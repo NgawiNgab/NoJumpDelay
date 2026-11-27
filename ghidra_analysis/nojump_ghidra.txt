@@ -1,0 +1,386 @@
+
+=== 001b1598 in FUN_001b1598 ===
+
+void FUN_001b1598(long param_1,undefined4 param_2)
+
+{
+  long *plVar1;
+  uint uVar2;
+  uint uVar3;
+  long lVar4;
+  long lVar5;
+  ulong uVar6;
+  
+  lVar4 = *(long *)(param_1 + 8);
+  lVar5 = *(long *)(((*(long *)(lVar4 + 0x40) - *(long *)(lVar4 + 0x38)) + 0x7fffffff8U &
+                    0x629647bc0) + *(long *)(lVar4 + 0x38));
+  if (lVar5 != -1) {
+    uVar2 = *(uint *)(param_1 + 0x10);
+    do {
+      plVar1 = (long *)(*(long *)(lVar4 + 0x50) + lVar5 * 0x20);
+      if (*(int *)(plVar1 + 1) == -0x3ad37088) {
+        if (plVar1 == *(long **)(lVar4 + 0x58)) {
+          return;
+        }
+        lVar4 = plVar1[2];
+        if (lVar4 == 0) {
+          return;
+        }
+        uVar6 = (ulong)(uVar2 >> 0xb) & 0x7f;
+        if ((ulong)(*(long *)(lVar4 + 0x10) - *(long *)(lVar4 + 8)) >> 3 <= uVar6) {
+          return;
+        }
+        lVar5 = *(long *)(*(long *)(lVar4 + 8) + uVar6 * 8);
+        if (lVar5 == 0) {
+          return;
+        }
+        uVar3 = *(uint *)(lVar5 + ((ulong)uVar2 & 0x7ff) * 4);
+        if (0x3fffe < ((ulong)uVar2 & 0xfffc0000 ^ (ulong)uVar3)) {
+          return;
+        }
+        lVar4 = *(long *)(*(long *)(lVar4 + 0x50) + ((ulong)(uVar3 >> 4) & 0x3ff8));
+        if (lVar4 == 0) {
+          return;
+        }
+        *(undefined4 *)(lVar4 + ((ulong)uVar3 & 0x7f) * 0x14 + 0x10) = param_2;
+        return;
+      }
+      lVar5 = *plVar1;
+    } while (lVar5 != -1);
+  }
+  return;
+}
+
+
+001b1598 090440f9 ldr x9,[x0, #0x8]
+001b159c e87f7db2 orr x8,xzr,#0x7fffffff8
+001b15a0 2aad43a9 ldp x10,x11,[x9, #0x38]
+001b15a4 6b010acb sub x11,x11,x10
+001b15a8 6801088b add x8,x11,x8
+001b15ac 0b788fd2 mov x11,#0x7bc0
+001b15b0 8b2ca5f2 movk x11,#0x2964, LSL #16
+001b15b4 cb00c0f2 movk x11,#0x6, LSL #32
+001b15b8 08010b8a and x8,x8,x11
+001b15bc 0a696af8 ldr x10,[x8, x10, LSL #0x0]
+001b15c0 5f0500b1 cmn x10,#0x1
+001b15c4 80010054 b.eq 0x001b15f4
+001b15c8 081040b9 ldr w8,[x0, #0x10]
+001b15cc 2b2940f9 ldr x11,[x9, #0x50]
+001b15d0 0cef9152 mov w12,#0x8f78
+001b15d4 8ca5b872 movk w12,#0xc52c, LSL #16
+001b15d8 6a150a8b add x10,x11,x10, LSL #0x5
+001b15dc 4d0940b9 ldr w13,[x10, #0x8]
+001b15e0 bf010c6b cmp w13,w12
+001b15e4 a0000054 b.eq 0x001b15f8
+001b15e8 4a0140f9 ldr x10,[x10]
+001b15ec 5f0500b1 cmn x10,#0x1
+001b15f0 41ffff54 b.ne 0x001b15d8
+001b15f4 c0035fd6 ret
+001b15f8 292d40f9 ldr x9,[x9, #0x58]
+001b15fc 5f0109eb cmp x10,x9
+001b1600 a0ffff54 b.eq 0x001b15f4
+001b1604 490940f9 ldr x9,[x10, #0x10]
+001b1608 69ffffb4 cbz x9,0x001b15f4
+001b160c 2ab140a9 ldp x10,x12,[x9, #0x8]
+001b1610 0b454bd3 ubfx x11,x8,#0xb,#0x7
+001b1614 8c010acb sub x12,x12,x10
+001b1618 7f0d4ceb cmp x11,x12, LSR #0x3
+001b161c c2feff54 b.cs 0x001b15f4
+001b1620 4a796bf8 ldr x10,[x10, x11, LSL #0x3]
+001b1624 8afeffb4 cbz x10,0x001b15f4
+001b1628 0b297ed3 ubfiz x11,x8,#0x2,#0xb
+001b162c 08356e92 and x8,x8,#0xfffc0000
+001b1630 4a696bb8 ldr w10,[x10, x11, LSL #0x0]
+001b1634 eb431f32 orr w11,wzr,#0x3fffe
+001b1638 08010aca eor x8,x8,x10
+001b163c 1f010beb cmp x8,x11
+001b1640 a8fdff54 b.hi 0x001b15f4
+001b1644 48fd44d3 lsr x8,x10,#0x4
+001b1648 292940f9 ldr x9,[x9, #0x50]
+001b164c 08297d92 and x8,x8,#0x3ff8
+001b1650 286968f8 ldr x8,[x9, x8, LSL #0x0]
+001b1654 08fdffb4 cbz x8,0x001b15f4
+001b1658 49194092 and x9,x10,#0x7f
+001b165c 8a028052 mov w10,#0x14
+001b1660 2821aa9b umaddl x8,w9,w10,x8
+001b1664 011100b9 str w1,[x8, #0x10]
+001b1668 c0035fd6 ret
+
+=== 001ae2d8 in FUN_001abb30 ===
+001ae288 a1000054 b.ne 0x001ae29c
+001ae28c 77ffff17 b 0x001ae068
+001ae290 7bc300d1 sub x27,x27,#0x30
+001ae294 7f031aeb cmp x27,x26
+001ae298 80eeff54 b.eq 0x001ae068
+001ae29c 68835e38 ldurb w8,[x27, #-0x18]
+001ae2a0 88ff0736 tbz w8,#0x0,0x001ae290
+001ae2a4 68835ef8 ldur x8,[x27, #-0x18]
+001ae2a8 60835ff8 ldur x0,[x27, #-0x8]
+001ae2ac 01f97f92 and x1,x8,#-0x2
+001ae2b0 20580494 bl 0x002c4330
+001ae2b4 f7ffff17 b 0x001ae290
+001ae2b8 401500d0 adrp x0,0x458000
+001ae2bc 00e01191 add x0,x0,#0x478
+001ae2c0 9c580494 bl 0x002c4530
+001ae2c4 fc3b40f9 ldr x28,[sp, #0x70]
+001ae2c8 481500d0 adrp x8,0x458000
+001ae2cc 08414339 ldrb w8,[x8, #0xd0]
+001ae2d0 68020037 tbnz w8,#0x0,0x001ae31c
+001ae2d4 481500b0 adrp x8,0x457000
+001ae2d8 08917b39 ldrb w8,[x8, #0xee4]
+001ae2dc 1f050071 cmp w8,#0x1
+001ae2e0 81000054 b.ne 0x001ae2f0
+001ae2e4 e0031caa mov x0,x28
+001ae2e8 e1031f2a mov w1,wzr
+001ae2ec ab0c0094 bl 0x001b1598
+001ae2f0 481500b0 adrp x8,0x457000
+001ae2f4 08017b39 ldrb w8,[x8, #0xec0]
+001ae2f8 1f050071 cmp w8,#0x1
+001ae2fc 01010054 b.ne 0x001ae31c
+001ae300 481500b0 adrp x8,0x457000
+001ae304 e0031caa mov x0,x28
+001ae308 41028052 mov w1,#0x12
+001ae30c 08f545f9 ldr x8,[x8, #0xbe8]
+001ae310 22008052 mov w2,#0x1
+001ae314 e3031f2a mov w3,wzr
+001ae318 00013fd6 blr x8
+001ae31c 68150090 adrp x8,0x45a000
+001ae320 e00313aa mov x0,x19
+001ae324 085947f9 ldr x8,[x8, #0xeb0]
+001ae328 00013fd6 blr x8
+001ae32c 281740f9 ldr x8,[x25, #0x28]
+001ae330 a9835af8 ldur x9,[x29, #-0x58]
+001ae334 1f0109eb cmp x8,x9
+001ae338 81230054 b.ne 0x001ae7a8
+001ae33c ff430691 add sp,sp,#0x190
+001ae340 f44f49a9 ldp x20,x19,[sp, #0x90]
+001ae344 f65748a9 ldp x22,x21,[sp, #0x80]
+001ae348 f85f47a9 ldp x24,x23,[sp, #0x70]
+001ae34c fa6746a9 ldp x26,x25,[sp, #0x60]
+001ae350 fc6f45a9 ldp x28,x27,[sp, #0x50]
+001ae354 fd7b44a9 ldp x29,x30,[sp, #0x40]
+001ae358 e923436d ldp d9,d8,[sp, #0x30]
+001ae35c eb2b426d ldp d11,d10,[sp, #0x20]
+001ae360 ed33416d ldp d13,d12,[sp, #0x10]
+001ae364 ef3bca6c ldp d15,d14,[sp], #0xa0
+001ae368 c0035fd6 ret
+001ae36c c10240bd ldr s1,[x22]
+001ae370 0800301e fcvtms w8,s0
+001ae374 c00a40bd ldr s0,[x22, #0x8]
+001ae378 571500b0 adrp x23,0x457000
+
+=== 001bc96c in JNI_OnLoad ===
+001bc91c 8b389852 mov w11,#0xc1c4
+001bc920 2b2eb172 movk w11,#0x8971, LSL #16
+001bc924 0b010b0b add w11,w8,w11
+001bc928 6c010a0b add w12,w11,w10
+001bc92c 6a010a0a and w10,w11,w10
+001bc930 8a050a4b sub w10,w12,w10, LSL #0x1
+001bc934 4c710151 sub w12,w10,#0x5c
+001bc938 8c6a2838 strb w12,[x20, x8, LSL ]
+001bc93c 6bffff17 b 0x001bc6e8
+001bc940 2b090091 add x11,x9,#0x2
+001bc944 df020beb cmp x22,x11
+001bc948 c0faff54 b.eq 0x001bc8a0
+001bc94c 8c6a2838 strb w12,[x20, x8, LSL ]
+001bc950 66ffff17 b 0x001bc6e8
+001bc954 e8d742f9 ldr x8,[sp, #0x5a8]
+001bc958 04000014 b 0x001bc968
+001bc95c a88302d1 sub x8,x29,#0xa0
+001bc960 02000014 b 0x001bc968
+001bc964 e82340f9 ldr x8,[sp, #0x40]
+001bc968 080140b9 ldr w8,[x8]
+001bc96c 1f2003d5 nop
+001bc970 018ef710 adr x1,0x1abb30
+001bc974 e21400d0 adrp x2,0x45a000
+001bc978 42c03a91 add x2,x2,#0xeb0
+001bc97c 6002088b add x0,x19,x8
+001bc980 ca880294 bl 0x0025eca8
+001bc984 c81400f0 adrp x8,0x457000
+001bc988 b8b08e52 mov w24,#0x7585
+001bc98c 7c108952 mov w28,#0x4883
+001bc990 139945f9 ldr x19,[x8, #0xb30]
+001bc994 c8fbfff0 adrp x8,0x137000
+001bc998 bb718652 mov w27,#0x338d
+001bc99c 009547fd ldr d0,[x8, #0xf28]
+001bc9a0 fad28352 mov w26,#0x1e97
+001bc9a4 99839252 mov w25,#0x941c
+001bc9a8 f5968152 mov w21,#0xcb7
+001bc9ac b48302d1 sub x20,x29,#0xa0
+001bc9b0 a80304d1 sub x8,x29,#0x100
+001bc9b4 18c6b072 movk w24,#0x8630, LSL #16
+001bc9b8 fcafbf72 movk w28,#0xfd7f, LSL #16
+001bc9bc 1b3ca172 movk w27,#0x9e0, LSL #16
+001bc9c0 3ac8a272 movk w26,#0x1641, LSL #16
+001bc9c4 398eb372 movk w25,#0x9c71, LSL #16
+001bc9c8 b582b872 movk w21,#0xc415, LSL #16
+001bc9cc 17008012 mov w23,#0xffffffff
+001bc9d0 bf7f36a9 stp xzr,xzr,[x29, #-0xa0]
+001bc9d4 1f5107f8 stur xzr,[x8, #0x75]
+001bc9d8 bf0317f8 stur xzr,[x29, #-0x90]
+001bc9dc a00316bc stur s0,[x29, #-0xa0]
+001bc9e0 38880294 bl 0x0025eac0
+001bc9e4 160040f9 ldr x22,[x0]
+001bc9e8 39880294 bl 0x0025eacc
+001bc9ec 090040f9 ldr x9,[x0]
+001bc9f0 e8031faa mov x8,xzr
+001bc9f4 0c000014 b 0x001bca24
+001bc9f8 09011c0b add w9,w8,w28
+001bc9fc 2c010a0b add w12,w9,w10
+001bca00 29010a0a and w9,w9,w10
+001bca04 8905094b sub w9,w12,w9, LSL #0x1
+001bca08 29ad0111 add w9,w9,#0x6b
+001bca0c 896a2838 strb w9,[x20, x8, LSL ]
+
+=== 001b5568 in JNI_OnLoad ===
+
+=== 0025eca8 in FUN_0025eca8 ===
+
+void FUN_0025eca8(undefined8 param_1,undefined8 param_2,undefined8 param_3)
+
+{
+  FUN_0025ecf0("hook_func_addr",param_1,param_2,param_3,0,0);
+  return;
+}
+
+
+0025eca8 ff8300d1 sub sp,sp,#0x20
+0025ecac fd7b01a9 stp x29,x30,[sp, #0x10]
+0025ecb0 fd430091 add x29,sp,#0x10
+0025ecb4 ff2003d5 xpaclri
+0025ecb8 e30302aa mov x3,x2
+0025ecbc e20301aa mov x2,x1
+0025ecc0 e10300aa mov x1,x0
+0025ecc4 00f7ffd0 adrp x0,0x140000
+0025ecc8 00141e91 add x0,x0,#0x785
+0025eccc e4031f2a mov w4,wzr
+0025ecd0 e5031f2a mov w5,wzr
+0025ecd4 e7031faa mov x7,xzr
+0025ecd8 ff0300f9 str xzr,[sp]
+0025ecdc e6031eaa mov x6,x30
+0025ece0 04000094 bl 0x0025ecf0
+0025ece4 fd7b41a9 ldp x29,x30,[sp, #0x10]
+0025ece8 ff830091 add sp,sp,#0x20
+0025ecec c0035fd6 ret
+
+=== refs to 001b1598 ===
+001628e0 INDIRECTION None
+0016a6b8 DATA None
+001ae2ec UNCONDITIONAL_CALL FUN_001abb30
+
+=== refs to 001abb30 ===
+00162828 INDIRECTION None
+0018519c DATA None
+0015a739 DATA None
+0015a73c DATA None
+0015a82e DATA None
+0015a83a DATA None
+001bc970 PARAM JNI_OnLoad
+
+=== refs to 0045aeb0 ===
+001ae324 READ FUN_001abb30
+001abc9c READ FUN_001abb30
+001bc978 PARAM JNI_OnLoad
+
+=== refs to 00457ee4 ===
+001ae2d8 READ FUN_001abb30
+001979cc PARAM FUN_001950f4
+001979dc WRITE FUN_001950f4
+001a4578 PARAM FUN_001a0958
+0019e1cc READ FUN_001986cc
+
+=== refs to 00457b30 ===
+001b6190 WRITE JNI_OnLoad
+001b61dc READ JNI_OnLoad
+001b6244 READ JNI_OnLoad
+001b64fc READ JNI_OnLoad
+001b6830 READ JNI_OnLoad
+001b6cc4 READ JNI_OnLoad
+001b6fd0 READ JNI_OnLoad
+001b730c READ JNI_OnLoad
+001b766c READ JNI_OnLoad
+001b7990 READ JNI_OnLoad
+001b7cb8 READ JNI_OnLoad
+001b7f6c READ JNI_OnLoad
+001b83f4 READ JNI_OnLoad
+001b8688 READ JNI_OnLoad
+001b8b18 READ JNI_OnLoad
+001b8ebc READ JNI_OnLoad
+001b9230 READ JNI_OnLoad
+001b96c4 READ JNI_OnLoad
+001b99e8 READ JNI_OnLoad
+001b9ec8 READ JNI_OnLoad
+001ba1fc READ JNI_OnLoad
+001ba520 READ JNI_OnLoad
+001ba7b4 READ JNI_OnLoad
+001baa50 READ JNI_OnLoad
+001baed4 READ JNI_OnLoad
+001bb168 READ JNI_OnLoad
+001bb494 READ JNI_OnLoad
+001bb7bc READ JNI_OnLoad
+001bbcd8 READ JNI_OnLoad
+001bc010 READ JNI_OnLoad
+001bc3b4 READ JNI_OnLoad
+001bc66c READ JNI_OnLoad
+001bc990 READ JNI_OnLoad
+001bcd28 READ JNI_OnLoad
+001bd060 READ JNI_OnLoad
+001bd394 READ JNI_OnLoad
+001bd648 READ JNI_OnLoad
+001bd964 READ JNI_OnLoad
+001bde74 READ JNI_OnLoad
+001be21c READ JNI_OnLoad
+001be4d4 READ JNI_OnLoad
+001be878 READ JNI_OnLoad
+001bec0c READ JNI_OnLoad
+001befac READ JNI_OnLoad
+001bf440 READ JNI_OnLoad
+001bf7bc READ JNI_OnLoad
+001bfaa8 READ JNI_OnLoad
+001bfd78 READ JNI_OnLoad
+001c00ac READ JNI_OnLoad
+001c044c READ JNI_OnLoad
+001c07f4 READ JNI_OnLoad
+001c0b30 READ JNI_OnLoad
+001c0dc8 READ JNI_OnLoad
+001c115c READ JNI_OnLoad
+001c13ec READ JNI_OnLoad
+001c171c READ JNI_OnLoad
+001c1a58 READ JNI_OnLoad
+001c1d90 READ JNI_OnLoad
+001c205c READ JNI_OnLoad
+001c2314 READ JNI_OnLoad
+001c2620 READ JNI_OnLoad
+001c2b38 READ JNI_OnLoad
+001c2e74 READ JNI_OnLoad
+001c31d4 READ JNI_OnLoad
+001c36b4 READ JNI_OnLoad
+001c3ac4 READ JNI_OnLoad
+001c4008 READ JNI_OnLoad
+001c436c READ JNI_OnLoad
+001c4670 READ JNI_OnLoad
+001c48fc READ JNI_OnLoad
+001c4bf4 READ JNI_OnLoad
+001c4f24 READ JNI_OnLoad
+001c5154 READ JNI_OnLoad
+001c54ec READ JNI_OnLoad
+001c598c READ JNI_OnLoad
+001c5c80 READ JNI_OnLoad
+001c5f30 READ JNI_OnLoad
+001c62b8 READ JNI_OnLoad
+001c6568 READ JNI_OnLoad
+001c67f4 READ JNI_OnLoad
+001c6b5c READ JNI_OnLoad
+001c6e08 READ JNI_OnLoad
+001c7094 READ JNI_OnLoad
+001c73b4 READ JNI_OnLoad
+001c7658 READ JNI_OnLoad
+001c7908 READ JNI_OnLoad
+001c7bec READ JNI_OnLoad
+001c7f3c READ JNI_OnLoad
+001c83c4 READ JNI_OnLoad
+001c8770 READ JNI_OnLoad
+001c8b00 READ JNI_OnLoad
+001c8fb4 READ JNI_OnLoad
+001c92cc READ JNI_OnLoad
+001c9758 READ JNI_OnLoad

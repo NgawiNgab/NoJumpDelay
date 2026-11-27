@@ -1,0 +1,8 @@
+{
+  "type": "preload-native",
+  "name": "NoJumpDelay (non-operational research prototype)",
+  "author": "Research build",
+  "description": "Fail-closed reverse engineering prototype; no game hook is installed.",
+  "version": "0.0.1",
+  "entry": "libNoJumpDelay.so"
+}

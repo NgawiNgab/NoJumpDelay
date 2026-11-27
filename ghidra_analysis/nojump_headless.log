@@ -1,0 +1,46 @@
+2026-11-27 09:51:32 INFO  (LoggingInitialization) Using log config file: jar:file:/home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-11-27 09:51:32 INFO  (LoggingInitialization) Using log file: /home/user/analysis/nojump_headless.log  
+2026-11-27 09:51:32 INFO  (Preferences) Loading user preferences: /home/user/.config/ghidra/ghidra_11.2.1_PUBLIC/preferences  
+2026-11-27 09:51:32 INFO  (ClassSearcher) Searching for classes...  
+2026-11-27 09:51:33 INFO  (ClassSearcher) Class search complete (1404 ms)  
+2026-11-27 09:51:33 INFO  (SSLContextInitializer) Initializing SSL Context  
+2026-11-27 09:51:33 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-11-27 09:51:33 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2026-11-27 09:51:33 INFO  (ApplicationTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2026-11-27 09:51:33 INFO  (FileCacheMaintenanceDaemon) Starting cache cleanup: /home/user/analysis/cache/ghidra/fscache2  
+2026-11-27 09:51:33 INFO  (FileCacheMaintenanceDaemon) Finished cache cleanup, estimated storage used: 0  
+2026-11-27 09:51:34 INFO  (AnalyzeHeadless) Headless startup complete (2848 ms)  
+2026-11-27 09:51:34 INFO  (ClassSearcher) Class searcher loaded 57 extension points (18 false positives)  
+2026-11-27 09:51:34 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Debug/Debugger-agent-dbgmodel-traceloader/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /home/user/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/Jython/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Debug/Debugger-agent-frida/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts  
+2026-11-27 09:51:34 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-11-27 09:51:34 INFO  (HeadlessAnalyzer) Opening existing project: /home/user/ghidra_projects/ReverseSigma  
+2026-11-27 09:51:34 DEBUG (DefaultProjectManager) No tools found; Installing default tools  
+2026-11-27 09:51:34 DEBUG (DefaultProjectManager) 	no recent project directories found  
+2026-11-27 09:51:34 INFO  (HeadlessProject) Opening project: /home/user/ghidra_projects/ReverseSigma  
+2026-11-27 09:51:36 INFO  (HeadlessAnalyzer) REPORT: Processing project file: /libReverseSigma.so  
+2026-11-27 09:51:37 INFO  (HeadlessAnalyzer) SCRIPT: /home/user/ghidra_scripts/TraceNoJump.py  
+2026-11-27 09:51:43 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for processed file: /libReverseSigma.so  

@@ -1,0 +1,2136 @@
+string_file_offset	ghidra_address	xref_from	function_entry	function_name	string
+37d78	00137d78	001f3f50	001f3efc	FUN_001f3efc	\uff
+37f28	00137f28	001bc99c	001b5568	JNI_OnLoad	zQ9'
+38980	00138980	001fd51c	001fd504	FUN_001fd504	]#q)
+38e18	00138e18	001fb5ec	001fb5a4	FUN_001fb5a4	.H?>
+39060	00139060	001c5998	001b5568	JNI_OnLoad	l<+#
+39720	00139720	001fb344	001fb300	FUN_001fb300	&4np
+397a8	001397a8	0020539c	00205354	FUN_00205354	(~_qz>
+398e0	001398e0	00209484	0020945c	FUN_0020945c	{/}e
+3a200	0013a200	001a2f90	001a0958	FUN_001a0958	333?
+3a200	0013a200	00194600	00194554	FUN_00194554	333?
+3a940	0013a940	0023484c	00234830	FUN_00234830	fff?fff?fff?
+3ad30	0013ad30	0020f0bc	0020e850	FUN_0020e850	Noclip
+3ad30	0013ad30	0020f3f8	0020e850	FUN_0020e850	Noclip
+3ad30	0013ad30	002d4a60			Noclip
+3ad37	0013ad37	0020eec4	0020e850	FUN_0020e850	Auto Clicker
+3ad37	0013ad37	0020f3ac	0020e850	FUN_0020e850	Auto Clicker
+3ad37	0013ad37	002d4a90			Auto Clicker
+3ad44	0013ad44	002d4aa0			Xray
+3ad49	0013ad49	001d17f4	001d169c	FUN_001d169c	0-pixel image
+3ad57	0013ad57	001d6a28	001d4f20	FUN_001d4f20	invalid filter
+3ad66	0013ad66	001d7934	001d7364	FUN_001d7364	unknown code
+3ad73	0013ad73	001ca9e0	001c9ec0	FUN_001c9ec0	wrong channel count
+3ada2	0013ada2	00195ac0	001950f4	FUN_001950f4	blockFlyShortcut
+3ada2	0013ada2	00199794	001986cc	FUN_001986cc	blockFlyShortcut
+3adb3	0013adb3	001961a8	001950f4	FUN_001950f4	blockFurnaceColor.y
+3adb3	0013adb3	0019a7b4	001986cc	FUN_001986cc	blockFurnaceColor.y
+3adc7	0013adc7	001961e8	001950f4	FUN_001950f4	espFurnace
+3adc7	0013adc7	0019a868	001986cc	FUN_001986cc	espFurnace
+3add2	0013add2	00196210	001950f4	FUN_001950f4	zoomShortcutSize.y
+3add2	0013add2	0019a8c4	001986cc	FUN_001986cc	zoomShortcutSize.y
+3ade5	0013ade5	001963b4	001950f4	FUN_001950f4	look360ShortcutPos.y
+3ade5	0013ade5	0019ad0c	001986cc	FUN_001986cc	look360ShortcutPos.y
+3adfa	0013adfa	00196790	001950f4	FUN_001950f4	noclipShortcut
+3adfa	0013adfa	0019b700	001986cc	FUN_001986cc	noclipShortcut
+3ae09	0013ae09	00196ae4	001950f4	FUN_001950f4	blockMobSpawnerColor.y
+3ae09	0013ae09	0019bf88	001986cc	FUN_001986cc	blockMobSpawnerColor.y
+3ae20	0013ae20	00196d00	001950f4	FUN_001950f4	containerCopperChestColor.y
+3ae20	0013ae20	0019c544	001986cc	FUN_001986cc	containerCopperChestColor.y
+3ae3c	0013ae3c	001972a4	001950f4	FUN_001950f4	noPigs
+3ae3c	0013ae3c	0019d20c	001986cc	FUN_001986cc	noPigs
+3ae43	0013ae43	00197c48	001950f4	FUN_001950f4	rotationsRange
+3ae43	0013ae43	0019e574	001986cc	FUN_001986cc	rotationsRange
+3ae52	0013ae52	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+0011 (DC1) must be escaped to \u0011
+3ae9b	0013ae9b	001e41b8	001e413c	FUN_001e413c	while parsing 
+3aeaa	0013aeaa	001f0468	001f03f4	FUN_001f03f4	type must be array, but is 
+3af6f	0013af6f	0022ca4c	0022c9e8	FUN_0022c9e8	[nav] NavInitRequest: ApplyResult: NavID 0x%08X in Layer %d Window "%s"
+3afb8	0013afb8	0021edb8	0021be78	FUN_0021be78	NULL
+3afb8	0013afb8	00230a08	0023098c	FUN_0023098c	NULL
+3afbd	0013afbd	002ca278			LeftCtrl
+3afc8	0013afc8	002ca598			KeypadEnter
+3afd4	0013afd4	002ca5e0			GamepadFaceDown
+3afe4	0013afe4	002ca600			GamepadDpadDown
+3aff4	0013aff4	002207b0	002201ac	FUN_002201ac	[io] %s: AppFocused %d
+3b00c	0013b00c	002251a4	00224e60	FUN_00224e60	###NavWindowingList
+3b020	0013b020	0021f958	0021be78	FUN_0021be78	Press ESC to abort picking.
+3b03c	0013b03c	0021f9a8	0021be78	FUN_0021be78	Middle
+3b043	0013b043	002ca898			V:%3d
+3b049	0013b049	002546bc	00253fb4	FUN_00253fb4	##ColorButton
+3b057	0013b057	00254990	00253fb4	FUN_00253fb4	_COL3F
+3b057	0013b057	00255224	00254e74	FUN_00254e74	_COL3F
+3b05e	0013b05e	00255ca0	002552ec	FUN_002552ec	##hex
+3b064	0013b064	0025c738	0025c4d8	FUN_0025c4d8	Sort=%d%c
+3b06f	0013b06f	0025d45c	0025d238	FUN_0025d238	Position
+3b088	0013b088	00457220			__dl___linker_init
+3b0f9	0013b0f9	00267528	00267394	FUN_00267394	strtab_out_of_bounds_error
+3b114	0013b114	002726dc	0027269c	FUN_0027269c	unspecified system_category error
+3b13a	0013b13a	00296980	00296868	do_get	0123456789
+3b13a	0013b13a	00298e80	00298d68	do_get	0123456789
+3b145	0013b145	002a70ec	002a705c	collate_byname	collate_byname<wchar_t>::collate_byname(size_t refs) failed to construct for 
+3b145	0013b145	002a6fb8	002a6f2c	collate_byname	collate_byname<wchar_t>::collate_byname(size_t refs) failed to construct for 
+3b193	0013b193	002b8190	002b7a94	init	locale not supported
+3b193	0013b193	002b81f4	002b7a94	init	locale not supported
+3b193	0013b193	002b7410	002b6d14	init	locale not supported
+3b193	0013b193	002b7474	002b6d14	init	locale not supported
+3b193	0013b193	00296214	00296110	__do_put	locale not supported
+3b193	0013b193	002b4e80	002b43d4	init	locale not supported
+3b193	0013b193	002b3d7c	002b26b4	__analyze	locale not supported
+3b1a8	0013b1a8	002bbfd0	002bbfc0	__cxa_pure_virtual	Pure virtual function called!
+3b1ca	0013b1ca	0020e9ec	0020e850	FUN_0020e850	Target Lock
+3b1ca	0013b1ca	0020efc0	0020e850	FUN_0020e850	Target Lock
+3b1ca	0013b1ca	002d4a70			Target Lock
+3b1d6	0013b1d6	001b6210	001b5568	JNI_OnLoad	Java_com_mojang_minecraftpe_MainActivity_nativeKeyHandler
+3b210	0013b210	001d17f4	001d169c	FUN_001d169c	bad ctype
+3b21a	0013b21a	001d17f4	001d169c	FUN_001d169c	outofdata
+3b224	0013b224	001d17f4	001d169c	FUN_001d169c	no IDAT
+3b22c	0013b22c	001d9dcc	001d958c	FUN_001d958c	bad COM len
+3b238	0013b238	001da15c	001d9eb4	FUN_001d9eb4	bad SOF len
+3b244	0013b244	001db99c	001db70c	FUN_001db70c	max value > 65535
+3b256	0013b256	00195570	001950f4	FUN_001950f4	blinkShortcutPos.y
+3b256	0013b256	00198a0c	001986cc	FUN_001986cc	blinkShortcutPos.y
+3b269	0013b269	00195a1c	001950f4	FUN_001950f4	blockFlyTypeShortcutPos.x
+3b269	0013b269	001995c4	001986cc	FUN_001986cc	blockFlyTypeShortcutPos.x
+3b283	0013b283	00196420	001950f4	FUN_001950f4	killItemsShortcutSize.y
+3b283	0013b283	0019ae1c	001986cc	FUN_001986cc	killItemsShortcutSize.y
+3b29b	0013b29b	00196448	001950f4	FUN_001950f4	killItemsShortcutSize.x
+3b29b	0013b29b	0019ae78	001986cc	FUN_001986cc	killItemsShortcutSize.x
+3b2b3	0013b2b3	001965d0	001950f4	FUN_001950f4	targetLockShortcutSize.x
+3b2b3	0013b2b3	0019b260	001986cc	FUN_001986cc	targetLockShortcutSize.x
+3b2cc	0013b2cc	001967b8	001950f4	FUN_001950f4	ladderFlyShortcutSize.y
+3b2cc	0013b2cc	0019b75c	001986cc	FUN_001986cc	ladderFlyShortcutSize.y
+3b2e4	0013b2e4	001969f0	001950f4	FUN_001950f4	blockVaultColor.z
+3b2e4	0013b2e4	0019bd0c	001986cc	FUN_001986cc	blockVaultColor.z
+3b2f6	0013b2f6	00196ac8	001950f4	FUN_001950f4	blockMobSpawnerColor.x
+3b2f6	0013b2f6	0019bf2c	001986cc	FUN_001986cc	blockMobSpawnerColor.x
+3b30d	0013b30d	00196b94	001950f4	FUN_001950f4	containerChestColor.z
+3b30d	0013b30d	0019c150	001986cc	FUN_001986cc	containerChestColor.z
+3b323	0013b323	00196e1c	001950f4	FUN_001950f4	espEnderChest
+3b323	0013b323	0019c814	001986cc	FUN_001986cc	espEnderChest
+3b331	0013b331	00197254	001950f4	FUN_001950f4	noPufferfishes
+3b331	0013b331	0019d15c	001986cc	FUN_001986cc	noPufferfishes
+3b340	0013b340	00197aa0	001950f4	FUN_001950f4	botList
+3b340	0013b340	0019e3c8	001986cc	FUN_001986cc	botList
+3b348	0013b348	00197d08	001950f4	FUN_001950f4	targetLock
+3b348	0013b348	0019e71c	001986cc	FUN_001986cc	targetLock
+3b353	0013b353	001edbc8	001eda94	FUN_001eda94	cannot use operator[] with a string argument with 
+3b3ef	0013b3ef	002ca2a8			RightAlt
+3b3fa	0013b3fa	002ca4e8			RightBracket
+3b40d	0013b40d	002ca8d0			G:%0.3f
+3b415	0013b415	00255b50	002552ec	FUN_002552ec	Original
+3b429	0013b429	0025c6cc	0025c4d8	FUN_0025c4d8	Width=%d
+3b433	0013b433	0025ff00	0025f884	FUN_0025f884	elf: lazy find sym gap %lx-%lx
+3b452	0013b452	00260990	002607e8	FUN_002607e8	linker: get dlinfo by target addr: target_addr %p, sym_name %s, sym_sz %zu, load_bias %lx, pathname %s
+3b4b9	0013b4b9	0026216c	00261fbc	FUN_00261fbc	switch: free_after_dlclose OK. target_addr %lx
+3b4e8	0013b4e8	00262968	0026261c	FUN_0026261c	switch: create, target_addr %lx
+3b508	0013b508	00262e44	00262e1c	FUN_00262e1c	H|%lx|%lx
+3b512	0013b512	00265308	00265254	FUN_00265254	a64 rewrite: fix addr %lx -> %lx
+3b547	0013b547	00268864	0026877c	FUN_0026877c	XzUnpacker_IsStreamWasFinished
+3b566	0013b566	002aed90	002aeaf4	FUN_002aeaf4	September
+3b570	0013b570	002bbac0	002bb970	__cxa_guard_acquire	%s failed to release mutex
+3b570	0013b570	002bbb9c	002bbb1c	__cxa_guard_release	%s failed to release mutex
+3b570	0013b570	002bbc38	002bbbc4	__cxa_guard_abort	%s failed to release mutex
+3b570	0013b570	002bbc9c	002bbc60	FUN_002bbc60	%s failed to release mutex
+3b58b	0013b58b	002bea64	002be97c	FUN_002be97c	%s:%d: %s
+3b58b	0013b58b	002beac4	002be97c	FUN_002be97c	%s:%d: %s
+3b58b	0013b58b	002bc8e4	002bc7e4	FUN_002bc7e4	%s:%d: %s
+3b595	0013b595	002c22a4	002c182c	FUN_002c182c	libunwind: %s - %s
+3b595	0013b595	002c2270	002c182c	FUN_002c182c	libunwind: %s - %s
+3b595	0013b595	002c22d8	002c182c	FUN_002c182c	libunwind: %s - %s
+3b595	0013b595	002c223c	002c182c	FUN_002c182c	libunwind: %s - %s
+3b595	0013b595	002c3e50	002c3dc0	FUN_002c3dc0	libunwind: %s - %s
+3b595	0013b595	002c3e90	002c3dc0	FUN_002c3dc0	libunwind: %s - %s
+3b595	0013b595	002c1798	002c1380	FUN_002c1380	libunwind: %s - %s
+3b595	0013b595	002c1800	002c1380	FUN_002c1380	libunwind: %s - %s
+3b595	0013b595	002c17cc	002c1380	FUN_002c1380	libunwind: %s - %s
+3b595	0013b595	002c2b3c	002c29d4	FUN_002c29d4	libunwind: %s - %s
+3b595	0013b595	002c2b70	002c29d4	FUN_002c29d4	libunwind: %s - %s
+3b595	0013b595	002c0d10	002c0a74	FUN_002c0a74	libunwind: %s - %s
+3b595	0013b595	002c3460	002c2b9c	FUN_002c2b9c	libunwind: %s - %s
+3b595	0013b595	002c33bc	002c2b9c	FUN_002c2b9c	libunwind: %s - %s
+3b595	0013b595	002c34cc	002c2b9c	FUN_002c2b9c	libunwind: %s - %s
+3b595	0013b595	002c33f0	002c2b9c	FUN_002c2b9c	libunwind: %s - %s
+3b595	0013b595	002c3354	002c2b9c	FUN_002c2b9c	libunwind: %s - %s
+3b595	0013b595	002c3498	002c2b9c	FUN_002c2b9c	libunwind: %s - %s
+3b595	0013b595	002c3500	002c2b9c	FUN_002c2b9c	libunwind: %s - %s
+3b595	0013b595	002c3388	002c2b9c	FUN_002c2b9c	libunwind: %s - %s
+3b595	0013b595	002c3534	002c2b9c	FUN_002c2b9c	libunwind: %s - %s
+3b595	0013b595	002c3428	002c2b9c	FUN_002c2b9c	libunwind: %s - %s
+3b595	0013b595	002c0e4c	002c0d90	FUN_002c0d90	libunwind: %s - %s
+3b595	0013b595	002c0f1c	002c0e78	FUN_002c0e78	libunwind: %s - %s
+3b595	0013b595	002c0304	002c0148	FUN_002c0148	libunwind: %s - %s
+3b595	0013b595	002c240c	002c2304	FUN_002c2304	libunwind: %s - %s
+3b595	0013b595	002c03f8	002c03a0	FUN_002c03a0	libunwind: %s - %s
+3b595	0013b595	002c25e8	002c2438	FUN_002c2438	libunwind: %s - %s
+3b595	0013b595	002c261c	002c2438	FUN_002c2438	libunwind: %s - %s
+3b595	0013b595	002c29a8	002c2648	FUN_002c2648	libunwind: %s - %s
+3b595	0013b595	002c2940	002c2648	FUN_002c2648	libunwind: %s - %s
+3b595	0013b595	002c28d8	002c2648	FUN_002c2648	libunwind: %s - %s
+3b595	0013b595	002c2974	002c2648	FUN_002c2648	libunwind: %s - %s
+3b595	0013b595	002c289c	002c2648	FUN_002c2648	libunwind: %s - %s
+3b595	0013b595	002c290c	002c2648	FUN_002c2648	libunwind: %s - %s
+3b595	0013b595	002c2858	002c2648	FUN_002c2648	libunwind: %s - %s
+3b5a9	0013b5a9	002c2920	002c2648	FUN_002c2648	DW_EH_PE_funcrel pointer encoding not supported
+3b5e1	0013b5e1	00193300	001932dc	FUN_001932dc	/proc/self/maps
+3b5e1	0013b5e1	00268110	002680bc	FUN_002680bc	/proc/self/maps
+3b5e1	0013b5e1	0025e1c4	0025e184	FUN_0025e184	/proc/self/maps
+3b5f3	0013b5f3	002d4af8			Down
+3b5f8	0013b5f8	00198518	00198460	Java_com_subroutineZEFF_ApollonClient_GLES3JNIView_setPackageName	/storage/emulated/0/Android/data/
+3b61a	0013b61a	001d17f4	001d169c	FUN_001d169c	tRNS before PLTE
+3b62b	0013b62b	001d9dcc	001d958c	FUN_001d958c	bad DRI len
+3b637	0013b637	0019572c	001950f4	FUN_001950f4	playersDeathPositionsBDS
+3b637	0013b637	00198e70	001986cc	FUN_001986cc	playersDeathPositionsBDS
+3b650	0013b650	00195818	001950f4	FUN_001950f4	freeCamShortcutSize.x
+3b650	0013b650	001990a0	001986cc	FUN_001986cc	freeCamShortcutSize.x
+3b666	0013b666	00195834	001950f4	FUN_001950f4	freeCamShortcutPos.y
+3b666	0013b666	00199100	001986cc	FUN_001986cc	freeCamShortcutPos.y
+3b67b	0013b67b	00195a60	001950f4	FUN_001950f4	blockFlyShortcutSize.x
+3b67b	0013b67b	00199684	001986cc	FUN_001986cc	blockFlyShortcutSize.x
+3b692	0013b692	001964f8	001950f4	FUN_001950f4	mobAuraShortcutSize.y
+3b692	0013b692	0019b03c	001986cc	FUN_001986cc	mobAuraShortcutSize.y
+3b6a8	0013b6a8	00196da4	001950f4	FUN_001950f4	espShulker
+3b6a8	0013b6a8	0019c70c	001986cc	FUN_001986cc	espShulker
+3b6b3	0013b6b3	0019754c	001950f4	FUN_001950f4	noBees
+3b6b3	0013b6b3	0019d7e4	001986cc	FUN_001986cc	noBees
+3b6ba	0013b6ba	001975c4	001950f4	FUN_001950f4	noArmadillos
+3b6ba	0013b6ba	0019d8ec	001986cc	FUN_001986cc	noArmadillos
+3b6c7	0013b6c7	00197614	001950f4	FUN_001950f4	noDonkeys
+3b6c7	0013b6c7	0019d99c	001986cc	FUN_001986cc	noDonkeys
+3b6d1	0013b6d1	00197bfc	001950f4	FUN_001950f4	hitBoxValue
+3b6d1	0013b6d1	0019e4c0	001986cc	FUN_001986cc	hitBoxValue
+3b6dd	0013b6dd	00197d30	001950f4	FUN_001950f4	rotations
+3b6dd	0013b6dd	0019e770	001986cc	FUN_001986cc	rotations
+3b6e7	0013b6e7	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+0004 (EOT) must be escaped to \u0004
+3b730	0013b730	001f3a3c	001f2dec	FUN_001f2dec	"subtype": 
+3b80e	0013b80e	00218bc0	002189dc	FUN_002189dc	#MOVE
+3b81e	0013b81e	002ca528			Keypad1
+3b826	0013b826	002ca5d0			GamepadFaceRight
+3b837	0013b837	0022087c	002201ac	FUN_002201ac	[io] %s: Text: %c (U+%08X)
+3b853	0013b853	0021dd3c	0021be78	FUN_0021be78	[nav] NavMoveRequestForward %d
+3b877	0013b877	00254400	00253fb4	FUN_00253fb4	#%02X%02X%02X%02X
+3b877	0013b877	00254de8	00254aa8	FUN_00254aa8	#%02X%02X%02X%02X
+3b88c	0013b88c	00262d48	00262cd4	FUN_00262cd4	switch: create glue_launcher, target_addr %lx
+3b8ba	0013b8ba	00263130	00262eb8	FUN_00262eb8	hub: create trampo at %lx, size %zu + %zu = %zu
+3b8ea	0013b8ea	002643a0	002641ec	FUN_002641ec	a64: %shook (with island) OK. target %lx
+3b913	0013b913	00264aa4	00264850	FUN_00264850	e|%lx|%zu|
+3b91e	0013b91e	002653d0	00265324	FUN_00265324	a64 rewrite: branch island %lx -> %lx
+3b979	0013b979	002c17a4	002c1380	FUN_002c1380	getSavedFloatRegister
+3b993	0013b993	0022abd0	0022abb4	FUN_0022abb4	1.90.0
+3b993	0013b993	00194330	001942fc	Java_com_subroutineZEFF_ApollonClient_GLES3JNIView_init	1.90.0
+3b99a	0013b99a	001ad9b8	001abb30	FUN_001abb30	item.fishing_rod
+3b9ab	0013b9ab	001b5130	001b4f30	FUN_001b4f30	Can't assign multiple hotkeys to one button.
+3b9d8	0013b9d8	001ca01c	001c9ec0	FUN_001c9ec0	bad png sig
+3b9d8	0013b9d8	001d17f4	001d169c	FUN_001d169c	bad png sig
+3b9e4	0013b9e4	001ca9e0	001c9ec0	FUN_001c9ec0	bad compression
+3b9f4	0013b9f4	001cc5cc	001cc410	FUN_001cc410	PICT
+3b9f9	0013b9f9	001d9d38	001d958c	FUN_001d958c	Adobe
+3ba0b	0013ba0b	001959f4	001950f4	FUN_001950f4	blockFlyTypeShortcutPos.y
+3ba0b	0013ba0b	00199564	001986cc	FUN_001986cc	blockFlyTypeShortcutPos.y
+3ba25	0013ba25	00195b24	001950f4	FUN_001950f4	clearItemList
+3ba25	0013ba25	00199870	001986cc	FUN_001986cc	clearItemList
+3ba33	0013ba33	00195cec	001950f4	FUN_001950f4	scaffold
+3ba33	0013ba33	00199ba4	001986cc	FUN_001986cc	scaffold
+3ba3c	0013ba3c	001968d8	001950f4	FUN_001950f4	blockCreakingHeartColor.z
+3ba3c	0013ba3c	0019ba34	001986cc	FUN_001986cc	blockCreakingHeartColor.z
+3ba56	0013ba56	00197074	001950f4	FUN_001950f4	noZombiepiglins
+3ba56	0013ba56	0019cd3c	001986cc	FUN_001986cc	noZombiepiglins
+3ba66	0013ba66	00197344	001950f4	FUN_001950f4	noLlamas
+3ba66	0013ba66	0019d36c	001986cc	FUN_001986cc	noLlamas
+3ba6f	0013ba6f	001977c4	001950f4	FUN_001950f4	xrayEmerald
+3ba6f	0013ba6f	0019dd6c	001986cc	FUN_001986cc	xrayEmerald
+3ba7b	0013ba7b	0019792c	001950f4	FUN_001950f4	xrayDefault
+3ba7b	0013ba7b	0019e084	001986cc	FUN_001986cc	xrayDefault
+3ba87	0013ba87	00197ef8	001950f4	FUN_001950f4	swing
+3ba87	0013ba87	0019eb68	001986cc	FUN_001986cc	swing
+3ba8d	0013ba8d	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+0016 (SYN) must be escaped to \u0016
+3bad6	0013bad6	001ef0c4	001eeffc	FUN_001eeffc	type must be number, but is 
+3bad6	0013bad6	001ee300	001ee284	FUN_001ee284	type must be number, but is 
+3baf3	0013baf3	001f41c4	001f3efc	FUN_001f3efc	\u%04x\u%04x
+3bb00	0013bb00	001f440c	001f3efc	FUN_001f3efc	0123456789ABCDEF
+3bb00	0013bb00	001f4410	001f3efc	FUN_001f3efc	0123456789ABCDEF
+3bb00	0013bb00	001f4340	001f3efc	FUN_001f3efc	0123456789ABCDEF
+3bb00	0013bb00	001f4348	001f3efc	FUN_001f3efc	0123456789ABCDEF
+3bbf7	0013bbf7	0021a4ac	0021a454	FUN_0021a454	SetActiveID() cancel MovingWindow
+3bc1a	0013bc1a	00224064	00220bb0	FUN_00220bb0	#RESIZE
+3bc22	0013bc22	00227f58	00227764	FUN_00227764	[focus] SetNavWindow("%s")
+3bc22	0013bc22	0021b0dc	0021af90	FUN_0021af90	[focus] SetNavWindow("%s")
+3bc22	0013bc22	0022c6c4	0022c660	FUN_0022c660	[focus] SetNavWindow("%s")
+3bc40	0013bc40	002ca248			Insert
+3bc4d	0013bc4d	002ca5c8			GamepadFaceLeft
+3bc5d	0013bc5d	002207f0	002201ac	FUN_002201ac	[io] %s: MousePos (-FLT_MAX, -FLT_MAX)
+3bc85	0013bc85	002ca6d8			TouchScreen
+3bc91	0013bc91	0023f1d0	0023f0c4	FUN_0023f0c4	..-         -XXXXXXX-    X    -           X           -XXXXXXX          -          XXXXXXX-     XX          - XX       XX ..-         -X.....X-   X.X   -          X.X          -X.....X          -          X.....X-    X..X         -X..X     X..X---         -XXX.XXX-  X...X  -         X...X         -X....X           -           X....X-    X..X         -X...X   X...XX           -  X.X  - X.....X -        X.....X        -X...X            -            X...X-    X..X         - X...X X...X XX          -  X.X  -X.......X-       X.......X       -X..X.X           -           X.X..X-    X..X         -  X...X...X  X.X         -  X.X  -XXXX.XXXX-       XXXX.XXXX       -X.X X.X          -          X.X X.X-    X..XXX       -   X.....X   X..X        -  X.X  -   X.X   -          X.X          -XX   X.X         -         X.X   XX-    X..X..XXX    -    X...X    X...X       -  X.X  -   X.X   -    XX    X.X    XX    -      X.X        -        X.X      -    X..X..X..XX  -     X.X     X....X      -  X.X  -   X.X   -   X.X    X.X    X.X   -       X.X       -       X.X       -    X..X..X..X.X -    X...X    X.....X     -  X.X  -   X.X   -  X..X    X.X    X..X  -        X.X      -      X.X        -XXX X..X..X..X..X-   X.....X   X......X    -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -         X.X   XX-XX   X.X         -X..XX........X..X-  X...X...X  X.......X   -  X.X  -   X.X   -X.....................X-          X.X X.X-X.X X.X          -X...X...........X- X...X X...X X........X  -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -           X.X..X-X..X.X           - X..............X-X...X   X...XX.........X -XXX.XXX-   X.X   -  X..X    X.X    X..X  -            X...X-X...X            -  X.............X-X..X     X..XX..........X-X.....X-   X.X   -   X.X    X.X    X.X   -           X....X-X....X           -  X.............X- XX       XX X......XXXXX-XXXXXXX-   X.X   -    XX    X.X    XX    -          X.....X-X.....X          -   X............X--------------X...X..X    ---------   X.X   -          X.X          -          XXXXXXX-XXXXXXX          -   X...........X -             X..X X..X   -       -XXXX.XXXX-       XXXX.XXXX       -------------------------------------    X..........X -             X.X  X..X   -       -X.......X-       X.......X       -    XX           XX    -           -    X..........X -             XX    X..X  -       - X.....X -        X.....X        -   X.X           X.X   -           -     X........X  -                   X..X  -       -  X...X  -         X...X         -  X..X           X..X  -           -     X........X  -                    XX   -       -   X.X   -          X.X          - X...XXXXXXXXXXXXX...X -           -     XXXXXXXXXX  -             -------------       -    X    -           X           -X.....................X-           -------------------                                 ----------------------------------- X...XXXXXXXXXXXXX...X -                                                                                                 -  X..X           X..X  -                                                                                                 -   X.X           X.X   -                                                                                                 -    XX           XX    -                                           
+3bc91	0013bc91	0023f2c0	0023f0c4	FUN_0023f0c4	..-         -XXXXXXX-    X    -           X           -XXXXXXX          -          XXXXXXX-     XX          - XX       XX ..-         -X.....X-   X.X   -          X.X          -X.....X          -          X.....X-    X..X         -X..X     X..X---         -XXX.XXX-  X...X  -         X...X         -X....X           -           X....X-    X..X         -X...X   X...XX           -  X.X  - X.....X -        X.....X        -X...X            -            X...X-    X..X         - X...X X...X XX          -  X.X  -X.......X-       X.......X       -X..X.X           -           X.X..X-    X..X         -  X...X...X  X.X         -  X.X  -XXXX.XXXX-       XXXX.XXXX       -X.X X.X          -          X.X X.X-    X..XXX       -   X.....X   X..X        -  X.X  -   X.X   -          X.X          -XX   X.X         -         X.X   XX-    X..X..XXX    -    X...X    X...X       -  X.X  -   X.X   -    XX    X.X    XX    -      X.X        -        X.X      -    X..X..X..XX  -     X.X     X....X      -  X.X  -   X.X   -   X.X    X.X    X.X   -       X.X       -       X.X       -    X..X..X..X.X -    X...X    X.....X     -  X.X  -   X.X   -  X..X    X.X    X..X  -        X.X      -      X.X        -XXX X..X..X..X..X-   X.....X   X......X    -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -         X.X   XX-XX   X.X         -X..XX........X..X-  X...X...X  X.......X   -  X.X  -   X.X   -X.....................X-          X.X X.X-X.X X.X          -X...X...........X- X...X X...X X........X  -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -           X.X..X-X..X.X           - X..............X-X...X   X...XX.........X -XXX.XXX-   X.X   -  X..X    X.X    X..X  -            X...X-X...X            -  X.............X-X..X     X..XX..........X-X.....X-   X.X   -   X.X    X.X    X.X   -           X....X-X....X           -  X.............X- XX       XX X......XXXXX-XXXXXXX-   X.X   -    XX    X.X    XX    -          X.....X-X.....X          -   X............X--------------X...X..X    ---------   X.X   -          X.X          -          XXXXXXX-XXXXXXX          -   X...........X -             X..X X..X   -       -XXXX.XXXX-       XXXX.XXXX       -------------------------------------    X..........X -             X.X  X..X   -       -X.......X-       X.......X       -    XX           XX    -           -    X..........X -             XX    X..X  -       - X.....X -        X.....X        -   X.X           X.X   -           -     X........X  -                   X..X  -       -  X...X  -         X...X         -  X..X           X..X  -           -     X........X  -                    XX   -       -   X.X   -          X.X          - X...XXXXXXXXXXXXX...X -           -     XXXXXXXXXX  -             -------------       -    X    -           X           -X.....................X-           -------------------                                 ----------------------------------- X...XXXXXXXXXXXXX...X -                                                                                                 -  X..X           X..X  -                                                                                                 -   X.X           X.X   -                                                                                                 -    XX           XX    -                                           
+3bc91	0013bc91	0023f240	0023f0c4	FUN_0023f0c4	..-         -XXXXXXX-    X    -           X           -XXXXXXX          -          XXXXXXX-     XX          - XX       XX ..-         -X.....X-   X.X   -          X.X          -X.....X          -          X.....X-    X..X         -X..X     X..X---         -XXX.XXX-  X...X  -         X...X         -X....X           -           X....X-    X..X         -X...X   X...XX           -  X.X  - X.....X -        X.....X        -X...X            -            X...X-    X..X         - X...X X...X XX          -  X.X  -X.......X-       X.......X       -X..X.X           -           X.X..X-    X..X         -  X...X...X  X.X         -  X.X  -XXXX.XXXX-       XXXX.XXXX       -X.X X.X          -          X.X X.X-    X..XXX       -   X.....X   X..X        -  X.X  -   X.X   -          X.X          -XX   X.X         -         X.X   XX-    X..X..XXX    -    X...X    X...X       -  X.X  -   X.X   -    XX    X.X    XX    -      X.X        -        X.X      -    X..X..X..XX  -     X.X     X....X      -  X.X  -   X.X   -   X.X    X.X    X.X   -       X.X       -       X.X       -    X..X..X..X.X -    X...X    X.....X     -  X.X  -   X.X   -  X..X    X.X    X..X  -        X.X      -      X.X        -XXX X..X..X..X..X-   X.....X   X......X    -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -         X.X   XX-XX   X.X         -X..XX........X..X-  X...X...X  X.......X   -  X.X  -   X.X   -X.....................X-          X.X X.X-X.X X.X          -X...X...........X- X...X X...X X........X  -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -           X.X..X-X..X.X           - X..............X-X...X   X...XX.........X -XXX.XXX-   X.X   -  X..X    X.X    X..X  -            X...X-X...X            -  X.............X-X..X     X..XX..........X-X.....X-   X.X   -   X.X    X.X    X.X   -           X....X-X....X           -  X.............X- XX       XX X......XXXXX-XXXXXXX-   X.X   -    XX    X.X    XX    -          X.....X-X.....X          -   X............X--------------X...X..X    ---------   X.X   -          X.X          -          XXXXXXX-XXXXXXX          -   X...........X -             X..X X..X   -       -XXXX.XXXX-       XXXX.XXXX       -------------------------------------    X..........X -             X.X  X..X   -       -X.......X-       X.......X       -    XX           XX    -           -    X..........X -             XX    X..X  -       - X.....X -        X.....X        -   X.X           X.X   -           -     X........X  -                   X..X  -       -  X...X  -         X...X         -  X..X           X..X  -           -     X........X  -                    XX   -       -   X.X   -          X.X          - X...XXXXXXXXXXXXX...X -           -     XXXXXXXXXX  -             -------------       -    X    -           X           -X.....................X-           -------------------                                 ----------------------------------- X...XXXXXXXXXXXXX...X -                                                                                                 -  X..X           X..X  -                                                                                                 -   X.X           X.X   -                                                                                                 -    XX           XX    -                                           
+3bc91	0013bc91	0023f150	0023f0c4	FUN_0023f0c4	..-         -XXXXXXX-    X    -           X           -XXXXXXX          -          XXXXXXX-     XX          - XX       XX ..-         -X.....X-   X.X   -          X.X          -X.....X          -          X.....X-    X..X         -X..X     X..X---         -XXX.XXX-  X...X  -         X...X         -X....X           -           X....X-    X..X         -X...X   X...XX           -  X.X  - X.....X -        X.....X        -X...X            -            X...X-    X..X         - X...X X...X XX          -  X.X  -X.......X-       X.......X       -X..X.X           -           X.X..X-    X..X         -  X...X...X  X.X         -  X.X  -XXXX.XXXX-       XXXX.XXXX       -X.X X.X          -          X.X X.X-    X..XXX       -   X.....X   X..X        -  X.X  -   X.X   -          X.X          -XX   X.X         -         X.X   XX-    X..X..XXX    -    X...X    X...X       -  X.X  -   X.X   -    XX    X.X    XX    -      X.X        -        X.X      -    X..X..X..XX  -     X.X     X....X      -  X.X  -   X.X   -   X.X    X.X    X.X   -       X.X       -       X.X       -    X..X..X..X.X -    X...X    X.....X     -  X.X  -   X.X   -  X..X    X.X    X..X  -        X.X      -      X.X        -XXX X..X..X..X..X-   X.....X   X......X    -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -         X.X   XX-XX   X.X         -X..XX........X..X-  X...X...X  X.......X   -  X.X  -   X.X   -X.....................X-          X.X X.X-X.X X.X          -X...X...........X- X...X X...X X........X  -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -           X.X..X-X..X.X           - X..............X-X...X   X...XX.........X -XXX.XXX-   X.X   -  X..X    X.X    X..X  -            X...X-X...X            -  X.............X-X..X     X..XX..........X-X.....X-   X.X   -   X.X    X.X    X.X   -           X....X-X....X           -  X.............X- XX       XX X......XXXXX-XXXXXXX-   X.X   -    XX    X.X    XX    -          X.....X-X.....X          -   X............X--------------X...X..X    ---------   X.X   -          X.X          -          XXXXXXX-XXXXXXX          -   X...........X -             X..X X..X   -       -XXXX.XXXX-       XXXX.XXXX       -------------------------------------    X..........X -             X.X  X..X   -       -X.......X-       X.......X       -    XX           XX    -           -    X..........X -             XX    X..X  -       - X.....X -        X.....X        -   X.X           X.X   -           -     X........X  -                   X..X  -       -  X...X  -         X...X         -  X..X           X..X  -           -     X........X  -                    XX   -       -   X.X   -          X.X          - X...XXXXXXXXXXXXX...X -           -     XXXXXXXXXX  -             -------------       -    X    -           X           -X.....................X-           -------------------                                 ----------------------------------- X...XXXXXXXXXXXXX...X -                                                                                                 -  X..X           X..X  -                                                                                                 -   X.X           X.X   -                                                                                                 -    XX           XX    -                                           
+3bc91	0013bc91	0023f4d4	0023f0c4	FUN_0023f0c4	..-         -XXXXXXX-    X    -           X           -XXXXXXX          -          XXXXXXX-     XX          - XX       XX ..-         -X.....X-   X.X   -          X.X          -X.....X          -          X.....X-    X..X         -X..X     X..X---         -XXX.XXX-  X...X  -         X...X         -X....X           -           X....X-    X..X         -X...X   X...XX           -  X.X  - X.....X -        X.....X        -X...X            -            X...X-    X..X         - X...X X...X XX          -  X.X  -X.......X-       X.......X       -X..X.X           -           X.X..X-    X..X         -  X...X...X  X.X         -  X.X  -XXXX.XXXX-       XXXX.XXXX       -X.X X.X          -          X.X X.X-    X..XXX       -   X.....X   X..X        -  X.X  -   X.X   -          X.X          -XX   X.X         -         X.X   XX-    X..X..XXX    -    X...X    X...X       -  X.X  -   X.X   -    XX    X.X    XX    -      X.X        -        X.X      -    X..X..X..XX  -     X.X     X....X      -  X.X  -   X.X   -   X.X    X.X    X.X   -       X.X       -       X.X       -    X..X..X..X.X -    X...X    X.....X     -  X.X  -   X.X   -  X..X    X.X    X..X  -        X.X      -      X.X        -XXX X..X..X..X..X-   X.....X   X......X    -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -         X.X   XX-XX   X.X         -X..XX........X..X-  X...X...X  X.......X   -  X.X  -   X.X   -X.....................X-          X.X X.X-X.X X.X          -X...X...........X- X...X X...X X........X  -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -           X.X..X-X..X.X           - X..............X-X...X   X...XX.........X -XXX.XXX-   X.X   -  X..X    X.X    X..X  -            X...X-X...X            -  X.............X-X..X     X..XX..........X-X.....X-   X.X   -   X.X    X.X    X.X   -           X....X-X....X           -  X.............X- XX       XX X......XXXXX-XXXXXXX-   X.X   -    XX    X.X    XX    -          X.....X-X.....X          -   X............X--------------X...X..X    ---------   X.X   -          X.X          -          XXXXXXX-XXXXXXX          -   X...........X -             X..X X..X   -       -XXXX.XXXX-       XXXX.XXXX       -------------------------------------    X..........X -             X.X  X..X   -       -X.......X-       X.......X       -    XX           XX    -           -    X..........X -             XX    X..X  -       - X.....X -        X.....X        -   X.X           X.X   -           -     X........X  -                   X..X  -       -  X...X  -         X...X         -  X..X           X..X  -           -     X........X  -                    XX   -       -   X.X   -          X.X          - X...XXXXXXXXXXXXX...X -           -     XXXXXXXXXX  -             -------------       -    X    -           X           -X.....................X-           -------------------                                 ----------------------------------- X...XXXXXXXXXXXXX...X -                                                                                                 -  X..X           X..X  -                                                                                                 -   X.X           X.X   -                                                                                                 -    XX           XX    -                                           
+3bc91	0013bc91	0023f6a0	0023f0c4	FUN_0023f0c4	..-         -XXXXXXX-    X    -           X           -XXXXXXX          -          XXXXXXX-     XX          - XX       XX ..-         -X.....X-   X.X   -          X.X          -X.....X          -          X.....X-    X..X         -X..X     X..X---         -XXX.XXX-  X...X  -         X...X         -X....X           -           X....X-    X..X         -X...X   X...XX           -  X.X  - X.....X -        X.....X        -X...X            -            X...X-    X..X         - X...X X...X XX          -  X.X  -X.......X-       X.......X       -X..X.X           -           X.X..X-    X..X         -  X...X...X  X.X         -  X.X  -XXXX.XXXX-       XXXX.XXXX       -X.X X.X          -          X.X X.X-    X..XXX       -   X.....X   X..X        -  X.X  -   X.X   -          X.X          -XX   X.X         -         X.X   XX-    X..X..XXX    -    X...X    X...X       -  X.X  -   X.X   -    XX    X.X    XX    -      X.X        -        X.X      -    X..X..X..XX  -     X.X     X....X      -  X.X  -   X.X   -   X.X    X.X    X.X   -       X.X       -       X.X       -    X..X..X..X.X -    X...X    X.....X     -  X.X  -   X.X   -  X..X    X.X    X..X  -        X.X      -      X.X        -XXX X..X..X..X..X-   X.....X   X......X    -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -         X.X   XX-XX   X.X         -X..XX........X..X-  X...X...X  X.......X   -  X.X  -   X.X   -X.....................X-          X.X X.X-X.X X.X          -X...X...........X- X...X X...X X........X  -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -           X.X..X-X..X.X           - X..............X-X...X   X...XX.........X -XXX.XXX-   X.X   -  X..X    X.X    X..X  -            X...X-X...X            -  X.............X-X..X     X..XX..........X-X.....X-   X.X   -   X.X    X.X    X.X   -           X....X-X....X           -  X.............X- XX       XX X......XXXXX-XXXXXXX-   X.X   -    XX    X.X    XX    -          X.....X-X.....X          -   X............X--------------X...X..X    ---------   X.X   -          X.X          -          XXXXXXX-XXXXXXX          -   X...........X -             X..X X..X   -       -XXXX.XXXX-       XXXX.XXXX       -------------------------------------    X..........X -             X.X  X..X   -       -X.......X-       X.......X       -    XX           XX    -           -    X..........X -             XX    X..X  -       - X.....X -        X.....X        -   X.X           X.X   -           -     X........X  -                   X..X  -       -  X...X  -         X...X         -  X..X           X..X  -           -     X........X  -                    XX   -       -   X.X   -          X.X          - X...XXXXXXXXXXXXX...X -           -     XXXXXXXXXX  -             -------------       -    X    -           X           -X.....................X-           -------------------                                 ----------------------------------- X...XXXXXXXXXXXXX...X -                                                                                                 -  X..X           X..X  -                                                                                                 -   X.X           X.X   -                                                                                                 -    XX           XX    -                                           
+3bc91	0013bc91	0023f544	0023f0c4	FUN_0023f0c4	..-         -XXXXXXX-    X    -           X           -XXXXXXX          -          XXXXXXX-     XX          - XX       XX ..-         -X.....X-   X.X   -          X.X          -X.....X          -          X.....X-    X..X         -X..X     X..X---         -XXX.XXX-  X...X  -         X...X         -X....X           -           X....X-    X..X         -X...X   X...XX           -  X.X  - X.....X -        X.....X        -X...X            -            X...X-    X..X         - X...X X...X XX          -  X.X  -X.......X-       X.......X       -X..X.X           -           X.X..X-    X..X         -  X...X...X  X.X         -  X.X  -XXXX.XXXX-       XXXX.XXXX       -X.X X.X          -          X.X X.X-    X..XXX       -   X.....X   X..X        -  X.X  -   X.X   -          X.X          -XX   X.X         -         X.X   XX-    X..X..XXX    -    X...X    X...X       -  X.X  -   X.X   -    XX    X.X    XX    -      X.X        -        X.X      -    X..X..X..XX  -     X.X     X....X      -  X.X  -   X.X   -   X.X    X.X    X.X   -       X.X       -       X.X       -    X..X..X..X.X -    X...X    X.....X     -  X.X  -   X.X   -  X..X    X.X    X..X  -        X.X      -      X.X        -XXX X..X..X..X..X-   X.....X   X......X    -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -         X.X   XX-XX   X.X         -X..XX........X..X-  X...X...X  X.......X   -  X.X  -   X.X   -X.....................X-          X.X X.X-X.X X.X          -X...X...........X- X...X X...X X........X  -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -           X.X..X-X..X.X           - X..............X-X...X   X...XX.........X -XXX.XXX-   X.X   -  X..X    X.X    X..X  -            X...X-X...X            -  X.............X-X..X     X..XX..........X-X.....X-   X.X   -   X.X    X.X    X.X   -           X....X-X....X           -  X.............X- XX       XX X......XXXXX-XXXXXXX-   X.X   -    XX    X.X    XX    -          X.....X-X.....X          -   X............X--------------X...X..X    ---------   X.X   -          X.X          -          XXXXXXX-XXXXXXX          -   X...........X -             X..X X..X   -       -XXXX.XXXX-       XXXX.XXXX       -------------------------------------    X..........X -             X.X  X..X   -       -X.......X-       X.......X       -    XX           XX    -           -    X..........X -             XX    X..X  -       - X.....X -        X.....X        -   X.X           X.X   -           -     X........X  -                   X..X  -       -  X...X  -         X...X         -  X..X           X..X  -           -     X........X  -                    XX   -       -   X.X   -          X.X          - X...XXXXXXXXXXXXX...X -           -     XXXXXXXXXX  -             -------------       -    X    -           X           -X.....................X-           -------------------                                 ----------------------------------- X...XXXXXXXXXXXXX...X -                                                                                                 -  X..X           X..X  -                                                                                                 -   X.X           X.X   -                                                                                                 -    XX           XX    -                                           
+3bc91	0013bc91	0023f378	0023f0c4	FUN_0023f0c4	..-         -XXXXXXX-    X    -           X           -XXXXXXX          -          XXXXXXX-     XX          - XX       XX ..-         -X.....X-   X.X   -          X.X          -X.....X          -          X.....X-    X..X         -X..X     X..X---         -XXX.XXX-  X...X  -         X...X         -X....X           -           X....X-    X..X         -X...X   X...XX           -  X.X  - X.....X -        X.....X        -X...X            -            X...X-    X..X         - X...X X...X XX          -  X.X  -X.......X-       X.......X       -X..X.X           -           X.X..X-    X..X         -  X...X...X  X.X         -  X.X  -XXXX.XXXX-       XXXX.XXXX       -X.X X.X          -          X.X X.X-    X..XXX       -   X.....X   X..X        -  X.X  -   X.X   -          X.X          -XX   X.X         -         X.X   XX-    X..X..XXX    -    X...X    X...X       -  X.X  -   X.X   -    XX    X.X    XX    -      X.X        -        X.X      -    X..X..X..XX  -     X.X     X....X      -  X.X  -   X.X   -   X.X    X.X    X.X   -       X.X       -       X.X       -    X..X..X..X.X -    X...X    X.....X     -  X.X  -   X.X   -  X..X    X.X    X..X  -        X.X      -      X.X        -XXX X..X..X..X..X-   X.....X   X......X    -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -         X.X   XX-XX   X.X         -X..XX........X..X-  X...X...X  X.......X   -  X.X  -   X.X   -X.....................X-          X.X X.X-X.X X.X          -X...X...........X- X...X X...X X........X  -  X.X  -   X.X   - X...XXXXXX.XXXXXX...X -           X.X..X-X..X.X           - X..............X-X...X   X...XX.........X -XXX.XXX-   X.X   -  X..X    X.X    X..X  -            X...X-X...X            -  X.............X-X..X     X..XX..........X-X.....X-   X.X   -   X.X    X.X    X.X   -           X....X-X....X           -  X.............X- XX       XX X......XXXXX-XXXXXXX-   X.X   -    XX    X.X    XX    -          X.....X-X.....X          -   X............X--------------X...X..X    ---------   X.X   -          X.X          -          XXXXXXX-XXXXXXX          -   X...........X -             X..X X..X   -       -XXXX.XXXX-       XXXX.XXXX       -------------------------------------    X..........X -             X.X  X..X   -       -X.......X-       X.......X       -    XX           XX    -           -    X..........X -             XX    X..X  -       - X.....X -        X.....X        -   X.X           X.X   -           -     X........X  -                   X..X  -       -  X...X  -         X...X         -  X..X           X..X  -           -     X........X  -                    XX   -       -   X.X   -          X.X          - X...XXXXXXXXXXXXX...X -           -     XXXXXXXXXX  -             -------------       -    X    -           X           -X.....................X-           -------------------                                 ----------------------------------- X...XXXXXXXXXXXXX...X -                                                                                                 -  X..X           X..X  -                                                                                                 -   X.X           X.X   -                                                                                                 -    XX           XX    -                                           
+3c970	0013c970	00256ed4	00256cc0	FUN_00256cc0	H: %.3f, S: %.3f, V: %.3f
+3c98e	0013c98e	002ca7b8			%lld
+3c98e	0013c98e	002ca7c0			%lld
+3c9a8	0013c9a8	002668e8	0026689c	FUN_0026689c	[vdso]
+3c9a8	0013c9a8	002668fc	0026689c	FUN_0026689c	[vdso]
+3c9c5	0013c9c5	002bbd10	002bbcfc	FUN_002bbcfc	unexpected_handler unexpectedly returned
+3c9ee	0013c9ee	002c20d0	002c182c	FUN_002c182c	libunwind: malformed DW_CFA_def_cfa DWARF unwind, reg too big
+3ca35	0013ca35	002d4a78			MobAura
+3ca40	0013ca40	001d17f4	001d169c	FUN_001d169c	bad filter method
+3ca52	0013ca52	001d17f4	001d169c	FUN_001d169c	first not IHDR
+3ca6f	0013ca6f	001d7934	001d7364	FUN_001d7364	too many codes
+3ca7e	0013ca7e	001da15c	001d9eb4	FUN_001d9eb4	bad TQ
+3ca85	0013ca85	001930ec	00192128	FUN_00192128	bad codelengths
+3ca95	0013ca95	00195554	001950f4	FUN_001950f4	blinkShortcutSize.x
+3ca95	0013ca95	001989ac	001986cc	FUN_001986cc	blinkShortcutSize.x
+3caa9	0013caa9	00196a0c	001950f4	FUN_001950f4	espVault
+3caa9	0013caa9	0019bd64	001986cc	FUN_001986cc	espVault
+3cab2	0013cab2	001972cc	001950f4	FUN_001950f4	noParrots
+3cab2	0013cab2	0019d264	001986cc	FUN_001986cc	noParrots
+3cabc	0013cabc	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+000A (LF) must be escaped to \u000A or \n
+3cb0a	0013cb0a	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+000E (SO) must be escaped to \u000E
+3cb52	0013cb52	001e43a0	001e413c	FUN_001e413c	; expected 
+3cb5e	0013cb5e	001dd93c	001dd830	FUN_001dd830	cannot use value() with 
+3cb5e	0013cb5e	001df974	001df86c	FUN_001df86c	cannot use value() with 
+3cb5e	0013cb5e	001e1a44	001e193c	FUN_001e193c	cannot use value() with 
+3cb5e	0013cb5e	001ddaec	001dd9e4	FUN_001dd9e4	cannot use value() with 
+3cb5e	0013cb5e	001dfb28	001dfa1c	FUN_001dfa1c	cannot use value() with 
+3cb5e	0013cb5e	001e1bf4	001e1aec	FUN_001e1aec	cannot use value() with 
+3cb5e	0013cb5e	001ddc9c	001ddb94	FUN_001ddb94	cannot use value() with 
+3cb5e	0013cb5e	001dfd00	001dfbd0	FUN_001dfbd0	cannot use value() with 
+3cb5e	0013cb5e	001e1da4	001e1c9c	FUN_001e1c9c	cannot use value() with 
+3cb5e	0013cb5e	001dde50	001ddd44	FUN_001ddd44	cannot use value() with 
+3cb5e	0013cb5e	001dfec0	001dfdb8	FUN_001dfdb8	cannot use value() with 
+3cb5e	0013cb5e	001de004	001ddef8	FUN_001ddef8	cannot use value() with 
+3cb5e	0013cb5e	001e0074	001dff68	FUN_001dff68	cannot use value() with 
+3cb5e	0013cb5e	001e1164	001e105c	FUN_001e105c	cannot use value() with 
+3cb5e	0013cb5e	001dd274	001dd168	FUN_001dd168	cannot use value() with 
+3cb5e	0013cb5e	001df2b0	001df1a4	FUN_001df1a4	cannot use value() with 
+3cb5e	0013cb5e	001e133c	001e120c	FUN_001e120c	cannot use value() with 
+3cb5e	0013cb5e	001dd424	001dd31c	FUN_001dd31c	cannot use value() with 
+3cb5e	0013cb5e	001df464	001df358	FUN_001df358	cannot use value() with 
+3cb5e	0013cb5e	001e1524	001e13f4	FUN_001e13f4	cannot use value() with 
+3cb5e	0013cb5e	001dd5d4	001dd4cc	FUN_001dd4cc	cannot use value() with 
+3cb5e	0013cb5e	001df614	001df50c	FUN_001df50c	cannot use value() with 
+3cb5e	0013cb5e	001e16e4	001e15dc	FUN_001e15dc	cannot use value() with 
+3cb5e	0013cb5e	001dd788	001dd67c	FUN_001dd67c	cannot use value() with 
+3cb5e	0013cb5e	001df7c4	001df6bc	FUN_001df6bc	cannot use value() with 
+3cb5e	0013cb5e	001e1894	001e178c	FUN_001e178c	cannot use value() with 
+3cb5e	0013cb5e	001dea34	001de92c	FUN_001de92c	cannot use value() with 
+3cb5e	0013cb5e	001e0aa0	001e0994	FUN_001e0994	cannot use value() with 
+3cb5e	0013cb5e	001debe4	001deadc	FUN_001deadc	cannot use value() with 
+3cb5e	0013cb5e	001e0c50	001e0b48	FUN_001e0b48	cannot use value() with 
+3cb5e	0013cb5e	001ded98	001dec8c	FUN_001dec8c	cannot use value() with 
+3cb5e	0013cb5e	001e0e04	001e0cf8	FUN_001e0cf8	cannot use value() with 
+3cb5e	0013cb5e	001def48	001dee40	FUN_001dee40	cannot use value() with 
+3cb5e	0013cb5e	001e0fb4	001e0eac	FUN_001e0eac	cannot use value() with 
+3cb5e	0013cb5e	001dd0c0	001dcfb4	FUN_001dcfb4	cannot use value() with 
+3cb5e	0013cb5e	001df0fc	001deff0	FUN_001deff0	cannot use value() with 
+3cb5e	0013cb5e	001de1b8	001de0ac	FUN_001de0ac	cannot use value() with 
+3cb5e	0013cb5e	001e0224	001e011c	FUN_001e011c	cannot use value() with 
+3cb5e	0013cb5e	001de36c	001de260	FUN_001de260	cannot use value() with 
+3cb5e	0013cb5e	001e03d8	001e02cc	FUN_001e02cc	cannot use value() with 
+3cb5e	0013cb5e	001de520	001de414	FUN_001de414	cannot use value() with 
+3cb5e	0013cb5e	001e0588	001e0480	FUN_001e0480	cannot use value() with 
+3cb5e	0013cb5e	001de6d4	001de5c8	FUN_001de5c8	cannot use value() with 
+3cb5e	0013cb5e	001e073c	001e0630	FUN_001e0630	cannot use value() with 
+3cb5e	0013cb5e	001de884	001de77c	FUN_001de77c	cannot use value() with 
+3cb5e	0013cb5e	001e08ec	001e07e4	FUN_001e07e4	cannot use value() with 
+3cc1b	0013cc1b	0021174c	002116f8	FUN_002116f8	imgui.ini
+3cc28	0013cc28	002ca4f0			GraveAccent
+3cc34	0013cc34	002ca5f0			GamepadDpadRight
+3cc45	0013cc45	002ca630			GamepadR3
+3cc4f	0013cc4f	002ca690			MouseX1
+3cc6d	0013cc6d	00217884	002176a0	FUN_002176a0	[%s][%s]
+3cc77	0013cc77	0025456c	00253fb4	FUN_00253fb4	context
+3cc77	0013cc77	00254738	00253fb4	FUN_00253fb4	context
+3cc77	0013cc77	0025446c	00253fb4	FUN_00253fb4	context
+3cc77	0013cc77	00254650	00253fb4	FUN_00253fb4	context
+3cc77	0013cc77	002557a4	002552ec	FUN_002552ec	context
+3cc77	0013cc77	002559d0	002552ec	FUN_002552ec	context
+3cc77	0013cc77	00256a54	00256a04	FUN_00256a04	context
+3cc77	0013cc77	00254aec	00254aa8	FUN_00254aa8	context
+3cc7f	0013cc7f	0025c6f4	0025c4d8	FUN_0025c4d8	Visible=%d
+3cc8b	0013cc8b	0025d344	0025d238	FUN_0025d238	vertex shader
+3cca0	0013cca0	0025f7dc	0025f6ec	FUN_0025f6ec	in ELF-gap
+3ccea	0013ccea	00267a20	002679f8	FUN_002679f8	%s/%s
+3ccf6	0013ccf6	002bc030	002bc028	what	std::exception
+3cd05	0013cd05	002bc430	002bc428	what	std::bad_cast
+3cd13	0013cd13	002c2198	002c182c	FUN_002c182c	libunwind: malformed DW_CFA_val_offset DWARF unwind, reg (%lu) out of range
+3cd79	0013cd79	002c0bb4	002c0a74	FUN_002c0a74	CIE version is not 1 or 3
+3cd93	0013cd93	001d17f4	001d169c	FUN_001d169c	invalid PLTE
+3cda0	0013cda0	001d4fc0	001d4f20	FUN_001d4f20	not enough pixels
+3cdc3	0013cdc3	00195ecc	001950f4	FUN_001950f4	xrayDefaultShortcutSize.x
+3cdc3	0013cdc3	0019a03c	001986cc	FUN_001986cc	xrayDefaultShortcutSize.x
+3cddd	0013cddd	00195fb8	001950f4	FUN_001950f4	espBrewingStand
+3cddd	0013cddd	0019a2b8	001986cc	FUN_001986cc	espBrewingStand
+3cded	0013cded	00196708	001950f4	FUN_001950f4	noclipShortcutSize.y
+3cded	0013cded	0019b594	001986cc	FUN_001986cc	noclipShortcutSize.y
+3ce02	0013ce02	00196b70	001950f4	FUN_001950f4	containerChestColor.y
+3ce02	0013ce02	0019c0f4	001986cc	FUN_001986cc	containerChestColor.y
+3ce18	0013ce18	00196f84	001950f4	FUN_001950f4	espLine
+3ce18	0013ce18	0019cb2c	001986cc	FUN_001986cc	espLine
+3ce20	0013ce20	001976ac	001950f4	FUN_001950f4	xrayObsidian
+3ce20	0013ce20	0019db04	001986cc	FUN_001986cc	xrayObsidian
+3ce2d	0013ce2d	001978b4	001950f4	FUN_001950f4	noSnowMan
+3ce2d	0013ce2d	0019df7c	001986cc	FUN_001986cc	noSnowMan
+3ce37	0013ce37	00197b58	001950f4	FUN_001950f4	friendList
+3ce37	0013ce37	0019e458	001986cc	FUN_001986cc	friendList
+3ce42	0013ce42	0019800c	001950f4	FUN_001950f4	noSlowDown
+3ce42	0013ce42	0019edbc	001986cc	FUN_001986cc	noSlowDown
+3ce4d	0013ce4d	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+0008 (BS) must be escaped to \u0008 or \b
+3ce9b	0013ce9b	001e5364	001e5314	FUN_001e5314	, column 
+3cebc	0013cebc	001e9608	001e9398	FUN_001e9398	iterator out of range
+3ced2	0013ced2	001ede74	001ede48	FUN_001ede48	type_error
+3ced2	0013ced2	001eab3c	001eab10	FUN_001eab10	type_error
+3ced2	0013ced2	001f2184	001f2158	FUN_001f2158	type_error
+3cee0	0013cee0	001b1e44	001b16ac	FUN_001b16ac	no_screen
+3cf86	0013cf86	00217824	002176a0	FUN_002176a0	IsChild=1
+3cf91	0013cf91	00254bc8	00254aa8	FUN_00254aa8	0..255
+3d0cd	0013d0cd	0025ec08	0025ead8	FUN_0025ead8	shadowhook version 2.0.1
+3d0e6	0013d0e6	0025ec00	0025ead8	FUN_0025ead8	%s: shadowhook init(default_mode: %s, debuggable: %s), init-errno: %d, real-init: %s
+3d13b	0013d13b	00260400	0026036c	FUN_0026036c	elf: delayed destroy, load_bias %p
+3d1b4	0013d1b4	00268c30	00268b8c	FUN_00268b8c	ro.build.version.sdk=
+3d1b4	0013d1b4	00268c50	00268b8c	FUN_00268b8c	ro.build.version.sdk=
+3d1b4	0013d1b4	002663a0	002662fc	FUN_002662fc	ro.build.version.sdk=
+3d1b4	0013d1b4	002663c0	002662fc	FUN_002662fc	ro.build.version.sdk=
+3d1ca	0013d1ca	00268884	0026877c	FUN_0026877c	XzUnpacker_Free
+3d1da	0013d1da	00268e98	00268e18	now	clock_gettime(CLOCK_MONOTONIC) failed
+3d200	0013d200	002bc120	002bc118	what	bad_array_new_length
+3d215	0013d215	002bc8ec	002bc7e4	FUN_002bc7e4	out/llvm-project/libcxxabi/src/private_typeinfo.cpp
+3d249	0013d249	002c040c	002c03a0	FUN_002c03a0	_Unwind_Resume() can't return
+3d2a9	0013d2a9	002c3ea4	002c3dc0	FUN_002c3dc0	Can't binary search on variable length encoded data.
+3d2e6	0013d2e6	001d17f4	001d169c	FUN_001d169c	tRNS with alpha
+3d2f6	0013d2f6	001ca9e0	001c9ec0	FUN_001c9ec0	bad offset
+3d301	0013d301	001ca9e0	001c9ec0	FUN_001c9ec0	wrong version
+3d31b	0013d31b	001951d8	001950f4	FUN_001950f4	physicalHotkeys
+3d31b	0013d31b	001951fc	001950f4	FUN_001950f4	physicalHotkeys
+3d31b	0013d31b	00195268	001950f4	FUN_001950f4	physicalHotkeys
+3d31b	0013d31b	00198828	001986cc	FUN_001986cc	physicalHotkeys
+3d32b	0013d32b	00195f78	001950f4	FUN_001950f4	blockBrewingStandColor.y
+3d32b	0013d32b	0019a204	001986cc	FUN_001986cc	blockBrewingStandColor.y
+3d344	0013d344	00196090	001950f4	FUN_001950f4	blockDispenserColor.y
+3d344	0013d344	0019a4dc	001986cc	FUN_001986cc	blockDispenserColor.y
+3d35a	0013d35a	001969b0	001950f4	FUN_001950f4	blockVaultColor.x
+3d35a	0013d35a	0019bc54	001986cc	FUN_001986cc	blockVaultColor.x
+3d36c	0013d36c	00196a98	001950f4	FUN_001950f4	espTrialSpawner
+3d36c	0013d36c	0019bed0	001986cc	FUN_001986cc	espTrialSpawner
+3d37c	0013d37c	00196c9c	001950f4	FUN_001950f4	containerBarrelColor.y
+3d37c	0013d37c	0019c430	001986cc	FUN_001986cc	containerBarrelColor.y
+3d393	0013d393	001974ac	001950f4	FUN_001950f4	noCods
+3d393	0013d393	0019d684	001986cc	FUN_001986cc	noCods
+3d39a	0013d39a	001979ec	001950f4	FUN_001950f4	emulateNativeAttack
+3d39a	0013d39a	0019e23c	001986cc	FUN_001986cc	emulateNativeAttack
+3d3ae	0013d3ae	00197c94	001950f4	FUN_001950f4	antiInvis
+3d3ae	0013d3ae	0019e620	001986cc	FUN_001986cc	antiInvis
+3d3b8	0013d3b8	00197f6c	001950f4	FUN_001950f4	fullBright
+3d3b8	0013d3b8	0019ec6c	001986cc	FUN_001986cc	fullBright
+3d3c3	0013d3c3	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+0002 (STX) must be escaped to \u0002
+3d40c	0013d40c	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+0013 (DC3) must be escaped to \u0013
+3d455	0013d455	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+0014 (DC4) must be escaped to \u0014
+3d49e	0013d49e	001ea910	001ea8e8	FUN_001ea8e8	invalid_iterator
+3d49e	0013d49e	001eea34	001eea0c	FUN_001eea0c	invalid_iterator
+3d4af	0013d4af	001f33cc	001f2dec	FUN_001f2dec	{"bytes":[
+3d4ba	0013d4ba	001f4364	001f3efc	FUN_001f3efc	: 0x
+3d541	0013d541	00226f2c	00226b40	FUN_00226b40	%s/%s_%08X
+3d54c	0013d54c	0021b95c	0021b87c	FUN_0021b87c	[popup] ClosePopupsOverWindow("%s")
+3d577	0013d577	00254580	00253fb4	FUN_00253fb4	#%02X%02X%02X
+3d577	0013d577	00254da0	00254aa8	FUN_00254aa8	#%02X%02X%02X
+3d585	0013d585	0025c6ac	0025c4d8	FUN_0025c4d8	Weight=%.4f
+3d592	0013d592	0025d29c	0025d238	FUN_0025d238	#version %d
+3d59e	0013d59e	0025e270	0025e184	FUN_0025e184	%llx-%llx %s %ld %s %d %s
+3d5b8	0013d5b8	00457290			_ZN7android14AndroidRuntime5startEPKcRKNS_6VectorINS_7String8EEE
+3d628	0013d628	00272614	002725d4	FUN_002725d4	unspecified generic_category error
+3d64e	0013d64e	002bba9c	002bb970	__cxa_guard_acquire	%s failed to acquire mutex
+3d64e	0013d64e	002bbb90	002bbb1c	__cxa_guard_release	%s failed to acquire mutex
+3d64e	0013d64e	002bbc2c	002bbbc4	__cxa_guard_abort	%s failed to acquire mutex
+3d669	0013d669	002bfb68	002bfb34	_INIT_0	ro.arch
+3d669	0013d669	002bfe04	002bfde0	_INIT_1	ro.arch
+3d671	0013d671	002c2b48	002c29d4	FUN_002c29d4	getULEB128
+3d671	0013d671	002c2b7c	002c29d4	FUN_002c29d4	getULEB128
+3d682	0013d682	001b1cf0	001b16ac	FUN_001b16ac	random.pop2
+3d68f	0013d68f	001ca9e0	001c9ec0	FUN_001c9ec0	unsupported bit depth
+3d6a5	0013d6a5	0019615c	001950f4	FUN_001950f4	espHopper
+3d6a5	0013d6a5	0019a6fc	001986cc	FUN_001986cc	espHopper
+3d6af	0013d6af	001965ec	001950f4	FUN_001950f4	targetLockShortcutPos.y
+3d6af	0013d6af	0019b2bc	001986cc	FUN_001986cc	targetLockShortcutPos.y
+3d6c7	0013d6c7	00196658	001950f4	FUN_001950f4	killAuraShortcutSize.y
+3d6c7	0013d6c7	0019b3cc	001986cc	FUN_001986cc	killAuraShortcutSize.y
+3d6de	0013d6de	0019745c	001950f4	FUN_001950f4	noCows
+3d6de	0013d6de	0019d5d4	001986cc	FUN_001986cc	noCows
+3d6e5	0013d6e5	0019779c	001950f4	FUN_001950f4	xrayLapis
+3d6e5	0013d6e5	0019dd14	001986cc	FUN_001986cc	xrayLapis
+3d6ef	0013d6ef	00197c20	001950f4	FUN_001950f4	hitBox
+3d6ef	0013d6ef	0019e518	001986cc	FUN_001986cc	hitBox
+3d6f6	0013d6f6	00197cbc	001950f4	FUN_001950f4	auraType
+3d6f6	0013d6f6	0019e674	001986cc	FUN_001986cc	auraType
+3d6ff	0013d6ff	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+0012 (DC2) must be escaped to \u0012
+3d748	0013d748	001e95a0	001e9398	FUN_001e9398	iterator does not fit current value
+3d842	0013d842	002ca4b8			Period
+3d849	0013d849	002ca558			Keypad7
+3d851	0013d851	002ca580			KeypadMultiply
+3d860	0013d860	002ca618			GamepadL2
+3d86a	0013d86a	002ca680			MouseRight
+3d875	0013d875	0021edb0	0021be78	FUN_0021be78	[io] LockWheelingWindow() "%s"
+3d875	0013d875	0021eee0	0021be78	FUN_0021be78	[io] LockWheelingWindow() "%s"
+3d875	0013d875	00230a10	0023098c	FUN_0023098c	[io] LockWheelingWindow() "%s"
+3d895	0013d895	00217514	00217480	FUN_00217480	Collapsed=%d
+3d8a6	0013d8a6	00256e84	00256cc0	FUN_00256cc0	H: %.3f, S: %.3f, V: %.3f, A: %.3f
+3d8c9	0013d8c9	0025c304	0025c1c4	FUN_0025c1c4	Weight=%f%n
+3d8d5	0013d8d5	0025c68c	0025c4d8	FUN_0025c4d8	UserID=%08X
+3d8e2	0013d8e2	0025d508	0025d238	FUN_0025d238	ERROR: ImGui_ImplOpenGL3_CreateDeviceObjects: failed to link %s! With GLSL %s
+3d931	0013d931	0026122c	00261048	FUN_00261048	unknown
+3d931	0013d931	002611cc	00261048	FUN_00261048	unknown
+3d951	0013d951	0026260c	002625c0	FUN_002625c0	switch: destroy, target_addr %lx
+3d972	0013d972	00263408	00263368	FUN_00263368	hub: add(new) func %lx
+3d989	0013d989	00264568	00264504	FUN_00264504	a64: free_after_dlclose OK. target %lx
+3d9fc	0013d9fc	0026f92c	0026f808	stof	: no conversion
+3d9fc	0013d9fc	0026fac4	0026f9a0	stod	: no conversion
+3d9fc	0013d9fc	0026fc58	0026fb38	stold	: no conversion
+3d9fc	0013d9fc	00271fcc	00271fb0	FUN_00271fb0	: no conversion
+3d9fc	0013d9fc	0026f458	0026f330	stoul	: no conversion
+3d9fc	0013d9fc	0026f5f4	0026f4cc	stoll	: no conversion
+3d9fc	0013d9fc	0026f794	0026f668	stoull	: no conversion
+3d9fc	0013d9fc	0026e950	0026e830	stoll	: no conversion
+3d9fc	0013d9fc	0026eae8	0026e9c4	stoull	: no conversion
+3d9fc	0013d9fc	0026ec78	0026eb5c	stof	: no conversion
+3d9fc	0013d9fc	0026ee08	0026ecec	stod	: no conversion
+3d9fc	0013d9fc	0026ef94	0026ee7c	stold	: no conversion
+3d9fc	0013d9fc	0026e7bc	0026e69c	stoul	: no conversion
+3da0c	0013da0c	00273940	00273834	iword	ios_base::clear
+3da0c	0013da0c	00273a54	00273948	pword	ios_base::clear
+3da0c	0013da0c	00273b34	00273a5c	register_callback	ios_base::clear
+3da0c	0013da0c	00273c58	00273c20	clear	ios_base::clear
+3da23	0013da23	002c20b4	002c182c	FUN_002c182c	libunwind: malformed DW_CFA_offset_extended DWARF unwind, reg too big
+3da6d	0013da6d	002c0958	002c08dc	FUN_002c08dc	FDE has zero length
+3da81	0013da81	001ad38c	001abb30	FUN_001abb30	tile.air
+3da81	0013da81	001ad45c	001abb30	FUN_001abb30	tile.air
+3da81	0013da81	001adce4	001abb30	FUN_001abb30	tile.air
+3da81	0013da81	001ad698	001abb30	FUN_001abb30	tile.air
+3da81	0013da81	001ad758	001abb30	FUN_001abb30	tile.air
+3da81	0013da81	001ad510	001abb30	FUN_001abb30	tile.air
+3da8a	0013da8a	001da15c	001d9eb4	FUN_001d9eb4	too large
+3da8a	0013da8a	001ca9e0	001c9ec0	FUN_001c9ec0	too large
+3da8a	0013da8a	001d854c	001d7fcc	FUN_001d7fcc	too large
+3da8a	0013da8a	001cf3a8	001cf284	FUN_001cf284	too large
+3da8a	0013da8a	001d7934	001d7364	FUN_001d7364	too large
+3da8a	0013da8a	001cf7ec	001cf544	FUN_001cf544	too large
+3da8a	0013da8a	001d17f4	001d169c	FUN_001d169c	too large
+3da8a	0013da8a	001d104c	001d08c8	FUN_001d08c8	too large
+3da8a	0013da8a	001d4fc0	001d4f20	FUN_001d4f20	too large
+3da8a	0013da8a	001ccac4	001cc60c	FUN_001cc60c	too large
+3da94	0013da94	001d7934	001d7364	FUN_001d7364	missing color table
+3daa8	0013daa8	001ca9e0	001c9ec0	FUN_001c9ec0	corrupt
+3daa8	0013daa8	001cf7ec	001cf544	FUN_001cf544	corrupt
+3dab0	0013dab0	001d8c94	001d8c20	FUN_001d8c20	no SOF
+3dab7	0013dab7	001d9dcc	001d958c	FUN_001d958c	bad DQT type
+3dac4	0013dac4	001da15c	001d9eb4	FUN_001d9eb4	bad V
+3daca	0013daca	001d104c	001d08c8	FUN_001d08c8	bad palette
+3dad6	0013dad6	0019562c	001950f4	FUN_001950f4	serverBlinkShortcutSize.y
+3dad6	0013dad6	00198be0	001986cc	FUN_001986cc	serverBlinkShortcutSize.y
+3daf0	0013daf0	00195654	001950f4	FUN_001950f4	serverBlinkShortcutSize.x
+3daf0	0013daf0	00198c40	001986cc	FUN_001986cc	serverBlinkShortcutSize.x
+3db0a	0013db0a	001966c4	001950f4	FUN_001950f4	killAuraShortcutPos.x
+3db0a	0013db0a	0019b4e0	001986cc	FUN_001986cc	killAuraShortcutPos.x
+3db20	0013db20	0019713c	001950f4	FUN_001950f4	noTadpoles
+3db20	0013db20	0019cef4	001986cc	FUN_001986cc	noTadpoles
+3db2b	0013db2b	00197394	001950f4	FUN_001950f4	noGoats
+3db2b	0013db2b	0019d41c	001986cc	FUN_001986cc	noGoats
+3db33	0013db33	00197574	001950f4	FUN_001950f4	noBats
+3db33	0013db33	0019d83c	001986cc	FUN_001986cc	noBats
+3db3a	0013db3a	0019759c	001950f4	FUN_001950f4	noAxolotls
+3db3a	0013db3a	0019d894	001986cc	FUN_001986cc	noAxolotls
+3db45	0013db45	00197688	001950f4	FUN_001950f4	velocityY
+3db45	0013db45	0019daac	001986cc	FUN_001986cc	velocityY
+3db4f	0013db4f	00197e18	001950f4	FUN_001950f4	mobAuraRange
+3db4f	0013db4f	0019e970	001986cc	FUN_001986cc	mobAuraRange
+3db5c	0013db5c	00197e8c	001950f4	FUN_001950f4	myMaxPlayers
+3db5c	0013db5c	0019ea6c	001986cc	FUN_001986cc	myMaxPlayers
+3db69	0013db69	001980d4	001950f4	FUN_001950f4	offDrown
+3db69	0013db69	0019ef50	001986cc	FUN_001986cc	offDrown
+3db72	0013db72	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+001C (FS) must be escaped to \u001C
+3dbba	0013dbba	001e2fa8	001e2c38	FUN_001e2c38	invalid number; expected digit after '.'
+3dbe3	0013dbe3	001e2fa8	001e2c38	FUN_001e2c38	invalid number; expected '+', '-', or digit after exponent
+3dc1e	0013dc1e	001e6754	001e5f60	FUN_001e5f60	object key
+3dc1e	0013dc1e	001e6968	001e5f60	FUN_001e5f60	object key
+3dc1e	0013dc1e	001e39a0	001e3440	FUN_001e3440	object key
+3dc1e	0013dc1e	001e3af8	001e3440	FUN_001e3440	object key
+3dc1e	0013dc1e	001e76ac	001e6e70	FUN_001e6e70	object key
+3dc1e	0013dc1e	001e78c0	001e6e70	FUN_001e6e70	object key
+3dc29	0013dc29	001e68b4	001e5f60	FUN_001e5f60	number overflow parsing '
+3dc29	0013dc29	001e3a64	001e3440	FUN_001e3440	number overflow parsing '
+3dc29	0013dc29	001e780c	001e6e70	FUN_001e6e70	number overflow parsing '
+3dc43	0013dc43	001f3010	001f2dec	FUN_001f2dec	null
+3dccf	0013dccf	0022e464	0022e438	FUN_0022e438	[%05d] 
+3dcd7	0013dcd7	002ca210			RightArrow
+3dce4	0013dce4	002ca5d8			GamepadFaceUp
+3dcf2	0013dcf2	002ca650			GamepadLStickDown
+3dd04	0013dd04	00217544	00217480	FUN_00217480	IsChild=%d
+3dd0f	0013dd0f	002178b8	002176a0	FUN_002176a0	Size=%d,%d
+3dd0f	0013dd0f	00217838	002176a0	FUN_002176a0	Size=%d,%d
+3dd1b	0013dd1b	00256e2c	00256cc0	FUN_00256cc0	##preview
+3dd25	0013dd25	00254d1c	00254aa8	FUN_00254aa8	(%.3ff, %.3ff, %.3ff, %.3ff)
+3dd45	0013dd45	0025c5e0	0025c4d8	FUN_0025c4d8	[%s][0x%08X,%d]
+3dd9c	0013dd9c	00260010	0025f884	FUN_0025f884	S|%lx
+3dda2	0013dda2	0026350c	00263488	FUN_00263488	hub: del func %lx
+3ddb4	0013ddb4	002638c4	00263858	FUN_00263858	task: start linker DL-init/fini monitor ...
+3ddf5	0013ddf5	002688a4	0026877c	FUN_0026877c	XzUnpacker_Code
+3de09	0013de09	002bbd5c	002bbd48	FUN_002bbd48	terminate_handler unexpectedly returned
+3de31	0013de31	002bc8f4	002bc7e4	FUN_002bc7e4	catching a class without an object?
+3de55	0013de55	002c2b50	002c29d4	FUN_002c29d4	truncated uleb128 expression
+3de72	0013de72	002c3a2c	002c3970	FUN_002c3970	libunwind: unsupported .eh_frame_hdr version: %u at %lx
+3debb	0013debb	002d4a30			Nearest
+3dec3	0013dec3	001d17f4	001d169c	FUN_001d169c	bad interlace method
+3ded8	0013ded8	001d17f4	001d169c	FUN_001d169c	no PLTE
+3dee0	0013dee0	001d6ee4	001d6c98	FUN_001d6c98	not BMP
+3dee8	0013dee8	001dbdf4	001dbcd0	FUN_001dbcd0	integer parse overflow
+3df0f	0013df0f	00195e2c	001950f4	FUN_001950f4	noFog
+3df0f	0013df0f	00199ed4	001986cc	FUN_001986cc	noFog
+3df15	0013df15	00196254	001950f4	FUN_001950f4	zoomShortcutPos.y
+3df15	0013df15	0019a97c	001986cc	FUN_001986cc	zoomShortcutPos.y
+3df27	0013df27	00196348	001950f4	FUN_001950f4	autoClickerShortcut
+3df27	0013df27	0019abf8	001986cc	FUN_001986cc	autoClickerShortcut
+3df3b	0013df3b	001963f8	001950f4	FUN_001950f4	look360Shortcut
+3df3b	0013df3b	0019adc0	001986cc	FUN_001986cc	look360Shortcut
+3df4b	0013df4b	00197524	001950f4	FUN_001950f4	noCamels
+3df4b	0013df4b	0019d78c	001986cc	FUN_001986cc	noCamels
+3df54	0013df54	00197df4	001950f4	FUN_001950f4	maxMobAuraCPS
+3df54	0013df54	0019e914	001986cc	FUN_001986cc	maxMobAuraCPS
+3df62	0013df62	001e26a0	001e25bc	FUN_001e25bc	invalid comment; expecting '/' or '*' after '/'
+3df92	0013df92	001e2be8	001e26b0	FUN_001e26b0	invalid string: '\u' must be followed by 4 hex digits
+3e03b	0013e03b	0020f4b0	0020e850	FUN_0020e850	Block Fly Down
+3e04a	0013e04a	002ca4f8			CapsLock
+3e053	0013e053	002ca590			KeypadAdd
+3e05d	0013e05d	002208b4	002201ac	FUN_002201ac	[io] %s: MousePos (%.1f, %.1f) (%s)
+3e082	0013e082	00220854	002201ac	FUN_002201ac	[io] %s: MouseWheel (%.3f, %.3f) (%s)
+3e0a9	0013e0a9	0021da08	0021be78	FUN_0021be78	[nav] NavUpdateCancelRequest()
+3e0c9	0013e0c9	0021e25c	0021be78	FUN_0021be78	[nav] NavMoveRequest: clamp NavRectRel for gamepad move
+3e102	0013e102	0021f948	0021be78	FUN_0021be78	HoveredId: 0x%08X
+3e114	0013e114	002547e0	00253fb4	FUN_00253fb4	##picker
+3e11d	0013e11d	0025d48c	0025d238	FUN_0025d238	Color
+3e11d	0013e11d	00255260	00254e74	FUN_00254e74	Color
+3e123	0013e123	00256eac	00256cc0	FUN_00256cc0	#%02X%02X%02X%02X
+3e169	0013e169	0025eff8	0025ef6c	FUN_0025ef6c	pthread_mutex_lock
+3e17c	0013e17c	00457208			libandroid_runtime.so
+3e192	0013e192	0025f574	0025f438	FUN_0025f438	xdl: open from linker %s, %s
+3e21e	0013e21e	00267cbc	00267b48	FUN_00267b48	.symtab
+3e21e	0013e21e	00267288	0026709c	FUN_0026709c	.symtab
+3e226	0013e226	0026842c	00268364	FUN_00268364	__dl__Z9do_dlopenPKciPK17android_dlextinfoPv
+3e253	0013e253	00268448	00268364	FUN_00268364	__dl__Z8__dlopenPKciPKv
+3e26b	0013e26b	002687f4	0026877c	FUN_0026877c	/system/lib64/liblzma.so
+3e284	0013e284	002818a8	0028185c	FUN_0028185c	a+be
+3e289	0013e289	002adb8c	002ad93c	__init	numpunct_byname<char>::numpunct_byname failed to construct for 
+3e2c9	0013e2c9	002bbbb8	002bbb1c	__cxa_guard_release	__cxa_guard_release
+3e2c9	0013e2c9	002bbba4	002bbb1c	__cxa_guard_release	__cxa_guard_release
+3e2dd	0013e2dd	002bbe94	002bbd8c	FUN_002bbd8c	uncaught
+3e2dd	0013e2dd	002bbea4	002bbd8c	FUN_002bbd8c	uncaught
+3e2dd	0013e2dd	002bbe14	002bbd8c	FUN_002bbd8c	uncaught
+3e2dd	0013e2dd	00457650			uncaught
+3e2e6	0013e2e6	002bfb80	002bfb34	_INIT_0	exynos9810
+3e2e6	0013e2e6	002bfe1c	002bfde0	_INIT_1	exynos9810
+3e2f1	0013e2f1	002c1814	002c1380	FUN_002c1380	unsupported arm64 register
+3e2f1	0013e2f1	002c17e0	002c1380	FUN_002c1380	unsupported arm64 register
+3e2f1	0013e2f1	002c3404	002c2b9c	FUN_002c2b9c	unsupported arm64 register
+3e2f1	0013e2f1	002c3514	002c2b9c	FUN_002c2b9c	unsupported arm64 register
+3e2f1	0013e2f1	002c3548	002c2b9c	FUN_002c2b9c	unsupported arm64 register
+3e2f1	0013e2f1	002c0e60	002c0d90	FUN_002c0d90	unsupported arm64 register
+3e2f1	0013e2f1	002c0f30	002c0e78	FUN_002c0e78	unsupported arm64 register
+3e2f1	0013e2f1	002c2420	002c2304	FUN_002c2304	unsupported arm64 register
+3e2f1	0013e2f1	002c2630	002c2438	FUN_002c2438	unsupported arm64 register
+3e30c	0013e30c	002c25fc	002c2438	FUN_002c2438	unsupported restore location for register
+3e336	0013e336	002c3e5c	002c3dc0	FUN_002c3dc0	getTableEntrySize
+3e336	0013e336	002c3e9c	002c3dc0	FUN_002c3dc0	getTableEntrySize
+3e348	0013e348	0020ea54	0020e850	FUN_0020e850	Block Fly
+3e348	0013e348	0020f018	0020e850	FUN_0020e850	Block Fly
+3e348	0013e348	002d4ab0			Block Fly
+3e352	0013e352	001d17f4	001d169c	FUN_001d169c	bad comp method
+3e362	0013e362	001d9bd8	001d958c	FUN_001d958c	bad DHT header
+3e371	0013e371	001db400	001db3bc	FUN_001db3bc	can't merge dc and ac
+3e371	0013e371	001daec4	001dad44	FUN_001dad44	can't merge dc and ac
+3e387	0013e387	00195698	001950f4	FUN_001950f4	serverBlinkShortcutPos.x
+3e387	0013e387	00198d00	001986cc	FUN_001986cc	serverBlinkShortcutPos.x
+3e3a0	0013e3a0	00195e7c	001950f4	FUN_001950f4	noNautilus
+3e3a0	0013e3a0	00199f84	001986cc	FUN_001986cc	noNautilus
+3e3ab	0013e3ab	00196c38	001950f4	FUN_001950f4	containerEnderChestColor.y
+3e3ab	0013e3ab	0019c31c	001986cc	FUN_001986cc	containerEnderChestColor.y
+3e3c6	0013e3c6	00196d64	001950f4	FUN_001950f4	containerShulkerColor.y
+3e3c6	0013e3c6	0019c658	001986cc	FUN_001986cc	containerShulkerColor.y
+3e3de	0013e3de	00196e44	001950f4	FUN_001950f4	espTrappedChest
+3e3de	0013e3de	0019c86c	001986cc	FUN_001986cc	espTrappedChest
+3e3ee	0013e3ee	00197024	001950f4	FUN_001950f4	noCaveVignette
+3e3ee	0013e3ee	0019cc8c	001986cc	FUN_001986cc	noCaveVignette
+3e3fd	0013e3fd	0019727c	001950f4	FUN_001950f4	noPiglins
+3e3fd	0013e3fd	0019d1b4	001986cc	FUN_001986cc	noPiglins
+3e407	0013e407	00197484	001950f4	FUN_001950f4	noCopperGolems
+3e407	0013e407	0019d62c	001986cc	FUN_001986cc	noCopperGolems
+3e416	0013e416	00197a14	001950f4	FUN_001950f4	showPaperdoll
+3e416	0013e416	0019e294	001986cc	FUN_001986cc	showPaperdoll
+3e424	0013e424	00197fe4	001950f4	FUN_001950f4	noCamSleep
+3e424	0013e424	0019ed68	001986cc	FUN_001986cc	noCamSleep
+3e42f	0013e42f	001980ac	001950f4	FUN_001950f4	look360
+3e42f	0013e42f	0019ef04	001986cc	FUN_001986cc	look360
+3e437	0013e437	001e3f40	001e3ec0	FUN_001e3ec0	parse error
+3e52f	0013e52f	00215f14	00215e9c	FUN_00215e9c	Window
+3e53a	0013e53a	0022bc70	0022bc0c	FUN_0022bc0c	##Popup_%08x
+3e549	0013e549	002ca520			Keypad0
+3e551	0013e551	002ca550			Keypad6
+3e55b	0013e55b	00255c78	002552ec	FUN_002552ec	##hsv
+3e561	0013e561	00256ad8	00256a04	FUN_00256a04	##selectable
+3e561	0013e561	00256ba0	00256a04	FUN_00256a04	##selectable
+3e56e	0013e56e	00256b38	00256a04	FUN_00256a04	##previewing_picker
+3e56e	0013e56e	00256bf0	00256a04	FUN_00256a04	##previewing_picker
+3e582	0013e582	0025d354	0025d238	FUN_0025d238	#ifdef GL_ES
+3e64e	0013e64e	0025f7e4	0025f6ec	FUN_0025f6ec	island: alloc %s, addr %lx, size %zu, pc %lx, range [%zx, %zx]
+3e68d	0013e68d	00261ef4	00261e98	FUN_00261e98	|%lx
+3e68d	0013e68d	00261f50	00261e98	FUN_00261e98	|%lx
+3e68d	0013e68d	00262e74	00262e1c	FUN_00262e1c	|%lx
+3e692	0013e692	002635b0	00263520	FUN_00263520	shadowhook-hub-trampo
+3e6f8	0013e6f8	00281918	0028185c	FUN_0028185c	w+xe
+3e6fd	0013e6fd	002a69dc	002a694c	collate_byname	collate_byname<char>::collate_byname failed to construct for 
+3e6fd	0013e6fd	002a6844	002a67b8	collate_byname	collate_byname<char>::collate_byname failed to construct for 
+3e73b	0013e73b	002bc0c8	002bc0c0	what	std::bad_alloc
+3e74a	0013e74a	002c22b8	002c182c	FUN_002c182c	truncated sleb128 expression
+3e74a	0013e74a	002c2284	002c182c	FUN_002c182c	truncated sleb128 expression
+3e74a	0013e74a	002c22ec	002c182c	FUN_002c182c	truncated sleb128 expression
+3e74a	0013e74a	002c2250	002c182c	FUN_002c182c	truncated sleb128 expression
+3e74a	0013e74a	002c0d24	002c0a74	FUN_002c0a74	truncated sleb128 expression
+3e74a	0013e74a	002c33d0	002c2b9c	FUN_002c2b9c	truncated sleb128 expression
+3e74a	0013e74a	002c3368	002c2b9c	FUN_002c2b9c	truncated sleb128 expression
+3e74a	0013e74a	002c339c	002c2b9c	FUN_002c2b9c	truncated sleb128 expression
+3e74a	0013e74a	002c286c	002c2648	FUN_002c2648	truncated sleb128 expression
+3e767	0013e767	002c3474	002c2b9c	FUN_002c2b9c	DW_OP_piece not implemented
+3e78d	0013e78d	002d4ab8			Block Fly Direction
+3e7a1	0013e7a1	002d4b10			Ignored
+3e7a9	0013e7a9	00198544	00198460	Java_com_subroutineZEFF_ApollonClient_GLES3JNIView_setPackageName	/files/config.json
+3e7bc	0013e7bc	001d17f4	001d169c	FUN_001d169c	1/2/4/8/16-bit only
+3e7d0	0013e7d0	00195bc8	001950f4	FUN_001950f4	invCleaner
+3e7d0	0013e7d0	001998d4	001986cc	FUN_001986cc	invCleaner
+3e7db	0013e7db	00195f9c	001950f4	FUN_001950f4	blockBrewingStandColor.z
+3e7db	0013e7db	0019a260	001986cc	FUN_001986cc	blockBrewingStandColor.z
+3e7f4	0013e7f4	001968b4	001950f4	FUN_001950f4	blockCreakingHeartColor.y
+3e7f4	0013e7f4	0019b9d8	001986cc	FUN_001986cc	blockCreakingHeartColor.y
+3e80e	0013e80e	001e2be8	001e26b0	FUN_001e26b0	invalid string: forbidden character after backslash
+3e910	0013e910	002ca288			LeftAlt
+3e91c	0013e91c	002ca4d8			LeftBracket
+3e928	0013e928	002ca5b8			GamepadStart
+3e935	0013e935	0022074c	002201ac	FUN_002201ac	[io] %s: MouseButton %d %s (%s)
+3e956	0013e956	002ca6d0			Mouse
+3e960	0013e960	002ca8c8			R:%0.3f
+3e968	0013e968	00254d58	00254aa8	FUN_00254aa8	(%d,%d,%d,%d)
+3e97a	0013e97a	0025d31c	0025d238	FUN_0025d238	uniform mat4 ProjMtx;
+3ea56	0013ea56	0026025c	00260114	FUN_00260114	elf: free addr %lx(load_bias %lx, %lx), size %zu, gap %zu, idx [%zu, %zu)
+3eae1	0013eae1	00262b04	00262a8c	FUN_00262a8c	G|%lx;
+3eaed	0013eaed	002734ec	00273420	operator()	random_device got EOF
+3eb03	0013eb03	002818f8	0028185c	FUN_0028185c	wbxe
+3eb08	0013eb08	002a944c	002a93c0	codecvt	codecvt_byname<wchar_t, char, mbstate_t>::codecvt_byname failed to construct for 
+3eb5d	0013eb5d	002bbebc	002bbd8c	FUN_002bbd8c	terminating due to %s exception of type %s
+3eb88	0013eb88	002c346c	002c2b9c	FUN_002c2b9c	evaluateExpression
+3eb88	0013eb88	002c34d8	002c2b9c	FUN_002c2b9c	evaluateExpression
+3eb88	0013eb88	002c34a4	002c2b9c	FUN_002c2b9c	evaluateExpression
+3eb88	0013eb88	002c3434	002c2b9c	FUN_002c2b9c	evaluateExpression
+3eba0	0013eba0	001c2a98	001b5568	JNI_OnLoad	1F 20 03 D5
+3ebac	0013ebac	001d17f4	001d169c	FUN_001d169c	bad tRNS len
+3ebdd	0013ebdd	001cf7ec	001cf544	FUN_001cf544	unsupported data layout
+3ebf5	0013ebf5	00196370	001950f4	FUN_001950f4	look360ShortcutSize.y
+3ebf5	0013ebf5	0019ac54	001986cc	FUN_001986cc	look360ShortcutSize.y
+3ec0b	0013ec0b	00196df4	001950f4	FUN_001950f4	espBarrel
+3ec0b	0013ec0b	0019c7bc	001986cc	FUN_001986cc	espBarrel
+3ec15	0013ec15	0019783c	001950f4	FUN_001950f4	xrayNetherite
+3ec15	0013ec15	0019de74	001986cc	FUN_001986cc	xrayNetherite
+3ec23	0013ec23	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+000B (VT) must be escaped to \u000B
+3ec6b	0013ec6b	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+0010 (DLE) must be escaped to \u0010
+3ecb4	0013ecb4	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+0015 (NAK) must be escaped to \u0015
+3ecfd	0013ecfd	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+001E (RS) must be escaped to \u001E
+3ed45	0013ed45	001e3e44	001e3dc4	FUN_001e3dc4	<U+%.4X>
+3ed4e	0013ed4e	001e4244	001e413c	FUN_001e413c	; last read: '
+3edfd	0013edfd	00215fa8	00215e9c	FUN_00215e9c	Reset order###ResetOrder
+3ee16	0013ee16	0022381c	00220bb0	FUN_00220bb0	#CLOSE
+3ee16	0013ee16	00258f58	002587c8	FUN_002587c8	#CLOSE
+3ee1d	0013ee1d	002ca298			RightCtrl
+3ee27	0013ee27	002ca2a0			RightShift
+3ee34	0013ee34	002ca508			NumLock
+3ee3c	0013ee3c	002178a4	002176a0	FUN_002176a0	Pos=%d,%d
+3ee50	0013ee50	002ca8d8			B:%0.3f
+3ee58	0013ee58	002ca8e0			A:%0.3f
+3ee58	0013ee58	002ca900			A:%0.3f
+3ee60	0013ee60	00254634	00253fb4	FUN_00253fb4	%02X%02X%02X
+3ee6d	0013ee6d	00256ee4	00256cc0	FUN_00256cc0	#%02X%02X%02X
+3eea2	0013eea2	0025c604	0025c4d8	FUN_0025c4d8	RefScale=%g
+3eeaf	0013eeaf	0025eee8	0025ecf0	FUN_0025ecf0	shadowhook: %s(%p, %p, %u) OK. return: %p
+3eed9	0013eed9	00262fd0	00262eb8	FUN_00262eb8	hub: fill in code crashed
+3eef3	0013eef3	00263ce8	00263b74	FUN_00263b74	task: reset finished flag for: %s lib_name %s, sym_name %s
+3ef37	0013ef37	00265ca0	00265c80	FUN_00265c80	Unknown error number
+3ef4c	0013ef4c	002bb360	002bb2cc	FUN_002bb2cc	01234567
+3ef4c	0013ef4c	002bae90	002badfc	FUN_002badfc	01234567
+3ef55	0013ef55	002c0310	002c0148	FUN_002c0148	unwind_phase2
+3ef63	0013ef63	002c2b84	002c29d4	FUN_002c29d4	malformed uleb128 expression
+3ef80	0013ef80	002c17ac	002c1380	FUN_002c1380	unsupported restore location for float register
+3efb7	0013efb7	001d4710	001d3914	FUN_001d3914	unsupported
+3efb7	0013efb7	001d38b4	001d296c	FUN_001d296c	unsupported
+3efc3	0013efc3	001d6ee4	001d6c98	FUN_001d6c98	bad BMP
+3efd9	0013efd9	001da15c	001d9eb4	FUN_001d9eb4	bad component count
+3efed	0013efed	00192034	00191f8c	FUN_00191f8c	#?RADIANCE
+3eff9	0013eff9	00195960	001950f4	FUN_001950f4	noSulfurCubes
+3eff9	0013eff9	001993e8	001986cc	FUN_001986cc	noSulfurCubes
+3f007	0013f007	00195d78	001950f4	FUN_001950f4	espBed
+3f007	0013f007	00199d10	001986cc	FUN_001986cc	espBed
+3f00e	0013f00e	00196100	001950f4	FUN_001950f4	blockHopperColor.x
+3f00e	0013f00e	0019a5ec	001986cc	FUN_001986cc	blockHopperColor.x
+3f021	0013f021	00196398	001950f4	FUN_001950f4	look360ShortcutSize.x
+3f021	0013f021	0019acb0	001986cc	FUN_001986cc	look360ShortcutSize.x
+3f037	0013f037	00196730	001950f4	FUN_001950f4	noclipShortcutSize.x
+3f037	0013f037	0019b5f0	001986cc	FUN_001986cc	noclipShortcutSize.x
+3f04c	0013f04c	00196a3c	001950f4	FUN_001950f4	blockTrialSpawnerColor.x
+3f04c	0013f04c	0019bdc0	001986cc	FUN_001986cc	blockTrialSpawnerColor.x
+3f065	0013f065	00196b24	001950f4	FUN_001950f4	espMobSpawner
+3f065	0013f065	0019c03c	001986cc	FUN_001986cc	espMobSpawner
+3f073	0013f073	00196ce4	001950f4	FUN_001950f4	containerCopperChestColor.x
+3f073	0013f073	0019c4e8	001986cc	FUN_001986cc	containerCopperChestColor.x
+3f08f	0013f08f	001970c4	001950f4	FUN_001950f4	noWanderingtraders
+3f08f	0013f08f	0019cdec	001986cc	FUN_001986cc	noWanderingtraders
+3f0a2	0013f0a2	00197664	001950f4	FUN_001950f4	velocityX
+3f0a2	0013f0a2	0019da50	001986cc	FUN_001986cc	velocityX
+3f0ac	0013f0ac	001978dc	001950f4	FUN_001950f4	noVillagers
+3f0ac	0013f0ac	0019dfd4	001986cc	FUN_001986cc	noVillagers
+3f0b8	0013f0b8	00197ce0	001950f4	FUN_001950f4	deathPosition
+3f0b8	0013f0b8	0019e6c8	001986cc	FUN_001986cc	deathPosition
+3f0c6	0013f0c6	001e2be8	001e26b0	FUN_001e26b0	invalid string: missing closing quote
+3f0ec	0013f0ec	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+000F (SI) must be escaped to \u000F
+3f134	0013f134	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+0019 (EM) must be escaped to \u0019
+3f17c	0013f17c	001f25b4	001f24a0	FUN_001f24a0	cannot use push_back() with 
+3f17c	0013f17c	001f2738	001f265c	FUN_001f265c	cannot use push_back() with 
+3f19c	0013f19c	001b5238	001b5210	FUN_001b5210	KEYCODE_UNKNOWN
+3f21d	0013f21d	0020eb18	0020e850	FUN_0020e850	Bedrock Anti Cheat Detected.
+3f21d	0013f21d	0020ecc0	0020e850	FUN_0020e850	Bedrock Anti Cheat Detected.
+3f23a	0013f23a	0022b364	0022b2b4	FUN_0022b2b4	##Tooltip_%02d
+3f23a	0013f23a	0022b460	0022b2b4	FUN_0022b2b4	##Tooltip_%02d
+3f249	0013f249	0022cd00	0022cb1c	FUN_0022cb1c	[nav] NavMoveRequest: result NavID 0x%08X in Layer %d Window "%s"
+3f28c	0013f28c	002ca230			PageDown
+3f2aa	0013f2aa	002ca548			Keypad5
+3f2b2	0013f2b2	002ca698			MouseX2
+3f2ba	0013f2ba	00225300	00224e60	FUN_00224e60	##MainMenuBar
+3f2c8	0013f2c8	002ca810			double
+3f2cf	0013f2cf	0025efa8	0025ef6c	FUN_0025ef6c	pthread_getspecific
+3f31e	0013f31e	00262e0c	00262d58	FUN_00262d58	switch: delayed destroy, target_addr %lx
+3f347	0013f347	00263b60	002638d4	FUN_002638d4	task: call_ctors() pre callback. load_bias %lx, name %s
+3f37f	0013f37f	00264a3c	00264850	FUN_00264850	W|%lx|%zu|
+3f3cd	0013f3cd	00268468	00268364	FUN_00268364	__loader_dlopen
+3f3e1	0013f3e1	002bc070	002bc068	what	std::bad_exception
+3f3f4	0013f3f4	002c21e4	002c182c	FUN_002c182c	libunwind: malformed DW_CFA_register DWARF unwind, reg2 too big
+3f435	0013f435	002c28b0	002c2648	FUN_002c2648	DW_EH_PE_aligned pointer encoding not supported
+3f465	0013f465	002c25f4	002c2438	FUN_002c2438	getSavedRegister
+3f47a	0013f47a	001b1c78	001b16ac	FUN_001b16ac	random.pop
+3f485	0013f485	001da15c	001d9eb4	FUN_001d9eb4	bad H
+3f497	0013f497	00195504	001950f4	FUN_001950f4	blinkShortcut
+3f497	0013f497	001988ec	001986cc	FUN_001986cc	blinkShortcut
+3f4a5	0013f4a5	0019585c	001950f4	FUN_001950f4	freeCamShortcutPos.x
+3f4a5	0013f4a5	00199160	001986cc	FUN_001986cc	freeCamShortcutPos.x
+3f4ba	0013f4ba	00195ae8	001950f4	FUN_001950f4	blockFly
+3f4ba	0013f4ba	001997ec	001986cc	FUN_001986cc	blockFly
+3f4c3	0013f4c3	00195c84	001950f4	FUN_001950f4	scaffoldShortcutPos.x
+3f4c3	0013f4c3	00199a9c	001986cc	FUN_001986cc	scaffoldShortcutPos.x
+3f4d9	0013f4d9	0019611c	001950f4	FUN_001950f4	blockHopperColor.y
+3f4d9	0013f4d9	0019a648	001986cc	FUN_001986cc	blockHopperColor.y
+3f4ec	0013f4ec	0019653c	001950f4	FUN_001950f4	mobAuraShortcutPos.y
+3f4ec	0013f4ec	0019b0f4	001986cc	FUN_001986cc	mobAuraShortcutPos.y
+3f501	0013f501	001966e0	001950f4	FUN_001950f4	killAuraShortcut
+3f501	0013f501	0019b538	001986cc	FUN_001986cc	killAuraShortcut
+3f512	0013f512	001e2364	001e2310	FUN_001e2310	invalid literal
+3f522	0013f522	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+0007 (BEL) must be escaped to \u0007
+3f56b	0013f56b	001e535c	001e5314	FUN_001e5314	at line 
+3f626	0013f626	0020eda0	0020e850	FUN_0020e850	Block Fly Up
+3f63d	0013f63d	002ca2b0			RightSuper
+3f64c	0013f64c	002ca4b0			Minus
+3f652	0013f652	002ca4c8			Semicolon
+3f65c	0013f65c	002ca500			ScrollLock
+3f667	0013f667	002ca5a8			AppBack
+3f66f	0013f66f	002ca670			GamepadRStickDown
+3f681	0013f681	0024fe40	0024fa08	FUN_0024fa08	#SCROLLY
+3f681	0013f681	0024fe20	0024fa08	FUN_0024fa08	#SCROLLY
+3f681	0013f681	002453c4	00245378	FUN_00245378	#SCROLLY
+3f68a	0013f68a	002ca880			A:%3d
+3f68a	0013f68a	002ca8a0			A:%3d
+3f690	0013f690	0025459c	00253fb4	FUN_00253fb4	##Text
+3f697	0013f697	0025c1e4	0025c1c4	FUN_0025c1c4	RefScale=%f
+3f6a3	0013f6a3	0025d0a4	0025d040	FUN_0025d040	imgui_impl_opengl3
+3f6b6	0013f6b6	0025d31c	0025d238	FUN_0025d238	layout (location = 0) in vec2 Position;
+3f7d0	0013f7d0	00261a38	002616b4	FUN_002616b4	switch: hook in %s mode OK: target_addr %lx, new_addr %lx
+3f80a	0013f80a	002648b4	00264850	FUN_00264850	T|%lx|
+3f811	0013f811	002649bc	00264850	FUN_00264850	N|%lx;
+3f818	0013f818	00265628	00265578	_INIT_5	sigprocmask
+3f824	0013f824	002683d8	00268364	FUN_00268364	__dl__ZL10g_dl_mutex
+3f83d	0013f83d	0026b904	0026b85c	compare	string_view::substr
+3f83d	0013f83d	0026dc74	0026dbc4	compare	string_view::substr
+3f854	0013f854	002c17d8	002c1380	FUN_002c1380	getRegister
+3f854	0013f854	002c33fc	002c2b9c	FUN_002c2b9c	getRegister
+3f854	0013f854	002c350c	002c2b9c	FUN_002c2b9c	getRegister
+3f854	0013f854	002c3540	002c2b9c	FUN_002c2b9c	getRegister
+3f854	0013f854	002c0e58	002c0d90	FUN_002c0d90	getRegister
+3f854	0013f854	002c2418	002c2304	FUN_002c2304	getRegister
+3f854	0013f854	002c2628	002c2438	FUN_002c2438	getRegister
+3f868	0013f868	002c0964	002c08dc	FUN_002c08dc	FDE is really a CIE
+3f87f	0013f87f	001aaca0	001aab74	Java_com_subroutineZEFF_ApollonClient_GLES3JNIView_getWindowRect	0|0|
+3f884	0013f884	001ca9e0	001c9ec0	FUN_001c9ec0	bad bpp
+3f88c	0013f88c	001955dc	001950f4	FUN_001950f4	stayOnline
+3f88c	0013f88c	00198b24	001986cc	FUN_001986cc	stayOnline
+3f897	0013f897	00195ca0	001950f4	FUN_001950f4	scaffoldShortcut
+3f897	0013f897	00199af4	001986cc	FUN_001986cc	scaffoldShortcut
+3f8a8	0013f8a8	00195ee8	001950f4	FUN_001950f4	xrayDefaultShortcutPos.y
+3f8a8	0013f8a8	0019a098	001986cc	FUN_001986cc	xrayDefaultShortcutPos.y
+3f8c1	0013f8c1	001960b4	001950f4	FUN_001950f4	blockDispenserColor.z
+3f8c1	0013f8c1	0019a538	001986cc	FUN_001986cc	blockDispenserColor.z
+3f8d7	0013f8d7	00196238	001950f4	FUN_001950f4	zoomShortcutSize.x
+3f8d7	0013f8d7	0019a920	001986cc	FUN_001986cc	zoomShortcutSize.x
+3f8ea	0013f8ea	00196868	001950f4	FUN_001950f4	zoom
+3f8ea	0013f8ea	0019b920	001986cc	FUN_001986cc	zoom
+3f8ef	0013f8ef	00196c1c	001950f4	FUN_001950f4	containerEnderChestColor.x
+3f8ef	0013f8ef	0019c2c0	001986cc	FUN_001986cc	containerEnderChestColor.x
+3f90a	0013f90a	00196e6c	001950f4	FUN_001950f4	espChest
+3f90a	0013f90a	0019c8c4	001986cc	FUN_001986cc	espChest
+3f913	0013f913	0019718c	001950f4	FUN_001950f4	noSquids
+3f913	0013f913	0019cfa4	001986cc	FUN_001986cc	noSquids
+3f91c	0013f91c	001971b4	001950f4	FUN_001950f4	noSniffers
+3f91c	0013f91c	0019cffc	001986cc	FUN_001986cc	noSniffers
+3f927	0013f927	0019722c	001950f4	FUN_001950f4	noRabbits
+3f927	0013f927	0019d104	001986cc	FUN_001986cc	noRabbits
+3f931	0013f931	001979c4	001950f4	FUN_001950f4	noJumpDelay
+3f931	0013f931	0019e1e4	001986cc	FUN_001986cc	noJumpDelay
+3f93d	0013f93d	00197e3c	001950f4	FUN_001950f4	mobAura
+3f93d	0013f93d	0019e9c4	001986cc	FUN_001986cc	mobAura
+3f945	0013f945	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+0009 (HT) must be escaped to \u0009 or \t
+3f993	0013f993	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+0018 (CAN) must be escaped to \u0018
+3f9dc	0013f9dc	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+001A (SUB) must be escaped to \u001A
+3fa25	0013fa25	001edda4	001edd00	FUN_001edd00	cannot compare iterators of different containers
+3fa25	0013fa25	001ee968	001ee8c4	FUN_001ee8c4	cannot compare iterators of different containers
+3fb1c	0013fb1c	00219b68	00219978	FUN_00219978	%.*s
+3fb1c	0013fb1c	0025906c	002587c8	FUN_002587c8	%.*s
+3fb21	0013fb21	00219af4	00219978	FUN_00219978	0x%08X [override]
+3fb33	0013fb33	00215f78	00215e9c	FUN_00215e9c	Dear ImGui 1.90.0 (19000)
+3fb51	0013fb51	002ca5c0			GamepadBack
+3fb5d	0013fb5d	002ca638			GamepadLStickLeft
+3fb6f	0013fb6f	0021e168	0021be78	FUN_0021be78	[nav] NavInitRequest: from move, window "%s", layer=%d
+3fba7	0013fba7	0025c268	0025c1c4	FUN_0025c1c4	UserID=0x%08X%n
+3fbb7	0013fbb7	0025d37c	0025d238	FUN_0025d238	fragment shader
+3fbc7	0013fbc7	0026346c	00263368	FUN_00263368	hub: add(re-enable) func %lx
+3fbe4	0013fbe4	002644ec	002643b8	FUN_002643b8	a64: %shook (without island) OK. target %lx
+3fc4c	0013fc4c	002bbe2c	002bbd8c	FUN_002bbd8c	terminating due to %s foreign exception
+3fc74	0013fc74	001d17f4	001d169c	FUN_001d169c	tRNS after IDAT
+3fc84	0013fc84	001d9dcc	001d958c	FUN_001d958c	bad DQT table
+3fc92	0013fc92	001920e8	00191f8c	FUN_00191f8c	#?RGBE
+3fc9a	0013fc9a	001958c4	001950f4	FUN_001950f4	freeCam
+3fc9a	0013fc9a	00199278	001986cc	FUN_001986cc	freeCam
+3fca2	0013fca2	00195988	001950f4	FUN_001950f4	seeHiddenBlocks
+3fca2	0013fca2	00199444	001986cc	FUN_001986cc	seeHiddenBlocks
+3fcb2	0013fcb2	00195f2c	001950f4	FUN_001950f4	xrayDefaultShortcut
+3fcb2	0013fcb2	0019a14c	001986cc	FUN_001986cc	xrayDefaultShortcut
+3fcc6	0013fcc6	00196140	001950f4	FUN_001950f4	blockHopperColor.z
+3fcc6	0013fcc6	0019a6a4	001986cc	FUN_001986cc	blockHopperColor.z
+3fcd9	0013fcd9	00196304	001950f4	FUN_001950f4	autoClickerShortcutPos.y
+3fcd9	0013fcd9	0019ab44	001986cc	FUN_001986cc	autoClickerShortcutPos.y
+3fcf2	0013fcf2	0019648c	001950f4	FUN_001950f4	killItemsShortcutPos.x
+3fcf2	0013fcf2	0019af30	001986cc	FUN_001986cc	killItemsShortcutPos.x
+3fd09	0013fd09	001967e0	001950f4	FUN_001950f4	ladderFlyShortcutSize.x
+3fd09	0013fd09	0019b7b8	001986cc	FUN_001986cc	ladderFlyShortcutSize.x
+3fd21	0013fd21	00196964	001950f4	FUN_001950f4	blockSculkShriekerColor.z
+3fd21	0013fd21	0019bba0	001986cc	FUN_001986cc	blockSculkShriekerColor.z
+3fd3b	0013fd3b	00196ee4	001950f4	FUN_001950f4	espBlocks
+3fd3b	0013fd3b	0019c9cc	001986cc	FUN_001986cc	espBlocks
+3fd45	0013fd45	0019763c	001950f4	FUN_001950f4	hurtCheck
+3fd45	0013fd45	0019d9f4	001986cc	FUN_001986cc	hurtCheck
+3fd4f	0013fd4f	0019774c	001950f4	FUN_001950f4	xrayCoal
+3fd4f	0013fd4f	0019dc64	001986cc	FUN_001986cc	xrayCoal
+3fd58	0013fd58	00197978	001950f4	FUN_001950f4	maxAutoClickerCPS
+3fd58	0013fd58	0019e134	001986cc	FUN_001986cc	maxAutoClickerCPS
+3fd6a	0013fd6a	00197da8	001950f4	FUN_001950f4	ladderFly
+3fd6a	0013fd6a	0019e86c	001986cc	FUN_001986cc	ladderFly
+3fd74	0013fd74	0019805c	001950f4	FUN_001950f4	noclip
+3fd74	0013fd74	0019ee64	001986cc	FUN_001986cc	noclip
+3fd7b	0013fd7b	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+0005 (ENQ) must be escaped to \u0005
+3fdc4	0013fdc4	001e66d8	001e5f60	FUN_001e5f60	object
+3fdc4	0013fdc4	001e3940	001e3440	FUN_001e3440	object
+3fdc4	0013fdc4	001e7630	001e6e70	FUN_001e6e70	object
+3fde1	0013fde1	001eadb8	001ead94	FUN_001ead94	number
+3fe42	0013fe42	0022b744	0022b68c	FUN_0022b68c	[popup] OpenPopupEx(0x%08X)
+3fe61	0013fe61	002ca4e0			Backslash
+3fe6b	0013fe6b	002ca518			Pause
+3fe71	0013fe71	002399cc	00239954	FUN_00239954	ProggyClean.ttf, %dpx
+3fe87	0013fe87	00246458	00246258	FUN_00246258	--------------------------------
+3fea9	0013fea9	00246cd8	00246b9c	FUN_00246b9c	##Combo_%02d
+3feba	0013feba	002ca890			S:%3d
+3fec0	0013fec0	002ca8a8			%0.3f
+3fec0	0013fec0	002ca8b0			%0.3f
+3fec0	0013fec0	002ca8b8			%0.3f
+3fec0	0013fec0	002ca8c0			%0.3f
+3fec6	0013fec6	00254c5c	00254aa8	FUN_00254aa8	Copy
+3fec6	0013fec6	00254c6c	00254aa8	FUN_00254aa8	Copy
+3fecb	0013fecb	00256c50	00256a04	FUN_00256a04	Alpha Bar
+3ffa4	0013ffa4	0025f020	0025ef6c	FUN_0025ef6c	pthread_mutex_unlock
+3ffb9	0013ffb9	00263cf0	00263b74	FUN_00263b74	intercept
+3ffe2	0013ffe2	0029af0c	0029aed0	do_put	%.0Lf
+3ffe2	0013ffe2	0029af5c	0029aed0	do_put	%.0Lf
+3ffe2	0013ffe2	0029c194	0029c158	do_put	%.0Lf
+3ffe2	0013ffe2	0029c1e4	0029c158	do_put	%.0Lf
+3ffe8	0013ffe8	002adf2c	002add94	__init	numpunct_byname<wchar_t>::numpunct_byname failed to construct for 
+4002b	0014002b	002b81a8	002b7a94	init	moneypunct_byname failed to construct for 
+4002b	0014002b	002b6c1c	002b68c8	init	moneypunct_byname failed to construct for 
+4002b	0014002b	002b7428	002b6d14	init	moneypunct_byname failed to construct for 
+4002b	0014002b	002b6398	002b6044	init	moneypunct_byname failed to construct for 
+40056	00140056	002bbd6c			terminate_handler unexpectedly threw an exception
+40088	00140088	002bbee4	002bbecc	FUN_002bbecc	unexpected
+400d9	001400d9	002d4a38			Multi
+400df	001400df	002d4ad0			Classic
+400df	001400df	002d4b00			Classic
+400e9	001400e9	001d839c	001d7fcc	FUN_001d7fcc	not GIF
+400f1	001400f1	001ca9e0	001c9ec0	FUN_001c9ec0	wrong color format
+4010d	0014010d	00195604	001950f4	FUN_001950f4	serverBlinkShortcut
+4010d	0014010d	00198b80	001986cc	FUN_001986cc	serverBlinkShortcut
+40121	00140121	00195670	001950f4	FUN_001950f4	serverBlinkShortcutPos.y
+40121	00140121	00198ca0	001986cc	FUN_001986cc	serverBlinkShortcutPos.y
+4013a	0014013a	0019593c	001950f4	FUN_001950f4	velocityType
+4013a	0014013a	0019938c	001986cc	FUN_001986cc	velocityType
+40147	00140147	00195c18	001950f4	FUN_001950f4	scaffoldShortcutSize.y
+40147	00140147	00199988	001986cc	FUN_001986cc	scaffoldShortcutSize.y
+4015e	0014015e	00195d38	001950f4	FUN_001950f4	blockBedColor.y
+4015e	0014015e	00199c5c	001986cc	FUN_001986cc	blockBedColor.y
+4016e	0014016e	00196004	001950f4	FUN_001950f4	blockEnchantingTableColor.y
+4016e	0014016e	0019a370	001986cc	FUN_001986cc	blockEnchantingTableColor.y
+4018a	0014018a	00196564	001950f4	FUN_001950f4	mobAuraShortcutPos.x
+4018a	0014018a	0019b150	001986cc	FUN_001986cc	mobAuraShortcutPos.x
+4019f	0014019f	00196c80	001950f4	FUN_001950f4	containerBarrelColor.x
+4019f	0014019f	0019c3d4	001986cc	FUN_001986cc	containerBarrelColor.x
+401b6	001401b6	00196dcc	001950f4	FUN_001950f4	espCopperChest
+401b6	001401b6	0019c764	001986cc	FUN_001986cc	espCopperChest
+401c5	001401c5	00197114	001950f4	FUN_001950f4	noTropicalfishes
+401c5	001401c5	0019ce9c	001986cc	FUN_001986cc	noTropicalfishes
+401d6	001401d6	0019736c	001950f4	FUN_001950f4	noHappyGhasts
+401d6	001401d6	0019d3c4	001986cc	FUN_001986cc	noHappyGhasts
+401e4	001401e4	001973e4	001950f4	FUN_001950f4	noFrogs
+401e4	001401e4	0019d4cc	001986cc	FUN_001986cc	noFrogs
+401ec	001401ec	001976fc	001950f4	FUN_001950f4	xrayIron
+401ec	001401ec	0019dbb4	001986cc	FUN_001986cc	xrayIron
+401f5	001401f5	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+0001 (SOH) must be escaped to \u0001
+40264	00140264	001f435c	001f3efc	FUN_001f3efc	invalid UTF-8 byte at index 
+40281	00140281	001f4420	001f3efc	FUN_001f3efc	incomplete UTF-8 string; last byte: 0x
+40399	00140399	00226704	00225f38	FUN_00225f38	##Foreground
+40399	00140399	0021520c	002150b4	FUN_002150b4	##Foreground
+40399	00140399	0021537c	00215378	FUN_00215378	##Foreground
+40399	00140399	00227908	00227764	FUN_00227764	##Foreground
+40399	00140399	0021aab8	0021a8e4	FUN_0021a8e4	##Foreground
+40399	00140399	00223c1c	00220bb0	FUN_00220bb0	##Foreground
+403aa	001403aa	00213e24	00213cf8	FUN_00213cf8	%*s%.*s
+403c1	001403c1	002174a8	00217480	FUN_00217480	Pos=%i,%i
+403da	001403da	002ca868			R:%3d
+403e0	001403e0	00254614	00253fb4	FUN_00253fb4	%02X%02X%02X%02X
+403f5	001403f5	002ca7d8			%llu
+403f5	001403f5	002ca7e0			%llu
+403fa	001403fa	0025c710	0025c4d8	FUN_0025c4d8	Order=%d
+40404	00140404	0025f048	0025ef6c	FUN_0025ef6c	abort
+4040a	0014040a	0025fcd4	0025f884	FUN_0025f884	elf: create, load_bias %p
+40424	00140424	00261d54	00261ae8	FUN_00261ae8	switch-interceptor: size %zu: add(new) pre %lx, data %lx
+40479	00140479	00268be4	00268b8c	FUN_00268b8c	/system/build.prop
+40479	00140479	00266354	002662fc	FUN_002662fc	/system/build.prop
+4049b	0014049b	002b5e1c	002b5da4	__time_put	time_put_byname failed to construct for 
+4049b	0014049b	002b5f28	002b5eac	__time_put	time_put_byname failed to construct for 
+404c4	001404c4	002c2140	002c182c	FUN_002c182c	libunwind: malformed DW_CFA_offset_extended_sf DWARF unwind, reg too big
+40515	00140515	002d4ad8			Save Y
+4051c	0014051c	001d6ee4	001d6c98	FUN_001d6c98	unknown BMP
+40528	00140528	001d6ee4	001d6c98	FUN_001d6c98	BMP RLE
+40530	00140530	001ca9e0	001c9ec0	FUN_001c9ec0	not PSD
+40538	00140538	00195bf0	001950f4	FUN_001950f4	autoFish
+40538	00140538	0019992c	001986cc	FUN_001986cc	autoFish
+40541	00140541	00195cc8	001950f4	FUN_001950f4	scaffoldType
+40541	00140541	00199b4c	001986cc	FUN_001986cc	scaffoldType
+4054e	0014054e	001962c0	001950f4	FUN_001950f4	autoClickerShortcutSize.y
+4054e	0014054e	0019aa8c	001986cc	FUN_001986cc	autoClickerShortcutSize.y
+40568	00140568	001965a8	001950f4	FUN_001950f4	targetLockShortcutSize.y
+40568	00140568	0019b204	001986cc	FUN_001986cc	targetLockShortcutSize.y
+40581	00140581	0019669c	001950f4	FUN_001950f4	killAuraShortcutPos.y
+40581	00140581	0019b484	001986cc	FUN_001986cc	killAuraShortcutPos.y
+40597	00140597	001967fc	001950f4	FUN_001950f4	ladderFlyShortcutPos.y
+40597	00140597	0019b814	001986cc	FUN_001986cc	ladderFlyShortcutPos.y
+405ae	001405ae	00196824	001950f4	FUN_001950f4	ladderFlyShortcutPos.x
+405ae	001405ae	0019b870	001986cc	FUN_001986cc	ladderFlyShortcutPos.x
+405c5	001405c5	00196b08	001950f4	FUN_001950f4	blockMobSpawnerColor.z
+405c5	001405c5	0019bfe4	001986cc	FUN_001986cc	blockMobSpawnerColor.z
+405dc	001405dc	001970ec	001950f4	FUN_001950f4	noTurtles
+405dc	001405dc	0019ce44	001986cc	FUN_001986cc	noTurtles
+405e6	001405e6	00197164	001950f4	FUN_001950f4	noStriders
+405e6	001405e6	0019cf4c	001986cc	FUN_001986cc	noStriders
+405f1	001405f1	00197204	001950f4	FUN_001950f4	noSalmons
+405f1	001405f1	0019d0ac	001986cc	FUN_001986cc	noSalmons
+405fb	001405fb	001977ec	001950f4	FUN_001950f4	xrayRedstone
+405fb	001405fb	0019ddc4	001986cc	FUN_001986cc	xrayRedstone
+406cb	001406cb	0020f478	0020e850	FUN_0020e850	Block Fly Default
+406e0	001406e0	002ca560			Keypad8
+406e8	001406e8	002ca568			Keypad9
+406f0	001406f0	002ca620			GamepadR2
+406fa	001406fa	002ca6a0			MouseWheelX
+40706	00140706	002206c0	002201ac	FUN_002201ac	ModCtrl
+40706	00140706	002ca6b0			ModCtrl
+4070e	0014070e	002206c0	002201ac	FUN_002201ac	ModAlt
+4070e	0014070e	002ca6c0			ModAlt
+40715	00140715	0021f990	0021be78	FUN_0021be78	Click %s Button to break in debugger! (remap w/ Ctrl+Shift)
+40755	00140755	00246924	0024676c	FUN_0024676c	##ComboPopup
+40762	00140762	002ca8e8			H:%0.3f
+40772	00140772	0025c224	0025c1c4	FUN_0025c1c4	Column %d%n
+4077e	0014077e	00261a40	002616b4	FUN_002616b4	SHARED
+40785	00140785	0025ecc8	0025eca8	FUN_0025eca8	hook_func_addr
+40794	00140794	0025f9e4	0025f884	FUN_0025f884	linker64
+40794	00140794	0025fc50	0025f884	FUN_0025f884	linker64
+40794	00140794	0025fa00	0025f884	FUN_0025f884	linker64
+40794	00140794	0025f220	0025f1ec	FUN_0025f1ec	linker64
+40794	00140794	0025f23c	0025f1ec	FUN_0025f1ec	linker64
+40794	00140794	002668b8	0026689c	FUN_0026689c	linker64
+40794	00140794	002683b0	00268364	FUN_00268364	linker64
+40794	00140794	00456f98			linker64
+40794	00140794	004571d8			linker64
+4079d	0014079d	0025f424	0025f384	FUN_0025f384	xdl: open from cache %s, %s
+407b9	001407b9	00262ab4	00262a8c	FUN_00262a8c	L|%lx|
+407c0	001407c0	002bea6c	002be97c	FUN_002be97c	out/llvm-project/libcxxabi/src/fallback_malloc.cpp
+407c0	001407c0	002beacc	002be97c	FUN_002be97c	out/llvm-project/libcxxabi/src/fallback_malloc.cpp
+407f3	001407f3	002c29bc	002c2648	FUN_002c2648	unknown pointer encoding
+407f3	001407f3	002c2988	002c2648	FUN_002c2648	unknown pointer encoding
+4080c	0014080c	002c22b0	002c182c	FUN_002c182c	getSLEB128
+4080c	0014080c	002c227c	002c182c	FUN_002c182c	getSLEB128
+4080c	0014080c	002c22e4	002c182c	FUN_002c182c	getSLEB128
+4080c	0014080c	002c2248	002c182c	FUN_002c182c	getSLEB128
+4080c	0014080c	002c0d1c	002c0a74	FUN_002c0a74	getSLEB128
+4080c	0014080c	002c33c8	002c2b9c	FUN_002c2b9c	getSLEB128
+4080c	0014080c	002c3360	002c2b9c	FUN_002c2b9c	getSLEB128
+4080c	0014080c	002c3394	002c2b9c	FUN_002c2b9c	getSLEB128
+4080c	0014080c	002c2864	002c2648	FUN_002c2648	getSLEB128
+40817	00140817	002c34e0	002c2b9c	FUN_002c2b9c	DW_OP_deref_size with bad size
+4083d	0014083d	001d17f4	001d169c	FUN_001d169c	IDAT size limit
+4084d	0014084d	001d104c	001d08c8	FUN_001d08c8	bad format
+4084d	0014084d	001ccf90	001cc60c	FUN_001cc60c	bad format
+4084d	0014084d	001ccb00	001cc60c	FUN_001cc60c	bad format
+40865	00140865	00195878	001950f4	FUN_001950f4	freeCamShortcut
+40865	00140865	001991bc	001986cc	FUN_001986cc	freeCamShortcut
+40875	00140875	00195ea4	001950f4	FUN_001950f4	xrayDefaultShortcutSize.y
+40875	00140875	00199fe0	001986cc	FUN_001986cc	xrayDefaultShortcutSize.y
+4088f	0014088f	001964a8	001950f4	FUN_001950f4	killItemsShortcut
+4088f	0014088f	0019af88	001986cc	FUN_001986cc	killItemsShortcut
+408a1	001408a1	001973bc	001950f4	FUN_001950f4	noGlowSquids
+408a1	001408a1	0019d474	001986cc	FUN_001986cc	noGlowSquids
+408ae	001408ae	001974d4	001950f4	FUN_001950f4	noChickens
+408ae	001408ae	0019d6dc	001986cc	FUN_001986cc	noChickens
+408b9	001408b9	0019799c	001950f4	FUN_001950f4	autoClicker
+408b9	001408b9	0019e18c	001986cc	FUN_001986cc	autoClicker
+408c5	001408c5	00197a64	001950f4	FUN_001950f4	panic
+408c5	001408c5	0019e344	001986cc	FUN_001986cc	panic
+408cb	001408cb	00197c6c	001950f4	FUN_001950f4	antiBot
+408cb	001408cb	0019e5cc	001986cc	FUN_001986cc	antiBot
+408d3	001408d3	00197d58	001950f4	FUN_001950f4	showPosition
+408d3	001408d3	0019e7c4	001986cc	FUN_001986cc	showPosition
+408e0	001408e0	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+0006 (ACK) must be escaped to \u0006
+4092c	0014092c	001e3f08	001e3ec0	FUN_001e3ec0	parse_error
+4093c	0014093c	001dcf0c	001dce8c	FUN_001dce8c	cannot use operator[] with a numeric argument with 
+40a99	00140a99	0021b954	0021b87c	FUN_0021b87c	<NULL>
+40a99	00140a99	0021e15c	0021be78	FUN_0021be78	<NULL>
+40a99	00140a99	0021b0d4	0021af90	FUN_0021af90	<NULL>
+40a99	00140a99	0022c6bc	0022c660	FUN_0022c660	<NULL>
+40aa0	00140aa0	0022bbd8	0022bb34	FUN_0022bb34	[popup] CloseCurrentPopup %d -> %d
+40ac4	00140ac4	002273a0	0022731c	FUN_0022731c	[nav] NavInitRequest: from NavInitWindow(), init_for_nav=%d, window="%s", layer=%d
+40b18	00140b18	0022cc78	0022cb1c	FUN_0022cb1c	[focus] NavMoveRequest: SetNavWindow("%s")
+40b4c	00140b4c	002ca660			GamepadRStickRight
+40b67	00140b67	00255c2c	002552ec	FUN_002552ec	##rgb
+40b6d	00140b6d	0025c354	0025c1c4	FUN_0025c1c4	Visible=%d%n
+40b7a	00140b7a	0025c3ec	0025c1c4	FUN_0025c1c4	Sort=%d%c%n
+40bbf	00140bbf	0026117c	00261048	FUN_00261048	error
+40bfe	00140bfe	00268dcc	00268d30	now	clock_gettime(CLOCK_REALTIME) failed
+40c23	00140c23	00273388	00273308	random_device	random_device failed to open 
+40c41	00140c41	002a8230	002a8194	ctype_byname	ctype_byname<char>::ctype_byname failed to construct for 
+40c41	00140c41	002a8374	002a82d4	ctype_byname	ctype_byname<char>::ctype_byname failed to construct for 
+40c7b	00140c7b	002c0318	002c0148	FUN_002c0148	during phase1 personality function said it would stop here, but now in phase2 it did not stop here
+40cde	00140cde	002c39ac	002c3970	FUN_002c3970	libunwind: unsupported .eh_frame_hdr at %lx: need at least 4 bytes of data but only got %zd
+40d46	00140d46	002d4ae0			Save Y (Air Place)
+40d59	00140d59	001cf7ec	001cf544	FUN_001cf544	unsupported format
+40d6c	00140d6c	00195dc4	001950f4	FUN_001950f4	blockShelfColor.y
+40d6c	00140d6c	00199dc8	001986cc	FUN_001986cc	blockShelfColor.y
+40d7e	00140d7e	00196680	001950f4	FUN_001950f4	killAuraShortcutSize.x
+40d7e	00140d7e	0019b428	001986cc	FUN_001986cc	killAuraShortcutSize.x
+40d95	00140d95	001969cc	001950f4	FUN_001950f4	blockVaultColor.y
+40d95	00140d95	0019bcb0	001986cc	FUN_001986cc	blockVaultColor.y
+40da7	00140da7	00196b54	001950f4	FUN_001950f4	containerChestColor.x
+40da7	00140da7	0019c098	001986cc	FUN_001986cc	containerChestColor.x
+40dbd	00140dbd	00196bb8	001950f4	FUN_001950f4	containerTrappedChestColor.x
+40dbd	00140dbd	0019c1ac	001986cc	FUN_001986cc	containerTrappedChestColor.x
+40dda	00140dda	00196bd4	001950f4	FUN_001950f4	containerTrappedChestColor.y
+40dda	00140dda	0019c208	001986cc	FUN_001986cc	containerTrappedChestColor.y
+40df7	00140df7	00196d48	001950f4	FUN_001950f4	containerShulkerColor.x
+40df7	00140df7	0019c5fc	001986cc	FUN_001986cc	containerShulkerColor.x
+40e0f	00140e0f	001974fc	001950f4	FUN_001950f4	noCats
+40e0f	00140e0f	0019d734	001986cc	FUN_001986cc	noCats
+40e16	00140e16	00197f94	001950f4	FUN_001950f4	fogEnable
+40e16	00140e16	0019ecc0	001986cc	FUN_001986cc	fogEnable
+40e20	00140e20	00197fbc	001950f4	FUN_001950f4	fastDrop
+40e20	00140e20	0019ed14	001986cc	FUN_001986cc	fastDrop
+40e29	00140e29	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+0017 (ETB) must be escaped to \u0017
+40e83	00140e83	001f2860	001f27e0	FUN_001f27e0	incompatible ReferenceType for get_ref, actual type is 
+40ebb	00140ebb	001f3280	001f2dec	FUN_001f2dec	"bytes": [
+40f0f	00140f0f	002ca280			LeftShift
+40f1b	00140f1b	002ca5a0			KeypadEqual
+40f27	00140f27	002ca668			GamepadRStickUp
+40ff1	00140ff1	00265610	00265578	_INIT_5	sigaction
+4101b	0014101b	0026868c	00268620	FUN_00268620	/libc.so
+4101b	0014101b	002686c8	00268620	FUN_00268620	/libc.so
+4101b	0014101b	00457430			/libc.so
+41024	00141024	00268ee8	00268ee0	what	std::bad_function_call
+4103b	0014103b	002a5e30	002a5d00	locale	locale constructed with null
+4103b	0014103b	002a6050	002a5f08	locale	locale constructed with null
+41058	00141058	002bbc54	002bbbc4	__cxa_guard_abort	__cxa_guard_abort
+41058	00141058	002bbc40	002bbbc4	__cxa_guard_abort	__cxa_guard_abort
+4106a	0014106a	002bbfe8	002bbfd8	__cxa_deleted_virtual	Deleted virtual function called!
+4108b	0014108b	002c180c	002c1380	FUN_002c1380	setRegister
+4108b	0014108b	002c0f28	002c0e78	FUN_002c0e78	setRegister
+4109b	0014109b	001d9dcc	001d958c	FUN_001d958c	bad APP len
+410a7	001410a7	001954dc	001950f4	FUN_001950f4	width
+410a7	001410a7	00198890	001986cc	FUN_001986cc	width
+410ad	001410ad	001955b4	001950f4	FUN_001950f4	blink
+410ad	001410ad	00198ac8	001986cc	FUN_001986cc	blink
+410b3	001410b3	001959b0	001950f4	FUN_001950f4	blockFlyTypeShortcutSize.y
+410b3	001410b3	001994a4	001986cc	FUN_001986cc	blockFlyTypeShortcutSize.y
+410ce	001410ce	00195a7c	001950f4	FUN_001950f4	blockFlyShortcutPos.y
+410ce	001410ce	001996e0	001986cc	FUN_001986cc	blockFlyShortcutPos.y
+410e4	001410e4	00196044	001950f4	FUN_001950f4	espEnchantingTable
+410e4	001410e4	0019a424	001986cc	FUN_001986cc	espEnchantingTable
+410f7	001410f7	0019674c	001950f4	FUN_001950f4	noclipShortcutPos.y
+410f7	001410f7	0019b64c	001986cc	FUN_001986cc	noclipShortcutPos.y
+4110b	0014110b	00196940	001950f4	FUN_001950f4	blockSculkShriekerColor.y
+4110b	0014110b	0019bb44	001986cc	FUN_001986cc	blockSculkShriekerColor.y
+41125	00141125	0019788c	001950f4	FUN_001950f4	noIronGolem
+41125	00141125	0019df24	001986cc	FUN_001986cc	noIronGolem
+41131	00141131	001e2be8	001e26b0	FUN_001e26b0	invalid string: surrogate U+D800..U+DBFF must be followed by U+DC00..U+DFFF
+4118d	0014118d	001f2070	001f1e0c	FUN_001f1e0c	cannot create object from initializer list
+41288	00141288	00224f54	00224e60	FUN_00224e60	[io] Calling io.SetPlatformImeDataFn(): WantVisible: %d, InputPos (%.2f,%.2f)
+412db	001412db	00215fb4	00215e9c	FUN_00215e9c	(Main menu bar)
+412eb	001412eb	002ca238			Home
+412f0	001412f0	002ca250			Delete
+412f7	001412f7	002ca290			LeftSuper
+41301	00141301	002ca2b8			Menu
+4130c	0014130c	002ca530			Keypad2
+41314	00141314	002ca640			GamepadLStickRight
+41327	00141327	00230eb4	00230e58	FUN_00230e58	[focus] NavRestoreLayer: from "%s" to SetNavWindow("%s")
+41361	00141361	0025dd68	0025dcb8	FUN_0025dcb8	ERROR: ImGui_ImplOpenGL3_CreateDeviceObjects: failed to compile %s! With GLSL: %s
+413b4	001413b4	0025f6dc	0025f6d0	FUN_0025f6d0	shadowhook-island
+413c6	001413c6	00457260			_ZN3art7Runtime5StartEv
+413de	001413de	00261d3c	00261ae8	FUN_00261ae8	switch-interceptor: size %zu: add(re-enable) pre %lx, data %lx
+4141d	0014141d	002655d4	00265578	_INIT_5	sigaction64
+4144e	0014144e	0026880c	0026877c	FUN_0026877c	CrcGenerateTable
+4145f	0014145f	002afe90	002afe18	__time_get	time_get_byname failed to construct for 
+4145f	0014145f	002aff9c	002aff20	__time_get	time_get_byname failed to construct for 
+414d0	001414d0	002c28ec	002c2648	FUN_002c2648	DW_EH_PE_textrel pointer encoding not supported
+41500	00141500	002c343c	002c2b9c	FUN_002c2b9c	DWARF opcode not implemented
+41528	00141528	001c9ff4	001c9ec0	FUN_001c9ec0	bad req_comp
+41528	00141528	001cd12c	001cd088	FUN_001cd088	bad req_comp
+41535	00141535	001957c8	001950f4	FUN_001950f4	overrideRender
+41535	00141535	00198fe0	001986cc	FUN_001986cc	overrideRender
+41544	00141544	001958a0	001950f4	FUN_001950f4	freeCamSpeed
+41544	00141544	0019921c	001986cc	FUN_001986cc	freeCamSpeed
+41551	00141551	00195e54	001950f4	FUN_001950f4	noBreakDelay
+41551	00141551	00199f2c	001986cc	FUN_001986cc	noBreakDelay
+4155e	0014155e	00196074	001950f4	FUN_001950f4	blockDispenserColor.x
+4155e	0014155e	0019a480	001986cc	FUN_001986cc	blockDispenserColor.x
+41574	00141574	00196fd4	001950f4	FUN_001950f4	espNametag
+41574	00141574	0019cbdc	001986cc	FUN_001986cc	espNametag
+4157f	0014157f	00197954	001950f4	FUN_001950f4	minAutoClickerCPS
+4157f	0014157f	0019e0dc	001986cc	FUN_001986cc	minAutoClickerCPS
+41591	00141591	00198034	001950f4	FUN_001950f4	offSlowdownTrigger
+41591	00141591	0019ee10	001986cc	FUN_001986cc	offSlowdownTrigger
+415b6	001415b6	001e9684	001e9398	FUN_001e9398	cannot use erase() with 
+4166a	0014166a	002264ec	00225f38	FUN_00225f38	##Background
+4166a	0014166a	0021aedc	0021aed4	FUN_0021aed4	##Background
+41677	00141677	0022082c	002201ac	FUN_002201ac	None
+4167c	0014167c	00219b48	00219978	FUN_00219978	(void*)0x%p
+41688	00141688	00215fcc	00215e9c	FUN_00215e9c	(Untitled)
+41696	00141696	002ca5f8			GamepadDpadUp
+416a4	001416a4	002ca628			GamepadL3
+416ae	001416ae	002ca658			GamepadRStickLeft
+416c0	001416c0	002178d4	002176a0	FUN_002176a0	Collapsed=1
+416cd	001416cd	002ca888			H:%3d
+416d3	001416d3	0025c674	0025c4d8	FUN_0025c4d8	Column %-2d
+41724	00141724	0026003c	0025f884	FUN_0025f884	|%lx-%lx
+4176a	0014176a	002724f4	00272474	FUN_00272474	Unknown error %d
+4177f	0014177f	002bb9c0	002bb970	__cxa_guard_acquire	__cxa_guard_acquire
+4177f	0014177f	002bbac8	002bb970	__cxa_guard_acquire	__cxa_guard_acquire
+4177f	0014177f	002bbaa4	002bb970	__cxa_guard_acquire	__cxa_guard_acquire
+41793	00141793	002c2088	002c182c	FUN_002c182c	libunwind: malformed DW_CFA_val_expression DWARF unwind, reg too big
+417f2	001417f2	00210cc4	00210c50	_INIT_2	/storage/emulated/0/Android/data/com.mojang.minecraftpe/files/config.json
+4183c	0014183c	0020edfc	0020e850	FUN_0020e850	Kill Near Items
+4183c	0014183c	0020f30c	0020e850	FUN_0020e850	Kill Near Items
+4183c	0014183c	002d4a80			Kill Near Items
+4184c	0014184c	002d4b08			Inverted
+41855	00141855	00195598	001950f4	FUN_001950f4	blinkShortcutPos.x
+41855	00141855	00198a6c	001986cc	FUN_001986cc	blinkShortcutPos.x
+41868	00141868	0019577c	001950f4	FUN_001950f4	protectedPlayerCheck
+41868	00141868	00198f28	001986cc	FUN_001986cc	protectedPlayerCheck
+4187d	0014187d	001957a4	001950f4	FUN_001950f4	chunksOverride
+4187d	0014187d	00198f84	001986cc	FUN_001986cc	chunksOverride
+4188c	0014188c	0019618c	001950f4	FUN_001950f4	blockFurnaceColor.x
+4188c	0014188c	0019a758	001986cc	FUN_001986cc	blockFurnaceColor.x
+418a0	001418a0	0019632c	001950f4	FUN_001950f4	autoClickerShortcutPos.x
+418a0	001418a0	0019aba0	001986cc	FUN_001986cc	autoClickerShortcutPos.x
+418b9	001418b9	00196840	001950f4	FUN_001950f4	ladderFlyShortcut
+418b9	001418b9	0019b8c8	001986cc	FUN_001986cc	ladderFlyShortcut
+418cb	001418cb	00196c5c	001950f4	FUN_001950f4	containerEnderChestColor.z
+418cb	001418cb	0019c378	001986cc	FUN_001986cc	containerEnderChestColor.z
+418e6	001418e6	001976d4	001950f4	FUN_001950f4	xrayDiamond
+418e6	001418e6	0019db5c	001986cc	FUN_001986cc	xrayDiamond
+418f2	001418f2	001e26a0	001e25bc	FUN_001e25bc	invalid comment; missing closing '*/'
+41918	00141918	001e6a58	001e5f60	FUN_001e5f60	attempting to parse an empty input; check that your input string or stream contains the expected JSON
+41918	00141918	001e3bb8	001e3440	FUN_001e3440	attempting to parse an empty input; check that your input string or stream contains the expected JSON
+41918	00141918	001e79b0	001e6e70	FUN_001e6e70	attempting to parse an empty input; check that your input string or stream contains the expected JSON
+4197e	0014197e	0020b894	0020b888	FUN_0020b888	vector
+4197e	0014197e	0020798c	00207980	FUN_00207980	vector
+4197e	0014197e	0020fb64	0020fb58	FUN_0020fb58	vector
+4197e	0014197e	0020fdd0	0020fdc4	FUN_0020fdc4	vector
+4197e	0014197e	002b90c8	002b90b8	FUN_002b90b8	vector
+4197e	0014197e	001e90a8	001e909c	FUN_001e909c	vector
+4197e	0014197e	001e9104	001e90f8	FUN_001e90f8	vector
+4197e	0014197e	00207598	0020758c	FUN_0020758c	vector
+4197e	0014197e	0020e848	0020e83c	FUN_0020e83c	vector
+4197e	0014197e	001e48e0	001e48d4	FUN_001e48d4	vector
+4197e	0014197e	001f0940	001f0934	FUN_001f0934	vector
+4197e	0014197e	00210b04	00210af8	FUN_00210af8	vector
+4197e	0014197e	00210af0	00210ae4	FUN_00210ae4	vector
+4197e	0014197e	00210120	00210114	FUN_00210114	vector
+4197e	0014197e	001ea2f8	001ea2ec	FUN_001ea2ec	vector
+4197e	0014197e	002104dc	002104d0	FUN_002104d0	vector
+4197e	0014197e	00210584	00210578	FUN_00210578	vector
+4197e	0014197e	00210570	00210564	FUN_00210564	vector
+4197e	0014197e	001ee660	001ee654	FUN_001ee654	vector
+419ea	001419ea	0022b664	0022b594	FUN_0022b594	[popup] OpenPopup("%s" -> 0x%08X)
+41a0d	00141a0d	00215f90	00215e9c	FUN_00215e9c	Size all columns to fit###SizeAll
+41a2f	00141a2f	002ca218			UpArrow
+41a3f	00141a3f	002ca610			GamepadR1
+41a49	00141a49	0021f96c	0021be78	FUN_0021be78	Remap w/ Ctrl+Shift: click anywhere to select new mouse button.
+41a94	00141a94	0025d514	0025d238	FUN_0025d238	shader program
+41aa3	00141aa3	0025f7dc	0025f6ec	FUN_0025f6ec	via anon-page
+41b31	00141b31	0026035c	0026027c	FUN_0026027c	elf: destroy, load_bias %p
+41b4c	00141b4c	002648a0	00264850	FUN_00264850	B|arm64|%shook;
+41bab	00141bab	002734d0	00273420	operator()	random_device got an unexpected error
+41bd5	00141bd5	00281908	0028185c	FUN_0028185c	w+bxe
+41bdb	00141bdb	002ae45c	002ae318	FUN_002ae318	Wednesday
+41bef	00141bef	002c3ee4	002c3ebc	FUN_002c3ebc	unknown register
+41c00	00141c00	001d8c94	001d8c20	FUN_001d8c20	no SOI
+41c00	00141c00	001cd060	001ccf9c	FUN_001ccf9c	no SOI
+41c07	00141c07	001cf7ec	001cf544	FUN_001cf544	not HDR
+41c0f	00141c0f	002111c0	00210c50	_INIT_2	/dev/urandom
+41c0f	00141c0f	001941b4	00194194	FUN_00194194	/dev/urandom
+41c1c	00141c1c	001956dc	001950f4	FUN_001950f4	instantRespawn
+41c1c	00141c1c	00198db8	001986cc	FUN_001986cc	instantRespawn
+41c2b	00141c2b	00196520	001950f4	FUN_001950f4	mobAuraShortcutSize.x
+41c2b	00141c2b	0019b098	001986cc	FUN_001986cc	mobAuraShortcutSize.x
+41c41	00141c41	00196f34	001950f4	FUN_001950f4	espHealth
+41c41	00141c41	0019ca7c	001986cc	FUN_001986cc	espHealth
+41c4b	00141c4b	00196f5c	001950f4	FUN_001950f4	espDistance
+41c4b	00141c4b	0019cad4	001986cc	FUN_001986cc	espDistance
+41c57	00141c57	00196fac	001950f4	FUN_001950f4	espBox
+41c57	00141c57	0019cb84	001986cc	FUN_001986cc	espBox
+41c5e	00141c5e	0019709c	001950f4	FUN_001950f4	noWolfs
+41c5e	00141c5e	0019cd94	001986cc	FUN_001986cc	noWolfs
+41c66	00141c66	00197814	001950f4	FUN_001950f4	xrayAmethyst
+41c66	00141c66	0019de1c	001986cc	FUN_001986cc	xrayAmethyst
+41c73	00141c73	00197864	001950f4	FUN_001950f4	xrayQuartz
+41c73	00141c73	0019decc	001986cc	FUN_001986cc	xrayQuartz
+41c7e	00141c7e	00197904	001950f4	FUN_001950f4	noHorses
+41c7e	00141c7e	0019e02c	001986cc	FUN_001986cc	noHorses
+41c87	00141c87	00197dd0	001950f4	FUN_001950f4	minMobAuraCPS
+41c87	00141c87	0019e8c0	001986cc	FUN_001986cc	minMobAuraCPS
+41c95	00141c95	00197e64	001950f4	FUN_001950f4	killItems
+41c95	00141c95	0019ea18	001986cc	FUN_001986cc	killItems
+41c9f	00141c9f	001e67d0	001e5f60	FUN_001e5f60	object separator
+41c9f	00141c9f	001e69e4	001e5f60	FUN_001e5f60	object separator
+41c9f	00141c9f	001e3a00	001e3440	FUN_001e3440	object separator
+41c9f	00141c9f	001e3b58	001e3440	FUN_001e3440	object separator
+41c9f	00141c9f	001e7728	001e6e70	FUN_001e6e70	object separator
+41c9f	00141c9f	001e793c	001e6e70	FUN_001e6e70	object separator
+41cb0	00141cb0	001e665c	001e5f60	FUN_001e5f60	array
+41cb0	00141cb0	001e38e0	001e3440	FUN_001e3440	array
+41cb0	00141cb0	001e75b4	001e6e70	FUN_001e6e70	array
+41cb6	00141cb6	001e416c	001e413c	FUN_001e413c	syntax error 
+41d0e	00141d0e	0021fac8	0021be78	FUN_0021be78	(Auto-disabled ImGuiDebugLogFlags_EventClipper to avoid spamming)
+41d58	00141d58	00254318	00253fb4	FUN_00253fb4	M:0.000
+41d6c	00141d6c	0025fc28	0025f884	FUN_0025f884	elf: find phdr gap %lx-%lx(load_bias %lx, %lx-%lx)
+41d9f	00141d9f	00261fa4	00261e98	FUN_00261e98	U|%lx;
+41da6	00141da6	00264b1c	00264850	FUN_00264850	R|%lx;
+41dfe	00141dfe	0026f8f0	0026f808	stof	: out of range
+41dfe	00141dfe	0026fa88	0026f9a0	stod	: out of range
+41dfe	00141dfe	0026fc1c	0026fb38	stold	: out of range
+41dfe	00141dfe	0026f14c	0026f008	stoi	: out of range
+41dfe	00141dfe	0026f0f8	0026f008	stoi	: out of range
+41dfe	00141dfe	0026f2a8	0026f1c0	stol	: out of range
+41dfe	00141dfe	0026f41c	0026f330	stoul	: out of range
+41dfe	00141dfe	0026f5b8	0026f4cc	stoll	: out of range
+41dfe	00141dfe	0026f758	0026f668	stoull	: out of range
+41dfe	00141dfe	0026e914	0026e830	stoll	: out of range
+41dfe	00141dfe	0026eaac	0026e9c4	stoull	: out of range
+41dfe	00141dfe	0026ec3c	0026eb5c	stof	: out of range
+41dfe	00141dfe	0026edcc	0026ecec	stod	: out of range
+41dfe	00141dfe	0026ef58	0026ee7c	stold	: out of range
+41dfe	00141dfe	0026e4c0	0026e384	stoi	: out of range
+41dfe	00141dfe	0026e46c	0026e384	stoi	: out of range
+41dfe	00141dfe	0026e614	0026e534	stol	: out of range
+41dfe	00141dfe	0026e780	0026e69c	stoul	: out of range
+41e0d	00141e0d	00273584	0027357c	FUN_0027357c	iostream
+41e16	00141e16	002bacdc	002baa84	FUN_002baa84	0123456789abcdefghijklmnopqrstuvwxyz
+41e16	00141e16	002bb1ac	002baf54	FUN_002baf54	0123456789abcdefghijklmnopqrstuvwxyz
+41e3b	00141e3b	002bbe90	002bbd8c	FUN_002bbd8c	terminating due to %s exception of type %s: %s
+41e6a	00141e6a	002c2954	002c2648	FUN_002c2648	DW_EH_PE_datarel is invalid with a datarelBase of 0
+41e9e	00141e9e	002c3e64	002c3dc0	FUN_002c3dc0	Unknown DWARF encoding for search table.
+41ecb	00141ecb	0020f264	0020e850	FUN_0020e850	Ladder Fly
+41ecb	00141ecb	0020f43c	0020e850	FUN_0020e850	Ladder Fly
+41ecb	00141ecb	002d4a58			Ladder Fly
+41ed6	00141ed6	001ca9e0	001c9ec0	FUN_001c9ec0	unknown image type
+41ee9	00141ee9	001d7934	001d7364	FUN_001d7364	illegal code in raster
+41f00	00141f00	001d9dcc	001d958c	FUN_001d958c	expected marker
+41f1f	00141f1f	001daec4	001dad44	FUN_001dad44	bad huffman code
+41f30	00141f30	001eda8c	001eda80	FUN_001eda80	basic_string
+41f30	00141f30	00269be0	00269bd0	FUN_00269bd0	basic_string
+41f30	00141f30	0026c18c	0026c17c	FUN_0026c17c	basic_string
+41f30	00141f30	0026e37c	0026e36c	__throw_out_of_range	basic_string
+41f30	00141f30	0026e364	0026e354	__throw_length_error	basic_string
+41f30	00141f30	001dc574	001dc568	FUN_001dc568	basic_string
+41f3d	00141f3d	00195754	001950f4	FUN_001950f4	autoTool
+41f3d	00141f3d	00198ecc	001986cc	FUN_001986cc	autoTool
+41f46	00141f46	00195aa4	001950f4	FUN_001950f4	blockFlyShortcutPos.x
+41f46	00141f46	0019973c	001986cc	FUN_001986cc	blockFlyShortcutPos.x
+41f5c	00141f5c	00195f10	001950f4	FUN_001950f4	xrayDefaultShortcutPos.x
+41f5c	00141f5c	0019a0f4	001986cc	FUN_001986cc	xrayDefaultShortcutPos.x
+41f75	00141f75	00195fe8	001950f4	FUN_001950f4	blockEnchantingTableColor.x
+41f75	00141f75	0019a314	001986cc	FUN_001986cc	blockEnchantingTableColor.x
+41f91	00141f91	001961cc	001950f4	FUN_001950f4	blockFurnaceColor.z
+41f91	00141f91	0019a810	001986cc	FUN_001986cc	blockFurnaceColor.z
+41fa5	00141fa5	001962e8	001950f4	FUN_001950f4	autoClickerShortcutSize.x
+41fa5	00141fa5	0019aae8	001986cc	FUN_001986cc	autoClickerShortcutSize.x
+41fbf	00141fbf	00196980	001950f4	FUN_001950f4	espSculkShrieker
+41fbf	00141fbf	0019bbf8	001986cc	FUN_001986cc	espSculkShrieker
+41fd0	00141fd0	00196cc0	001950f4	FUN_001950f4	containerBarrelColor.z
+41fd0	00141fd0	0019c48c	001986cc	FUN_001986cc	containerBarrelColor.z
+41fe7	00141fe7	0019740c	001950f4	FUN_001950f4	noFoxes
+41fe7	00141fe7	0019d524	001986cc	FUN_001986cc	noFoxes
+41fef	00141fef	001975ec	001950f4	FUN_001950f4	noAllays
+41fef	00141fef	0019d944	001986cc	FUN_001986cc	noAllays
+41ff8	00141ff8	00198084	001950f4	FUN_001950f4	xrayCam
+41ff8	00141ff8	0019eeb8	001986cc	FUN_001986cc	xrayCam
+42000	00142000	001e8c64	001e8c38	FUN_001e8c38	out_of_range
+42000	00142000	001e44f0	001e44c4	FUN_001e44c4	out_of_range
+4200d	0014200d	001e7ebc	001e7d28	FUN_001e7d28	excessive object size: 
+4209e	0014209e	0021174c	002116f8	FUN_002116f8	imgui_log.txt
+420ac	001420ac	0021b054	0021af90	FUN_0021af90	[focus] FocusWindow("%s", UnlessBelowModal): prevented by "%s".
+420ed	001420ed	0022cf50	0022cb1c	FUN_0022cb1c	[nav] NavMoveSubmitted but not led to a result!
+42122	00142122	002ca4a0			Apostrophe
+4212d	0014212d	002ca4c0			Slash
+42133	00142133	002206c0	002201ac	FUN_002201ac	ModShift
+42133	00142133	002ca6b8			ModShift
+42140	00142140	002ca878			B:%3d
+42146	00142146	0025c0a4	0025c088	FUN_0025c088	0x%08X,%d
+42150	00142150	0025d31c	0025d238	FUN_0025d238	uniform mat4 ProjMtx;
+422e5	001422e5	002649d4	00264850	FUN_00264850	E|%lx|
+422fb	001422fb	00267168	0026709c	FUN_0026709c	/system/lib64
+42309	00142309	002672f0	0026709c	FUN_0026709c	.gnu_debugdata
+42318	00142318	002693c8	002693c0	what	bad_weak_ptr
+42325	00142325	00281968	0028185c	FUN_0028185c	w+be
+4232a	0014232a	002c2108	002c182c	FUN_002c182c	libunwind: malformed DW_CFA_GNU_negative_offset_extended DWARF unwind, reg too big
+4237e	0014237e	001c2dd4	001b5568	JNI_OnLoad	E8 00 80 52
+4238a	0014238a	001c3f60	001b5568	JNI_OnLoad	1F 20 03 D5 1F 20 03 D5
+423a2	001423a2	001db9c4	001db70c	FUN_001db70c	invalid width
+423bf	001423bf	00195da8	001950f4	FUN_001950f4	blockShelfColor.x
+423bf	001423bf	00199d6c	001986cc	FUN_001986cc	blockShelfColor.x
+423d1	001423d1	001964d0	001950f4	FUN_001950f4	noWeather
+423d1	001423d1	0019afe0	001986cc	FUN_001986cc	noWeather
+423db	001423db	001968f4	001950f4	FUN_001950f4	espCreakingHeart
+423db	001423db	0019ba8c	001986cc	FUN_001986cc	espCreakingHeart
+423ec	001423ec	00196bf8	001950f4	FUN_001950f4	containerTrappedChestColor.z
+423ec	001423ec	0019c264	001986cc	FUN_001986cc	containerTrappedChestColor.z
+42409	00142409	00196f0c	001950f4	FUN_001950f4	espPlatform
+42409	00142409	0019ca24	001986cc	FUN_001986cc	espPlatform
+42419	00142419	00197434	001950f4	FUN_001950f4	noDolphins
+42419	00142419	0019d57c	001986cc	FUN_001986cc	noDolphins
+42424	00142424	00197eb0	001950f4	FUN_001950f4	minKillAuraCPS
+42424	00142424	0019eac0	001986cc	FUN_001986cc	minKillAuraCPS
+42433	00142433	001980fc	001950f4	FUN_001950f4	speedValue
+42433	00142433	0019efa0	001986cc	FUN_001986cc	speedValue
+4243e	0014243e	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+001D (GS) must be escaped to \u001D
+42486	00142486	001e42f8	001e413c	FUN_001e413c	unexpected 
+424a0	001424a0	001e8628	001e8490	FUN_001e8490	excessive array size: 
+424b7	001424b7	001a3638	001a0958	FUN_001a0958	%.1f
+424b7	001424b7	001a369c	001a0958	FUN_001a0958	%.1f
+424b7	001424b7	001a37d4	001a0958	FUN_001a0958	%.1f
+424b7	001424b7	001a5ddc	001a0958	FUN_001a0958	%.1f
+424b7	001424b7	001a8620	001a0958	FUN_001a0958	%.1f
+424b7	001424b7	001a8690	001a0958	FUN_001a0958	%.1f
+424b7	001424b7	001a6068	001a0958	FUN_001a0958	%.1f
+42557	00142557	0021c3f4	0021be78	FUN_0021be78	NewFrame(): ClearActiveID() because it isn't marked alive anymore!
+4259b	0014259b	0021fae4	0021be78	FUN_0021be78	Debug##Default
+425aa	001425aa	0022bcb0	0022bc0c	FUN_0022bc0c	##Menu_%02d
+425b6	001425b6	0022373c	00220bb0	FUN_00220bb0	#COLLAPSE
+425c0	001425c0	002ca228			PageUp
+425c7	001425c7	002ca258			Backspace
+425d5	001425d5	002ca4d0			Equal
+425db	001425db	002ca570			KeypadDecimal
+425f8	001425f8	002ca870			G:%3d
+425fe	001425fe	002546f0	00253fb4	FUN_00253fb4	picker
+425fe	001425fe	00254748	00253fb4	FUN_00253fb4	picker
+42605	00142605	002ca7f0			float
+4260b	0014260b	0025c3a8	0025c1c4	FUN_0025c1c4	Order=%d%n
+42619	00142619	002632a0	0026315c	FUN_0026315c	shadowhook-hub-stack
+4262e	0014262e	00267ff4	00267ec8	FUN_00267ec8	/system/bin/linker64
+4262e	0014262e	002668d8	0026689c	FUN_0026689c	/system/bin/linker64
+42643	00142643	0026840c	00268364	FUN_00268364	__dl__ZL10dlopen_extPKciPK17android_dlextinfoPv
+42673	00142673	002c2124	002c182c	FUN_002c182c	libunwind: malformed DW_CFA_register DWARF unwind, reg too big
+426b3	001426b3	002c20a4	002c182c	FUN_002c182c	libunwind: malformed DW_CFA_def_cfa_register DWARF unwind, reg too big
+426ff	001426ff	001932c8	001931b8	FUN_001931b8	fopen
+42705	00142705	002d4a98			Zoom
+4270a	0014270a	001b1d68	001b16ac	FUN_001b16ac	random.break
+42717	00142717	001d17f4	001d169c	FUN_001d169c	multiple IHDR
+42725	00142725	001d4710	001d3914	FUN_001d3914	outofmem
+42725	00142725	00191dd0	00191cd8	FUN_00191cd8	outofmem
+42725	00142725	001da6e0	001d9eb4	FUN_001d9eb4	outofmem
+42725	00142725	001ca9e0	001c9ec0	FUN_001c9ec0	outofmem
+42725	00142725	001d0488	001cff0c	FUN_001cff0c	outofmem
+42725	00142725	001ce9f8	001cd088	FUN_001cd088	outofmem
+42725	00142725	001cd150	001cd088	FUN_001cd088	outofmem
+42725	00142725	001cf3a8	001cf284	FUN_001cf284	outofmem
+42725	00142725	001d7934	001d7364	FUN_001d7364	outofmem
+42725	00142725	001cf7ec	001cf544	FUN_001cf544	outofmem
+42725	00142725	001d17f4	001d169c	FUN_001d169c	outofmem
+42725	00142725	001d104c	001d08c8	FUN_001d08c8	outofmem
+42725	00142725	001d38b4	001d296c	FUN_001d296c	outofmem
+42725	00142725	001d4fc0	001d4f20	FUN_001d4f20	outofmem
+42725	00142725	001cd038	001ccf9c	FUN_001ccf9c	outofmem
+42725	00142725	001cca9c	001cc60c	FUN_001cc60c	outofmem
+42733	00142733	001da15c	001d9eb4	FUN_001d9eb4	no header height
+42744	00142744	001959d8	001950f4	FUN_001950f4	blockFlyTypeShortcutSize.x
+42744	00142744	00199504	001986cc	FUN_001986cc	blockFlyTypeShortcutSize.x
+4275f	0014275f	00195a38	001950f4	FUN_001950f4	blockFlyShortcutSize.y
+4275f	0014275f	00199624	001986cc	FUN_001986cc	blockFlyShortcutSize.y
+42776	00142776	00195d1c	001950f4	FUN_001950f4	blockBedColor.x
+42776	00142776	00199c00	001986cc	FUN_001986cc	blockBedColor.x
+42786	00142786	00196614	001950f4	FUN_001950f4	targetLockShortcutPos.x
+42786	00142786	0019b318	001986cc	FUN_001986cc	targetLockShortcutPos.x
+4279e	0014279e	00196898	001950f4	FUN_001950f4	blockCreakingHeartColor.x
+4279e	0014279e	0019b97c	001986cc	FUN_001986cc	blockCreakingHeartColor.x
+427b8	001427b8	00197774	001950f4	FUN_001950f4	xrayCopper
+427b8	001427b8	0019dcbc	001986cc	FUN_001986cc	xrayCopper
+427c3	001427c3	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+0003 (ETX) must be escaped to \u0003
+4280c	0014280c	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+000C (FF) must be escaped to \u000C or \f
+4285a	0014285a	001e2fa8	001e2c38	FUN_001e2c38	invalid number; expected digit after exponent sign
+4291e	0014291e	002ca268			Enter
+4292a	0014292a	002ca540			Keypad4
+42932	00142932	002ca5b0			AppForward
+4293d	0014293d	002ca648			GamepadLStickUp
+4294d	0014294d	002ca6a8			MouseWheelY
+4295e	0014295e	002ca8f0			S:%0.3f
+42966	00142966	00255b2c	002552ec	FUN_002552ec	##current
+42978	00142978	0025d430	0025d238	FUN_0025d238	Texture
+42980	00142980	0025ebe0	0025ead8	FUN_0025ead8	MULTI
+42986	00142986	0025efd0	0025ef6c	FUN_0025ef6c	pthread_setspecific
+4299a	0014299a	00264964	00264850	FUN_00264850	X|%lx|%zu|
+429a5	001429a5	002655ec	00265578	_INIT_5	sigprocmask64
+429b3	001429b3	00267528	00267394	FUN_00267394	dynstr_out_of_bounds_error
+429ce	001429ce	00268150	002680bc	FUN_002680bc	%lx-%lx r
+429d8	001429d8	00272694	0027268c	FUN_0027268c	system
+429e3	001429e3	002bb408	002bb37c	FUN_002bb37c	0123456789abcdef
+429e3	001429e3	002baf38	002baeac	FUN_002baeac	0123456789abcdef
+429f4	001429f4	002bbae4	002bb970	__cxa_guard_acquire	__cxa_guard_acquire detected recursive initialization: do you have a function-local static variable whose initialization depends on that function?
+42a87	00142a87	002c0404	002c03a0	FUN_002c03a0	_Unwind_Resume
+42a96	00142a96	002c2178	002c182c	FUN_002c182c	libunwind: malformed DW_CFA_undefined DWARF unwind, reg too big
+42ada	00142ada	002c0ad8	002c0a74	FUN_002c0a74	CIE ID is not zero
+42aed	00142aed	002d4a88			Freelook
+42af6	00142af6	00194388	001942fc	Java_com_subroutineZEFF_ApollonClient_GLES3JNIView_init	#version 100
+42b03	00142b03	001ca9e0	001c9ec0	FUN_001c9ec0	bad header
+42b0e	00142b0e	001d7934	001d7364	FUN_001d7364	bad Image Descriptor
+42b23	00142b23	001d9dcc	001d958c	FUN_001d958c	unknown marker
+42b32	00142b32	001da15c	001d9eb4	FUN_001d9eb4	only 8-bit
+42b3d	00142b3d	00195c40	001950f4	FUN_001950f4	scaffoldShortcutSize.x
+42b3d	00142b3d	001999e4	001986cc	FUN_001986cc	scaffoldShortcutSize.x
+42b54	00142b54	00195d5c	001950f4	FUN_001950f4	blockBedColor.z
+42b54	00142b54	00199cb8	001986cc	FUN_001986cc	blockBedColor.z
+42b64	00142b64	00195f5c	001950f4	FUN_001950f4	blockBrewingStandColor.x
+42b64	00142b64	0019a1a8	001986cc	FUN_001986cc	blockBrewingStandColor.x
+42b7d	00142b7d	00196028	001950f4	FUN_001950f4	blockEnchantingTableColor.z
+42b7d	00142b7d	0019a3cc	001986cc	FUN_001986cc	blockEnchantingTableColor.z
+42b99	00142b99	001960d0	001950f4	FUN_001950f4	espDispenser
+42b99	00142b99	0019a590	001986cc	FUN_001986cc	espDispenser
+42ba6	00142ba6	0019627c	001950f4	FUN_001950f4	zoomShortcutPos.x
+42ba6	00142ba6	0019a9d8	001986cc	FUN_001986cc	zoomShortcutPos.x
+42bb8	00142bb8	00196580	001950f4	FUN_001950f4	mobAuraShortcut
+42bb8	00142bb8	0019b1a8	001986cc	FUN_001986cc	mobAuraShortcut
+42bc8	00142bc8	00196774	001950f4	FUN_001950f4	noclipShortcutPos.x
+42bc8	00142bc8	0019b6a8	001986cc	FUN_001986cc	noclipShortcutPos.x
+42bdc	00142bdc	00196a58	001950f4	FUN_001950f4	blockTrialSpawnerColor.y
+42bdc	00142bdc	0019be1c	001986cc	FUN_001986cc	blockTrialSpawnerColor.y
+42bf5	00142bf5	00197a3c	001950f4	FUN_001950f4	noBlur
+42bf5	00142bf5	0019e2ec	001986cc	FUN_001986cc	noBlur
+42bfc	00142bfc	00197f20	001950f4	FUN_001950f4	killAura
+42bfc	00142bfc	0019ebbc	001986cc	FUN_001986cc	killAura
+42c05	00142c05	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+001B (ESC) must be escaped to \u001B
+42c4e	00142c4e	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+001F (US) must be escaped to \u001F
+42cf0	00142cf0	00215f84	00215e9c	FUN_00215e9c	Size column to fit###SizeOne
+42d0d	00142d0d	00215f9c	00215e9c	FUN_00215e9c	Size all columns to default###SizeAll
+42d33	00142d33	00215fc0	00215e9c	FUN_00215e9c	(Popup)
+42d41	00142d41	002ca578			KeypadDivide
+42d4e	00142d4e	002ca688			MouseMiddle
+42d5a	00142d5a	002174e0	00217480	FUN_00217480	Size=%i,%i
+42d6b	00142d6b	00255b10	002552ec	FUN_002552ec	Current
+42d76	00142d76	002ca7f8			%.3f
+42d7b	00142d7b	0025bf8c	0025bf4c	FUN_0025bf4c	Table
+42d7b	00142d7b	0025bf68	0025bf4c	FUN_0025bf4c	Table
+42d88	00142d88	0025ee70	0025ecf0	FUN_0025ecf0	shadowhook: %s(%s, %s, %p, %p, %u) ...
+42daf	00142daf	002615f8	002615ec	FUN_002615ec	shadowhook-enter
+42dc0	00142dc0	00263848	002637cc	FUN_002637cc	task: delayed destroy, target_addr %lx
+42de7	00142de7	00265138	00264cd8	FUN_00264cd8	a64 rewrite: type %d, inst %x
+42e44	00142e44	0026691c	0026689c	FUN_0026689c	app_process64
+42e52	00142e52	00268828	0026877c	FUN_0026877c	Crc64GenerateTable
+42e65	00142e65	002735d8	0027358c	FUN_0027358c	unspecified iostream_category error
+42e89	00142e89	002bbbb0	002bbb1c	__cxa_guard_release	%s failed to broadcast
+42e89	00142e89	002bbc4c	002bbbc4	__cxa_guard_abort	%s failed to broadcast
+42ea0	00142ea0	002bc490	002bc488	what	std::bad_typeid
+42eb0	00142eb0	002c0940	002c08dc	FUN_002c08dc	CIE start does not match
+42ec9	00142ec9	002d4a50			Blink
+42ecf	00142ecf	001d8c00	001d8ae4	FUN_001d8ae4	bad file
+42ecf	00142ecf	001ccf70	001cc60c	FUN_001cc60c	bad file
+42ecf	00142ecf	001ccb00	001cc60c	FUN_001cc60c	bad file
+42ecf	00142ecf	001cc788	001cc60c	FUN_001cc60c	bad file
+42ed8	00142ed8	001d9c24	001d958c	FUN_001d958c	JFIF
+42f00	00142f00	0019552c	001950f4	FUN_001950f4	blinkShortcutSize.y
+42f00	00142f00	0019894c	001986cc	FUN_001986cc	blinkShortcutSize.y
+42f14	00142f14	001956b4	001950f4	FUN_001950f4	serverBlink
+42f14	00142f14	00198d5c	001986cc	FUN_001986cc	serverBlink
+42f20	00142f20	00195914	001950f4	FUN_001950f4	hotspotMultuplayerFix
+42f20	00142f20	00199330	001986cc	FUN_001986cc	hotspotMultuplayerFix
+42f36	00142f36	00196464	001950f4	FUN_001950f4	killItemsShortcutPos.y
+42f36	00142f36	0019aed4	001986cc	FUN_001986cc	killItemsShortcutPos.y
+42f4d	00142f4d	00196d24	001950f4	FUN_001950f4	containerCopperChestColor.z
+42f4d	00142f4d	0019c5a0	001986cc	FUN_001986cc	containerCopperChestColor.z
+42f69	00142f69	0019704c	001950f4	FUN_001950f4	noZombievillagers
+42f69	00142f69	0019cce4	001986cc	FUN_001986cc	noZombievillagers
+42f7b	00142f7b	00197724	001950f4	FUN_001950f4	xrayGold
+42f7b	00142f7b	0019dc0c	001986cc	FUN_001986cc	xrayGold
+42f84	00142f84	00197ed4	001950f4	FUN_001950f4	maxKillAuraCPS
+42f84	00142f84	0019eb14	001986cc	FUN_001986cc	maxKillAuraCPS
+42f93	00142f93	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+000D (CR) must be escaped to \u000D or \r
+42fe1	00142fe1	001e4e94	001e4e54	FUN_001e4e54	[json.exception.
+42ff5	00142ff5	001f418c	001f3efc	FUN_001f3efc	\u%04x
+430a6	001430a6	0022d24c	0022cf78	FUN_0022cf78	##Tooltip_Hidden
+430b7	001430b7	002ca270			Escape
+430ca	001430ca	002ca8f8			V:%0.3f
+430d5	001430d5	00255b70	002552ec	FUN_002552ec	##original
+430e0	001430e0	00254bdc	00254aa8	FUN_00254aa8	0.00..1.00
+430eb	001430eb	0025c2b0	0025c1c4	FUN_0025c1c4	Width=%d%n
+430f6	001430f6	0025f370	0025f1ec	FUN_0025f1ec	xdl: save to cache %s
+4310c	0014310c	002605ec	002604c0	FUN_002604c0	elf: alloc addr %lx(load_bias %lx, %lx), size %zu, idx [%zu, %zu)
+4314e	0014314e	002648e0	00264850	FUN_00264850	%02x
+4314e	0014314e	00264928	00264850	FUN_00264850	%02x
+4314e	0014314e	0026498c	00264850	FUN_00264850	%02x
+4314e	0014314e	002649fc	00264850	FUN_00264850	%02x
+4314e	0014314e	00264a64	00264850	FUN_00264850	%02x
+4314e	0014314e	00264acc	00264850	FUN_00264850	%02x
+4314e	0014314e	00262ad4	00262a8c	FUN_00262a8c	%02x
+43177	00143177	00268844	0026877c	FUN_0026877c	XzUnpacker_Construct
+4318c	0014318c	002a8744	002a86b8	ctype_byname	ctype_byname<wchar_t>::ctype_byname failed to construct for 
+4318c	0014318c	002a8878	002a87e8	ctype_byname	ctype_byname<wchar_t>::ctype_byname failed to construct for 
+431c9	001431c9	002bc570	002bc498	FUN_002bc498	libc++abi
+431e0	001431e0	002d4aa8			Scaffold
+431e9	001431e9	002d4af0			Default
+431f1	001431f1	001ca1a0	001c9ec0	FUN_001c9ec0	bad bits_per_channel
+43206	00143206	001d17f4	001d169c	FUN_001d169c	bad IHDR len
+43213	00143213	001ca9e0	001c9ec0	FUN_001c9ec0	invalid
+4321b	0014321b	001da15c	001d9eb4	FUN_001d9eb4	0 width
+43223	00143223	00195704	001950f4	FUN_001950f4	espHunger
+43223	00143223	00198e14	001986cc	FUN_001986cc	espHunger
+4322d	0014322d	00195c5c	001950f4	FUN_001950f4	scaffoldShortcutPos.y
+4322d	0014322d	00199a40	001986cc	FUN_001986cc	scaffoldShortcutPos.y
+43243	00143243	00195e04	001950f4	FUN_001950f4	espShelf
+43243	00143243	00199e7c	001986cc	FUN_001986cc	espShelf
+4324c	0014324c	00196298	001950f4	FUN_001950f4	zoomShortcut
+4324c	0014324c	0019aa30	001986cc	FUN_001986cc	zoomShortcut
+43259	00143259	00196630	001950f4	FUN_001950f4	targetLockShortcut
+43259	00143259	0019b370	001986cc	FUN_001986cc	targetLockShortcut
+4326c	0014326c	00196924	001950f4	FUN_001950f4	blockSculkShriekerColor.x
+4326c	0014326c	0019bae8	001986cc	FUN_001986cc	blockSculkShriekerColor.x
+43286	00143286	00196a7c	001950f4	FUN_001950f4	blockTrialSpawnerColor.z
+43286	00143286	0019be78	001986cc	FUN_001986cc	blockTrialSpawnerColor.z
+4329f	0014329f	00196e94	001950f4	FUN_001950f4	espBlocksLine
+4329f	0014329f	0019c91c	001986cc	FUN_001986cc	espBlocksLine
+432ad	001432ad	001971dc	001950f4	FUN_001950f4	noSheeps
+432ad	001432ad	0019d054	001986cc	FUN_001986cc	noSheeps
+432b6	001432b6	001972f4	001950f4	FUN_001950f4	noPandas
+432b6	001432b6	0019d2bc	001986cc	FUN_001986cc	noPandas
+432bf	001432bf	0019731c	001950f4	FUN_001950f4	noOcelots
+432bf	001432bf	0019d314	001986cc	FUN_001986cc	noOcelots
+432c9	001432c9	00197f48	001950f4	FUN_001950f4	killRange
+432c9	001432c9	0019ec18	001986cc	FUN_001986cc	killRange
+432d3	001432d3	001e2364	001e2310	FUN_001e2310	invalid BOM; must be 0xEF 0xBB 0xBF if given
+43300	00143300	001e2be8	001e26b0	FUN_001e26b0	invalid string: surrogate U+DC00..U+DFFF must follow U+D800..U+DBFF
+43344	00143344	001e2be8	001e26b0	FUN_001e26b0	invalid string: control character U+0000 (NUL) must be escaped to \u0000
+4338d	0014338d	001e2fa8	001e2c38	FUN_001e2c38	invalid number; expected digit after '-'
+433b6	001433b6	001e4378	001e413c	FUN_001e413c	unknown token
+433b6	001433b6	001e42d0	001e413c	FUN_001e413c	unknown token
+433c7	001433c7	001f3960	001f2dec	FUN_001f2dec	],"subtype":
+43461	00143461	00220940	002201ac	FUN_002201ac	Unknown
+43469	00143469	0021a51c	0021a454	FUN_0021a454	SetActiveID() old:0x%08X (window "%s") -> new:0x%08X (window "%s")
+434ad	001434ad	00226fd8	00226b40	FUN_00226b40	%s/%08X
+434b5	001434b5	002ca220			DownArrow
+434bf	001434bf	002ca510			PrintScreen
+434cb	001434cb	002ca538			Keypad3
+434d3	001434d3	002ca588			KeypadSubtract
+434e8	001434e8	002549c4	00253fb4	FUN_00253fb4	_COL4F
+434e8	001434e8	00255210	00254e74	FUN_00254e74	_COL4F
+434ef	001434ef	00255a04	002552ec	FUN_002552ec	alpha
+434f5	001434f5	00254c3c	00254aa8	FUN_00254aa8	Copy as..
+434ff	001434ff	002638bc	00263858	FUN_00263858	shadowhook_tag
+434ff	001434ff	0025fccc	0025f884	FUN_0025f884	shadowhook_tag
+434ff	001434ff	0025fef8	0025f884	FUN_0025f884	shadowhook_tag
+434ff	001434ff	0025fc20	0025f884	FUN_0025f884	shadowhook_tag
+434ff	001434ff	00263b58	002638d4	FUN_002638d4	shadowhook_tag
+434ff	001434ff	00261d4c	00261ae8	FUN_00261ae8	shadowhook_tag
+434ff	001434ff	00261d34	00261ae8	FUN_00261ae8	shadowhook_tag
+434ff	001434ff	00263ce4	00263b74	FUN_00263b74	shadowhook_tag
+434ff	001434ff	00263d30	00263b74	FUN_00263b74	shadowhook_tag
+434ff	001434ff	00262168	00261fbc	FUN_00261fbc	shadowhook_tag
+434ff	001434ff	0025f368	0025f1ec	FUN_0025f1ec	shadowhook_tag
+434ff	001434ff	00265300	00265254	FUN_00265254	shadowhook_tag
+434ff	001434ff	002653c8	00265324	FUN_00265324	shadowhook_tag
+434ff	001434ff	00263474	00263368	FUN_00263368	shadowhook_tag
+434ff	001434ff	0025f41c	0025f384	FUN_0025f384	shadowhook_tag
+434ff	001434ff	0025f56c	0025f438	FUN_0025f438	shadowhook_tag
+434ff	001434ff	00263504	00263488	FUN_00263488	shadowhook_tag
+434ff	001434ff	00261a30	002616b4	FUN_002616b4	shadowhook_tag
+434ff	001434ff	0025f7cc	0025f6ec	FUN_0025f6ec	shadowhook_tag
+434ff	001434ff	00263840	002637cc	FUN_002637cc	shadowhook_tag
+434ff	001434ff	0025ebc8	0025ead8	FUN_0025ead8	shadowhook_tag
+434ff	001434ff	0025eea4	0025ecf0	FUN_0025ecf0	shadowhook_tag
+434ff	001434ff	0025eee0	0025ecf0	FUN_0025ecf0	shadowhook_tag
+434ff	001434ff	0025ee64	0025ecf0	FUN_0025ecf0	shadowhook_tag
+434ff	001434ff	00262d40	00262cd4	FUN_00262cd4	shadowhook_tag
+434ff	001434ff	00265130	00264cd8	FUN_00264cd8	shadowhook_tag
+434ff	001434ff	00262e04	00262d58	FUN_00262d58	shadowhook_tag
+434ff	001434ff	00262fc8	00262eb8	FUN_00262eb8	shadowhook_tag
+434ff	001434ff	00263124	00262eb8	FUN_00262eb8	shadowhook_tag
+434ff	001434ff	00260254	00260114	FUN_00260114	shadowhook_tag
+434ff	001434ff	00264394	002641ec	FUN_002641ec	shadowhook_tag
+434ff	001434ff	00260354	0026027c	FUN_0026027c	shadowhook_tag
+434ff	001434ff	002603f8	0026036c	FUN_0026036c	shadowhook_tag
+434ff	001434ff	002644e0	002643b8	FUN_002643b8	shadowhook_tag
+434ff	001434ff	002605e4	002604c0	FUN_002604c0	shadowhook_tag
+434ff	001434ff	00264560	00264504	FUN_00264504	shadowhook_tag
+434ff	001434ff	00262604	002625c0	FUN_002625c0	shadowhook_tag
+434ff	001434ff	00262960	0026261c	FUN_0026261c	shadowhook_tag
+434ff	001434ff	00260988	002607e8	FUN_002607e8	shadowhook_tag
+4350e	0014350e	00265588	00265578	_INIT_5	libc.so
+4350e	0014350e	0025ef88	0025ef6c	FUN_0025ef6c	libc.so
+4350e	0014350e	00456fe8			libc.so
+43516	00143516	00261630	00261624	FUN_00261624	shadowhook-interceptor-glue-launcher
+4353b	0014353b	00266930	0026689c	FUN_0026689c	/system/bin/app_process64
+43555	00143555	00281958	0028185c	FUN_0028185c	r+be
+4355a	0014355a	002bc4cc	002bc498	FUN_002bc498	libc++abi: 
+43566	00143566	002c20ec	002c182c	FUN_002c182c	libunwind: malformed DW_CFA_val_offset_sf DWARF unwind, reg too big
+435ab	001435ab	002c29b4	002c2648	FUN_002c2648	getEncodedP
+435ab	001435ab	002c294c	002c2648	FUN_002c2648	getEncodedP
+435ab	001435ab	002c28e4	002c2648	FUN_002c2648	getEncodedP
+435ab	001435ab	002c2980	002c2648	FUN_002c2648	getEncodedP
+435ab	001435ab	002c28a8	002c2648	FUN_002c2648	getEncodedP
+435ab	001435ab	002c2918	002c2648	FUN_002c2648	getEncodedP
+435b7	001435b7	002c34ac	002c2b9c	FUN_002c2b9c	DW_OP_fbreg not implemented
+435df	001435df	002d4a48			Panic
+435e5	001435e5	002d4a68			KillAura
+435ee	001435ee	0020e91c	0020e850	FUN_0020e850	Free Camera
+435ee	001435ee	0020ef20	0020e850	FUN_0020e850	Free Camera
+435ee	001435ee	002d4ac0			Free Camera
+435fa	001435fa	0020eb8c	0020e850	FUN_0020e850	Server Blink
+435fa	001435fa	0020f110	0020e850	FUN_0020e850	Server Blink
+435fa	001435fa	002d4ac8			Server Blink
+43607	00143607	001ad7a8	001abb30	FUN_001abb30	Main Hand Is Empty.
+4361b	0014361b	001ca9e0	001c9ec0	FUN_001c9ec0	bad masks
+43625	00143625	001d6ee4	001d6c98	FUN_001d6c98	BMP JPEG/PNG
+4363a	0014363a	001db400	001db3bc	FUN_001db3bc	bad delta
+4363a	0014363a	001daec4	001dad44	FUN_001dad44	bad delta
+43644	00143644	001cf3a8	001cf284	FUN_001cf284	bad PNM
+4364c	0014364c	001cf7ec	001cf544	FUN_001cf544	invalid decoded scanline length
+4366c	0014366c	001957f0	001950f4	FUN_001950f4	freeCamShortcutSize.y
+4366c	0014366c	00199040	001986cc	FUN_001986cc	freeCamShortcutSize.y
+43682	00143682	001958ec	001950f4	FUN_001950f4	velo
+43682	00143682	001992d4	001986cc	FUN_001986cc	velo
+43687	00143687	00195de8	001950f4	FUN_001950f4	blockShelfColor.z
+43687	00143687	00199e24	001986cc	FUN_001986cc	blockShelfColor.z
+43699	00143699	001963dc	001950f4	FUN_001950f4	look360ShortcutPos.x
+43699	00143699	0019ad68	001986cc	FUN_001986cc	look360ShortcutPos.x
+436ae	001436ae	00196d88	001950f4	FUN_001950f4	containerShulkerColor.z
+436ae	001436ae	0019c6b4	001986cc	FUN_001986cc	containerShulkerColor.z
+436c6	001436c6	00196ebc	001950f4	FUN_001950f4	espBlocksBox
+436c6	001436c6	0019c974	001986cc	FUN_001986cc	espBlocksBox
+436d3	001436d3	00197d80	001950f4	FUN_001950f4	antiFireball
+436d3	001436d3	0019e818	001986cc	FUN_001986cc	antiFireball
+436e0	001436e0	001e2be8	001e26b0	FUN_001e26b0	invalid string: ill-formed UTF-8 byte
+43706	00143706	001e92f4	001e9264	FUN_001e9264	cannot get value
+43706	00143706	001f0a1c	001f09c0	FUN_001f09c0	cannot get value
+43706	00143706	001f0ab8	001f09c0	FUN_001f09c0	cannot get value
+43706	00143706	001dcd4c	001dccf0	FUN_001dccf0	cannot get value
+43706	00143706	001dcde8	001dccf0	FUN_001dccf0	cannot get value
+43706	00143706	001ee6f8	001ee668	FUN_001ee668	cannot get value
+43717	00143717	001ee14c	001ee0cc	FUN_001ee0cc	type must be string, but is 
+43734	00143734	001eec74	001eebf8	FUN_001eebf8	type must be boolean, but is 
+437d5	001437d5	00220714	002201ac	FUN_002201ac	Remaining
+437df	001437df	0022ba60	0022ba24	FUN_0022ba24	[popup] ClosePopupToLevel(%d), restore_focus_to_window_under_popup=%d
+437df	001437df	0022b7d0	0022b68c	FUN_0022b68c	[popup] ClosePopupToLevel(%d), restore_focus_to_window_under_popup=%d
+43826	00143826	002ca208			LeftArrow
+43830	00143830	002ca260			Space
+43836	00143836	002ca4a8			Comma
+4383c	0014383c	002ca5e8			GamepadDpadLeft
+4384c	0014384c	002ca608			GamepadL1
+43856	00143856	002ca678			MouseLeft
+43860	00143860	002206c0	002201ac	FUN_002201ac	ModSuper
+43860	00143860	002ca6c8			ModSuper
+43869	00143869	002206d8	002201ac	FUN_002201ac	[io] %s: Key "%s" %s
+43883	00143883	0025d444	0025d238	FUN_0025d238	ProjMtx
+4388b	0014388b	0025eeac	0025ecf0	FUN_0025ecf0	shadowhook: %s(%p, %p, %u) FAILED. %d - %s
+438b6	001438b6	0025f9e4	0025f884	FUN_0025f884	libart.so
+438b6	001438b6	004571f0			libart.so
+438c0	001438c0	00263d38	00263b74	FUN_00263b74	task: call_dtors() post callback. load_bias %lx, name %s
+4393d	0014393d	002725cc	002725c4	FUN_002725c4	generic
+43945	00143945	00296ba4	00296868	do_get	money_get error
+43945	00143945	002990a8	00298d68	do_get	money_get error
+43955	00143955	002bbdd4	002bbd8c	FUN_002bbd8c	terminating
+43961	00143961	002c21b8	002c182c	FUN_002c182c	libunwind: malformed DW_CFA_same_value DWARF unwind, reg too big
+439f4	001439f4	002c9fd0			N3ghc10filesystem16filesystem_errorE
+4fc91	0014fc91	002ca078			N8nlohmann16json_abi_v3_11_36detail9exceptionE
+4fcc0	0014fcc0	002ca090			N8nlohmann16json_abi_v3_11_36detail16invalid_iteratorE
+4fcf7	0014fcf7	002ca0d0			N8nlohmann16json_abi_v3_11_36detail10type_errorE
+4fd29	0014fd29	002ca110			N8nlohmann16json_abi_v3_11_36detail11parse_errorE
+4feeb	0014feeb	001f3358	001f2dec	FUN_001f2dec	000102030405060708091011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495969798990001020304050607080910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989900010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899
+4feeb	0014feeb	001f3728	001f2dec	FUN_001f2dec	000102030405060708091011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495969798990001020304050607080910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989900010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899
+4feeb	0014feeb	001f39d0	001f2dec	FUN_001f2dec	000102030405060708091011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495969798990001020304050607080910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989900010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899
+4feeb	0014feeb	001f336c	001f2dec	FUN_001f2dec	000102030405060708091011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495969798990001020304050607080910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989900010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899
+4feeb	0014feeb	001f348c	001f2dec	FUN_001f2dec	000102030405060708091011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495969798990001020304050607080910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989900010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899
+4feeb	0014feeb	001f36c4	001f2dec	FUN_001f2dec	000102030405060708091011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495969798990001020304050607080910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989900010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899
+4feeb	0014feeb	001f3934	001f2dec	FUN_001f2dec	000102030405060708091011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495969798990001020304050607080910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989900010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899
+4feeb	0014feeb	001f34a0	001f2dec	FUN_001f2dec	000102030405060708091011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859606162636465666768697071727374757677787980818283848586878889909192939495969798990001020304050607080910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989900010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899
+524d6	001524d6	00239a34	00239954	FUN_00239954	7])#######hV0qs'/###[),##/l:$#Q6>##5[n42>c-TH`->>#/e>11NNV=Bv(*:.F?uu#(gRU.o0XGH`$vhLG1hxt9?W`#,5LsCp#-i>.r$<$6pD>Lb';9Crc6tgXmKVeU2cD4Eo3R/2*>]b(MC;$jPfY.;h^`IWM9<Lh2TlS+f-s$o6Q<BWH`YiU.xfLq$N;$0iR/GX:U(jcW2p/W*q?-qmnUCI;jHSAiFWM.R*kU@C=GH?a9wp8f$e.-4^Qg1)Q-GL(lf(r/7GrRgwV%MS=C#`8ND>Qo#t'X#(v#Y9w0#1D$CIf;W'#pWUPXOuxXuU(H9M(1<q-UE31#^-V'8IRUo7Qf./L>=Ke$$'5F%)]0^#0X@U.a<r:QLtFsLcL6##lOj)#.Y5<-R&KgLwqJfLgN&;Q?gI^#DY2uLi@^rMl9t=cWq6##weg>$FBjVQTSDgEKnIS7EM9>ZY9w0#L;>>#Mx&4Mvt//L[MkA#W@lK.N'[0#7RL_&#w+F%HtG9M#XL`N&.,GM4Pg;-<nLENhvx>-VsM.M0rJfLH2eTM`*oJMHRC`NkfimM2J,W-jXS:)r0wK#@Fge$U>`w'N7G#$#fB#$E^$#:9:hk+eOe--6x)F7*E%?76%^GMHePW-Z5l'&GiF#$956:rS?dA#fiK:)Yr+`&#0j@'DbG&#^$PG.Ll+DNa<XCMKEV*N)LN/N*b=%Q6pia-Xg8I$<MR&,VdJe$<(7G;Ckl'&hF;;$<_=X(b.RS%%)###MPBuuE1V:v&cX&#2m#(&cV]`k9OhLMbn%s$G2,B$BfD3X*sp5#l,$R#]x_X1xKX%b5U*[r5iMfUo9U`N99hG)tm+/Us9pG)XPu`<0s-)WTt(gCRxIg(%6sfh=ktMKn3j)<6<b5Sk_/0(^]AaN#(p/L>&VZ>1i%h1S9u5o@YaaW$e+b<TWFn/Z:Oh(Cx2$lNEoN^e)#CFY@@I;BOQ*sRwZtZxRcU7uW6CXow0i(?$Q[cjOd[P4d)]>ROPOpxTO7Stwi1::iB1q)C_=dV26J;2,]7op$]uQr@_V7$q^%lQwtuHY]=DX,n3L#0PHDO4f9>dC@O>HBuKPpP*E,N+b3L#lpR/MrTEH.IAQk.a>D[.e;mc.x]Ip.PH^'/aqUO/$1WxLoW0[iLA<QT;5HKD+@qQ'NQ(3_PLhE48R.qAPSwQ0/WK?Z,[x?-J;jQTWA0X@KJ(_Y8N-:/M74:/-ZpKrUss?d#dZq]DAbkU*JqkL+nwX@@47`5>w=4h(9.`GCRUxHPeR`5Mjol(dUWxZa(>STrPkrJiWx`5U7F#.g*jrohGg`cg:lSTvEY/EV_7H4Q9[Z%cnv;JQYZ5q.l7Zeas:HOIZOB?G<Nald$qs]@]L<J7bR*>gv:[7MI2k).'2($5FNP&EQ(,)U]W]+fh18.vsai00);D3@4ku5P?DP8aJt+;qUM]=+b'8@;mViBKx0DE[-auGl8:PJ&Dj+M6OC]O^((##]`0i)drT;-7X`=-H3[igUnPG-NZlo.#k@h#=Ork$m>a>$-?Tm$UV(?#P6YY#'/###xe7q.73rI3*pP/$1>s9)W,JrM7SN]'/4C#v$U`0#V.[0>xQsH$fEmPMgY2u7Kh(G%siIfLSoS+MK2eTM$=5,M8p`A.;_R%#u[K#$x4AG8.kK/HSB==-'Ie/QTtG?-.*^N-4B/ZM_3YlQC7(p7q)&](`6_c)$/*JL(L-^(]$wIM`dPtOdGA,U3:w2M-0<q-]L_?^)1vw'.,MRsqVr.L;aN&#/EgJ)PBc[-f>+WomX2u7lqM2iEumMTcsF?-aT=Z-97UEnXglEn1K-bnEO`guFt(c%=;Am_Qs@jLooI&NX;]0#j4#F14;gl8-GQpgwhrq8'=l_f-b49'UOqkLu7-##oDY2L(te+Mch&gLYtJ,MEtJfLh'x'M=$CS-ZZ%P]8bZ>#S?YY#%Q&q'3^Fw&?D)UDNrocM3A76//oL?#h7gl85[qW/NDOk%16ij;+:1a'iNIdb-ou8.P*w,v5#EI$TWS>Pot-R*H'-SEpA:g)f+O$%%`kA#G=8RMmG1&O`>to8bC]T&$,n.LoO>29sp3dt-52U%VM#q7'DHpg+#Z9%H[K<L%a2E-grWVM3@2=-k22tL]4$##6We'8UJCKE[d_=%wI;'6X-GsLX4j^SgJ$##R*w,vP3wK#iiW&#*h^D&R?jp7+/u&#(AP##XU8c$fSYW-J95_-Dp[g9wcO&#M-h1OcJlc-*vpw0xUX&#OQFKNX@QI'IoPp7nb,QU//MQ&ZDkKP)X<WSVL(68uVl&#c'[0#(s1X&xm$Y%B7*K:eDA323j998GXbA#pwMs-jgD$9QISB-A_(aN4xoFM^@C58D0+Q+q3n0#3U1InDjF682-SjMXJK)(h$hxua_K]ul92%'BOU&#BRRh-slg8KDlr:%L71Ka:.A;%YULjDPmL<LYs8i#XwJOYaKPKc1h:'9Ke,g)b),78=I39B;xiY$bgGw-&.Zi9InXDuYa%G*f2Bq7mn9^#p1vv%#(Wi-;/Z5ho;#2:;%d&#x9v68C5g?ntX0X)pT`;%pB3q7mgGN)3%(P8nTd5L7GeA-GL@+%J3u2:(Yf>et`e;)f#Km8&+DC$I46>#Kr]]u-[=99tts1.qb#q72g1WJO81q+eN'03'eM>&1XxY-caEnOj%2n8)),?ILR5^.Ibn<-X-Mq7[a82Lq:F&#ce+S9wsCK*x`569E8ew'He]h:sI[2LM$[guka3ZRd6:t%IG:;$%YiJ:Nq=?eAw;/:nnDq0(CYcMpG)qLN4$##&J<j$UpK<Q4a1]MupW^-sj_$%[HK%'F####QRZJ::Y3EGl4'@%FkiAOg#p[##O`gukTfBHagL<LHw%q&OV0##F=6/:chIm0@eCP8X]:kFI%hl8hgO@RcBhS-@Qb$%+m=hPDLg*%K8ln(wcf3/'DW-$.lR?n[nCH-eXOONTJlh:.RYF%3'p6sq:UIMA945&^HFS87@$EP2iG<-lCO$%c`uKGD3rC$x0BL8aFn--`ke%#HMP'vh1/R&O_J9'um,.<tx[@%wsJk&bUT2`0uMv7gg#qp/ij.L56'hl;.s5CUrxjOM7-##.l+Au'A&O:-T72L]P`&=;ctp'XScX*rU.>-XTt,%OVU4)S1+R-#dg0/Nn?Ku1^0f$B*P:Rowwm-`0PKjYDDM'3]d39VZHEl4,.j']Pk-M.h^&:0FACm$maq-&sgw0t7/6(^xtk%LuH88Fj-ekm>GA#_>568x6(OFRl-IZp`&b,_P'$M<Jnq79VsJW/mWS*PUiq76;]/NM_>hLbxfc$mj`,O;&%W2m`Zh:/)Uetw:aJ%]K9h:TcF]u_-Sj9,VK3M.*'&0D[Ca]J9gp8,kAW]%(?A%R$f<->Zts'^kn=-^@c4%-pY6qI%J%1IGxfLU9CP8cbPlXv);C=b),<2mOvP8up,UVf3839acAWAW-W?#ao/^#%KYo8fRULNd2.>%m]UK:n%r$'sw]J;5pAoO_#2mO3n,'=H5(etHg*`+RLgv>=4U8guD$I%D:W>-r5V*%j*W:Kvej.Lp$<M-SGZ':+Q_k+uvOSLiEo(<aD/K<CCc`'Lx>'?;++O'>()jLR-^u68PHm8ZFWe+ej8h:9r6L*0//c&iH&R8pRbA#Kjm%upV1g:a_#Ur7FuA#(tRh#.Y5K+@?3<-8m0$PEn;J:rh6?I6uG<-`wMU'ircp0LaE_OtlMb&1#6T.#FDKu#1Lw%u%+GM+X'e?YLfjM[VO0MbuFp7;>Q&#WIo)0@F%q7c#4XAXN-U&VB<HFF*qL($/V,;(kXZejWO`<[5??ewY(*9=%wDc;,u<'9t3W-(H1th3+G]ucQ]kLs7df($/*JL]@*t7Bu_G3_7mp7<iaQjO@.kLg;x3B0lqp7Hf,^Ze7-##@/c58Mo(3;knp0%)A7?-W+eI'o8)b<nKnw'Ho8C=Y>pqB>0ie&jhZ[?iLR@@_AvA-iQC(=ksRZRVp7`.=+NpBC%rh&3]R:8XDmE5^V8O(x<<aG/1N$#FX$0V5Y6x'aErI3I$7x%E`v<-BY,)%-?Psf*l?%C3.mM(=/M0:JxG'?7WhH%o'a<-80g0NBxoO(GH<dM]n.+%q@jH?f.UsJ2Ggs&4<-e47&Kl+f//9@`b+?.TeN_&B8Ss?v;^Trk;f#YvJkl&w$]>-+k?'(<S:68tq*WoDfZu';mM?8X[ma8W%*`-=;D.(nc7/;)g:T1=^J$&BRV(-lTmNB6xqB[@0*o.erM*<SWF]u2=st-*(6v>^](H.aREZSi,#1:[IXaZFOm<-ui#qUq2$##Ri;u75OK#(RtaW-K-F`S+cF]uN`-KMQ%rP/Xri.LRcB##=YL3BgM/3MD?@f&1'BW-)Ju<L25gl8uhVm1hL$##*8###'A3/LkKW+(^rWX?5W_8g)a(m&K8P>#bmmWCMkk&#TR`C,5d>g)F;t,4:@_l8G/5h4vUd%&%950:VXD'QdWoY-F$BtUwmfe$YqL'8(PWX(P?^@Po3$##`MSs?DWBZ/S>+4%>fX,VWv/w'KD`LP5IbH;rTV>n3cEK8U#bX]l-/V+^lj3;vlMb&[5YQ8#pekX9JP3XUC72L,,?+Ni&co7ApnO*5NK,((W-i:$,kp'UDAO(G0Sq7MVjJsbIu)'Z,*[>br5fX^:FPAWr-m2KgL<LUN098kTF&#lvo58=/vjDo;.;)Ka*hLR#/k=rKbxuV`>Q_nN6'8uTG&#1T5g)uLv:873UpTLgH+#FgpH'_o1780Ph8KmxQJ8#H72L4@768@Tm&Qh4CB/5OvmA&,Q&QbUoi$a_%3M01H)4x7I^&KQVgtFnV+;[Pc>[m4k//,]1?#`VY[Jr*3&&slRfLiVZJ:]?=K3Sw=[$=uRB?3xk48@aeg<Z'<$#4H)6,>e0jT6'N#(q%.O=?2S]u*(m<-V8J'(1)G][68hW$5'q[GC&5j`TE?m'esFGNRM)j,ffZ?-qx8;->g4t*:CIP/[Qap7/9'#(1sao7w-.qNUdkJ)tCF&#B^;xGvn2r9FEPFFFcL@.iFNkTve$m%#QvQS8U@)2Z+3K:AKM5isZ88+dKQ)W6>J%CL<KE>`.d*(B`-n8D9oK<Up]c$X$(,)M8Zt7/[rdkqTgl-0cuGMv'?>-XV1q['-5k'cAZ69e;D_?$ZPP&s^+7])$*$#@QYi9,5P&#9r+$%CE=68>K8r0=dSC%%(@p7.m7jilQ02'0-VWAg<a/''3u.=4L$Y)6k/K:_[3=&jvL<L0C/2'v:^;-DIBW,B4E68:kZ;%?8(Q8BH=kO65BW?xSG&#@uU,DS*,?.+(o(#1vCS8#CHF>TlGW'b)Tq7VT9q^*^$$.:&N@@$&)WHtPm*5_rO0&e%K&#-30j(E4#'Zb.o/(Tpm$>K'f@[PvFl,hfINTNU6u'0pao7%XUp9]5.>%h`8_=VYbxuel.NTSsJfLacFu3B'lQSu/m6-Oqem8T+oE--$0a/k]uj9EwsG>%veR*hv^BFpQj:K'#SJ,sB-'#](j.Lg92rTw-*n%@/;39rrJF,l#qV%OrtBeC6/,;qB3ebNW[?,Hqj2L.1NP&GjUR=1D8QaS3Up&@*9wP?+lo7b?@%'k4`p0Z$22%K3+iCZj?XJN4Nm&+YF]u@-W$U%VEQ/,,>>#)D<h#`)h0:<Q6909ua+&VU%n2:cG3FJ-%@Bj-DgLr`Hw&HAKjKjseK</xKT*)B,N9X3]krc12t'pgTV(Lv-tL[xg_%=M_q7a^x?7Ubd>#%8cY#YZ?=,`Wdxu/ae&#w6)R89tI#6@s'(6Bf7a&?S=^ZI_kS&ai`&=tE72L_D,;^R)7[$s<Eh#c&)q.MXI%#v9ROa5FZO%sF7q7Nwb&#ptUJ:aqJe$Sl68%.D###EC><?-aF&#RNQv>o8lKN%5/$(vdfq7+ebA#u1p]ovUKW&Y%q]'>$1@-[xfn$7ZTp7mM,G,Ko7a&Gu%G[RMxJs[0MM%wci.LFDK)(<c`Q8N)jEIF*+?P2a8g%)$q]o2aH8C&<SibC/q,(e:v;-b#6[$NtDZ84Je2KNvB#$P5?tQ3nt(0d=j.LQf./Ll33+(;q3L-w=8dX$#WF&uIJ@-bfI>%:_i2B5CsR8&9Z&#=mPEnm0f`<&c)QL5uJ#%u%lJj+D-r;BoF&#4DoS97h5g)E#o:&S4weDF,9^Hoe`h*L+_a*NrLW-1pG_&2UdB86e%B/:=>)N4xeW.*wft-;$'58-ESqr<b?UI(_%@[P46>#U`'6AQ]m&6/`Z>#S?YY#Vc;r7U2&326d=w&H####?TZ`*4?&.MK?LP8Vxg>$[QXc%QJv92.(Db*B)gb*BM9dM*hJMAo*c&#b0v=Pjer]$gG&JXDf->'StvU7505l9$AFvgYRI^&<^b68?j#q9QX4SM'RO#&sL1IM.rJfLUAj221]d##DW=m83u5;'bYx,*Sl0hL(W;;$doB&O/TQ:(Z^xBdLjL<Lni;''X.`$#8+1GD:k$YUWsbn8ogh6rxZ2Z9]%nd+>V#*8U_72Lh+2Q8Cj0i:6hp&$C/:p(HK>T8Y[gHQ4`4)'$Ab(Nof%V'8hL&#<NEdtg(n'=S1A(Q1/I&4([%dM`,Iu'1:_hL>SfD07&6D<fp8dHM7/g+tlPN9J*rKaPct&?'uBCem^jn%9_K)<,C5K3s=5g&GmJb*[SYq7K;TRLGCsM-$$;S%:Y@r7AK0pprpL<Lrh,q7e/%KWK:50I^+m'vi`3?%Zp+<-d+$L-Sv:@.o19n$s0&39;kn;S%BSq*$3WoJSCLweV[aZ'MQIjO<7;X-X;&+dMLvu#^UsGEC9WEc[X(wI7#2.(F0jV*eZf<-Qv3J-c+J5AlrB#$p(H68LvEA'q3n0#m,[`*8Ft)FcYgEud]CWfm68,(aLA$@EFTgLXoBq/UPlp7:d[/;r_ix=:TF`S5H-b<LI&HY(K=h#)]Lk$K14lVfm:x$H<3^Ql<M`$OhapBnkup'D#L$Pb_`N*g]2e;X/Dtg,bsj&K#2[-:iYr'_wgH)NUIR8a1n#S?Yej'h8^58UbZd+^FKD*T@;6A7aQC[K8d-(v6GI$x:T<&'Gp5Uf>@M.*J:;$-rv29'M]8qMv-tLp,'886iaC=Hb*YJoKJ,(j%K=H`K.v9HggqBIiZu'QvBT.#=)0ukruV&.)3=(^1`o*Pj4<-<aN((^7('#Z0wK#5GX@7u][`*S^43933A4rl][`*O4CgLEl]v$1Q3AeF37dbXk,.)vj#x'd`;qgbQR%FW,2(?LO=s%Sc68%NP'##Aotl8x=BE#j1UD([3$M(]UI2LX3RpKN@;/#f'f/&_mt&F)XdF<9t4)Qa.*kTLwQ'(TTB9.xH'>#MJ+gLq9-##@HuZPN0]u:h7.T..G:;$/Usj(T7`Q8tT72LnYl<-qx8;-HV7Q-&Xdx%1a,hC=0u+HlsV>nuIQL-5<N?)NBS)QN*_I,?&)2'IM%L3I)X((e/dl2&8'<M:^#M*Q+[T.Xri.LYS3v%fF`68h;b-X[/En'CR.q7E)p'/kle2HM,u;^%OKC-N+Ll%F9CF<Nf'^#t2L,;27W:0O@6##U6W7:$rJfLWHj$#)woqBefIZ.PK<b*t7ed;p*_m;4ExK#h@&]>_>@kXQtMacfD.m-VAb8;IReM3$wf0''hra*so568'Ip&vRs849'MRYSp%:t:h5qSgwpEr$B>Q,;s(C#$)`svQuF$##-D,##,g68@2[T;.XSdN9Qe)rpt._K-#5wF)sP'##p#C0c%-Gb%hd+<-j'Ai*x&&HMkT]C'OSl##5RG[JXaHN;d'uA#x._U;.`PU@(Z3dt4r152@:v,'R.Sj'w#0<-;kPI)FfJ&#AYJ&#//)>-k=m=*XnK$>=)72L]0I%>.G690a:$##<,);?;72#?x9+d;^V'9;jY@;)br#q^YQpx:X#Te$Z^'=-=bGhLf:D6&bNwZ9-ZD#n^9HhLMr5G;']d&6'wYmTFmL<LD)F^%[tC'8;+9E#C$g%#5Y>q9wI>P(9mI[>kC-ekLC/R&CH+s'B;K-M6$EB%is00:+A4[7xks.LrNk0&E)wILYF@2L'0Nb$+pv<(2.768/FrY&h$^3i&@+G%JT'<-,v`3;_)I9M^AE]CN?Cl2AZg+%4iTpT3<n-&%H%b<FDj2M<hH=&Eh<2Len$b*aTX=-8QxN)k11IM1c^j%9s<L<NFSo)B?+<-(GxsF,^-Eh@$4dXhN$+#rxK8'je'D7k`e;)2pYwPA'_p9&@^18ml1^[@g4t*[JOa*[=Qp7(qJ_oOL^('7fB&Hq-:sf,sNj8xq^>$U4O]GKx'm9)b@p7YsvK3w^YR-CdQ*:Ir<($u&)#(&?L9Rg3H)4fiEp^iI9O8KnTj,]H?D*r7'M;PwZ9K0E^k&-cpI;.p/6_vwoFMV<->#%Xi.LxVnrU(4&8/P+:hLSKj$#U%]49t'I:rgMi'FL@a:0Y-uA[39',(vbma*hU%<-SRF`Tt:542R_VV$p@[p8DV[A,?1839FWdF<TddF<9Ah-6&9tWoDlh]&1SpGMq>Ti1O*H&#(AL8[_P%.M>v^-))qOT*F5Cq0`Ye%+$B6i:7@0IX<N+T+0MlMBPQ*Vj>SsD<U4JHY8kD2)2fU/M#$e.)T4,_=8hLim[&);?UkK'-x?'(:siIfL<$pFM`i<?%W(mGDHM%>iWP,##P`%/L<eXi:@Z9C.7o=@(pXdAO/NLQ8lPl+HPOQa8wD8=^GlPa8TKI1CjhsCTSLJM'/Wl>-S(qw%sf/@%#B6;/U7K]uZbi^Oc^2n<bhPmUkMw>%t<)'mEVE''n`WnJra$^TKvX5B>;_aSEK',(hwa0:i4G?.Bci.(X[?b*($,=-n<.Q%`(X=?+@Am*Js0&=3bh8K]mL<LoNs'6,'85`0?t/'_U59@]ddF<#LdF<eWdF<OuN/45rY<-L@&#+fm>69=Lb,OcZV/);TTm8VI;?%OtJ<(b4mq7M6:u?KRdF<gR@2L=FNU-<b[(9c/ML3m;Z[$oF3g)GAWqpARc=<ROu7cL5l;-[A]%/+fsd;l#SafT/f*W]0=O'$(Tb<[)*@e775R-:Yob%g*>l*:xP?Yb.5)%w_I?7uk5JC+FS(m#i'k.'a0i)9<7b'fs'59hq$*5Uhv##pi^8+hIEBF`nvo`;'l0.^S1<-wUK2/Coh58KKhLjM=SO*rfO`+qC`W-On.=AJ56>>i2@2LH6A:&5q`?9I3@@'04&p2/LVa*T-4<-i3;M9UvZd+N7>b*eIwg:CC)c<>nO&#<IGe;__.thjZl<%w(Wk2xmp4Q@I#I9,DF]u7-P=.-_:YJ]aS@V?6*C()dOp7:WL,b&3Rg/.cmM9&r^>$(>.Z-I&J(Q0Hd5Q%7Co-b`-c<N(6r@ip+AurK<m86QIth*#v;-OBqi+L7wDE-Ir8K['m+DDSLwK&/.?-V%U_%3:qKNu$_b*B-kp7NaD'QdWQPKYq[@>P)hI;*_F]u`Rb[.j8_Q/<&>uu+VsH$sM9TA%?)(vmJ80),P7E>)tjD%2L=-t#fK[%`v=Q8<FfNkgg^oIbah*#8/Qt$F&:K*-(N/'+1vMB,u()-a.VUU*#[e%gAAO(S>WlA2);Sa>gXm8YB`1d@K#n]76-a$U,mF<fX]idqd)<3,]J7JmW4`6]uks=4-72L(jEk+:bJ0M^q-8Dm_Z?0olP1C9Sa&H[d&c$ooQUj]Exd*3ZM@-WGW2%s',B-_M%>%Ul:#/'xoFM9QX-$.QN'>[%$Z$uF6pA6Ki2O5:8w*vP1<-1`[G,)-m#>0`P&#eb#.3i)rtB61(o'$?X3B</R90;eZ]%Ncq;-Tl]#F>2Qft^ae_5tKL9MUe9b*sLEQ95C&`=G?@Mj=wh*'3E>=-<)Gt*Iw)'QG:`@IwOf7&]1i'S01B+Ev/Nac#9S;=;YQpg_6U`*kVY39xK,[/6Aj7:'1Bm-_1EYfa1+o&o4hp7KN_Q(OlIo@S%;jVdn0'1<Vc52=u`3^o-n1'g4v58Hj&6_t7$##?M)c<$bgQ_'SY((-xkA#Y(,p'H9rIVY-b,'%bCPF7.J<Up^,(dU1VY*5#WkTU>h19w,WQhLI)3S#f$2(eb,jr*b;3Vw]*7NH%$c4Vs,eD9>XW8?N]o+(*pgC%/72LV-u<Hp,3@e^9UB1J+ak9-TN/mhKPg+AJYd$MlvAF_jCK*.O-^(63adMT->W%iewS8W6m2rtCpo'RS1R84=@paTKt)>=%&1[)*vp'u+x,VrwN;&]kuO9JDbg=pO$J*.jVe;u'm0dr9l,<*wMK*Oe=g8lV_KEBFkO'oU]^=[-792#ok,)i]lR8qQ2oA8wcRCZ^7w/Njh;?.stX?Q1>S1q4Bn$)K1<-rGdO'$Wr.Lc.CG)$/*JL4tNR/,SVO3,aUw'DJN:)Ss;wGn9A32ijw%FL+Z0Fn.U9;reSq)bmI32U==5ALuG&#Vf1398/pVo1*c-(aY168o<`JsSbk-,1N;$>0:OUas(3:8Z972LSfF8eb=c-;>SPw7.6hn3m`9^Xkn(r.qS[0;T%&Qc=+STRxX'q1BNk3&*eu2;&8q$&x>Q#Q7^Tf+6<(d%ZVmj2bDi%.3L2n+4W'$PiDDG)g,r%+?,$@?uou5tSe2aN_AQU*<h`e-GI7)?OK2A.d7_c)?wQ5AS@DL3r#7fSkgl6-++D:'A,uq7SvlB$pcpH'q3n0#_%dY#xCpr-l<F0NR@-##FEV6NTF6##$l84N1w?AO>'IAOURQ##V^Fv-XFbGM7Fl(N<3DhLGF%q.1rC$#:T__&Pi68%0xi_&[qFJ(77j_&JWoF.V735&T,[R*:xFR*K5>>#`bW-?4Ne_&6Ne_&6Ne_&n`kr-#GJcM6X;uM6X;uM(.a..^2TkL%oR(#;u.T%fAr%4tJ8&><1=GHZ_+m9/#H1F^R#SC#*N=BA9(D?v[UiFY>>^8p,KKF.W]L29uLkLlu/+4T<XoIB&hx=T1PcDaB&;HH+-AFr?(m9HZV)FKS8JCw;SD=6[^/DZUL`EUDf]GGlG&>w$)F./^n3+rlo+DB;5sIYGNk+i1t-69Jg--0pao7Sm#K)pdHW&;LuDNH@H>#/X-TI(;P>#,Gc>#0Su>#4`1?#8lC?#<xU?#@.i?#D:%@#HF7@#LRI@#P_[@#Tkn@#Xw*A#]-=A#a9OA#d<F&#*;G##.GY##2Sl##6`($#:l:$#>xL$#B.`$#F:r$#JF.%#NR@%#R_R%#Vke%#Zww%#_-4&#3^Rh%Sflr-k'MS.o?.5/sWel/wpEM0%3'/1)K^f1-d>G21&v(35>V`39V7A4=onx4A1OY5EI0;6Ibgr6M$HS7Q<)58C5w,;WoA*#[%T*#`1g*#d=#+#hI5+#lUG+#pbY+#tnl+#x$),#&1;,#*=M,#.I`,#2Ur,#6b.-#;w[H#iQtA#m^0B#qjBB#uvTB##-hB#'9$C#+E6C#/QHC#3^ZC#7jmC#;v)D#?,<D#C8ND#GDaD#KPsD#O]/E#g1A5#KA*1#gC17#MGd;#8(02#L-d3#rWM4#Hga1#,<w0#T.j<#O#'2#CYN1#qa^:#_4m3#o@/=#eG8=#t8J5#`+78#4uI-#m3B2#SB[8#Q0@8#i[*9#iOn8#1Nm;#^sN9#qh<9#:=x-#P;K2#$%X9#bC+.#Rg;<#mN=.#MTF.#RZO.#2?)4#Y#(/#[)1/#b;L/#dAU/#0Sv;#lY$0#n`-0#sf60#(F24#wrH0#%/e0#TmD<#%JSMFove:CTBEXI:<eh2g)B,3h2^G3i;#d3jD>)4kMYD4lVu`4m`:&5niUA5@(A5BA1]PBB:xlBCC=2CDLXMCEUtiCf&0g2'tN?PGT4CPGT4CPGT4CPGT4CPGT4CPGT4CPGT4CPGT4CPGT4CPGT4CPGT4CPGT4CPGT4CP-qekC`.9kEg^+F$kwViFJTB&5KTB&5KTB&5KTB&5KTB&5KTB&5KTB&5KTB&5KTB&5KTB&5KTB&5KTB&5KTB&5KTB&5KTB&5o,^<-28ZI'O?;xpO?;xpO?;xpO?;xpO?;xpO?;xpO?;xpO?;xpO?;xpO?;xpO?;xpO?;xpO?;xpO?;xp;7q-#lLYI:xvD=#
+554f7	001554f7	Entry Point			NSt6__ndk117bad_function_callE
+554f7	001554f7	002ca948			NSt6__ndk117bad_function_callE
+55517	00155517	Entry Point			NSt6__ndk114__shared_countE
+55517	00155517	002ca988			NSt6__ndk114__shared_countE
+55533	00155533	Entry Point			NSt6__ndk119__shared_weak_countE
+55533	00155533	002ca9d0			NSt6__ndk119__shared_weak_countE
+55554	00155554	Entry Point			NSt6__ndk112bad_weak_ptrE
+55554	00155554	002caa20			NSt6__ndk112bad_weak_ptrE
+55711	00155711	Entry Point			NSt6__ndk112system_errorE
+55711	00155711	002caaf0			NSt6__ndk112system_errorE
+5572b	0015572b	002cab08			NSt6__ndk112__do_messageE
+55745	00155745	002cab20			NSt6__ndk124__generic_error_categoryE
+5576b	0015576b	002cab38			NSt6__ndk123__system_error_categoryE
+55791	00155791	Entry Point			NSt6__ndk114error_categoryE
+55791	00155791	002cab98			NSt6__ndk114error_categoryE
+55820	00155820	Entry Point			NSt6__ndk18ios_baseE
+55820	00155820	002cac38			NSt6__ndk18ios_baseE
+55835	00155835	Entry Point			NSt6__ndk18ios_base7failureE
+55835	00155835	002cac48			NSt6__ndk18ios_base7failureE
+55852	00155852	002cac60			NSt6__ndk119__iostream_categoryE
+558f2	001558f2	Entry Point			NSt6__ndk19basic_iosIcNS_11char_traitsIcEEEE
+558f2	001558f2	002cb0c8			NSt6__ndk19basic_iosIcNS_11char_traitsIcEEEE
+5591f	0015591f	Entry Point			NSt6__ndk115basic_streambufIcNS_11char_traitsIcEEEE
+5591f	0015591f	002cb0e0			NSt6__ndk115basic_streambufIcNS_11char_traitsIcEEEE
+55953	00155953	Entry Point			NSt6__ndk113basic_istreamIcNS_11char_traitsIcEEEE
+55953	00155953	002cb0f0			NSt6__ndk113basic_istreamIcNS_11char_traitsIcEEEE
+55985	00155985	Entry Point			NSt6__ndk113basic_ostreamIcNS_11char_traitsIcEEEE
+55985	00155985	002cb118			NSt6__ndk113basic_ostreamIcNS_11char_traitsIcEEEE
+559b7	001559b7	Entry Point			NSt6__ndk114basic_iostreamIcNS_11char_traitsIcEEEE
+559b7	001559b7	002cb1e0			NSt6__ndk114basic_iostreamIcNS_11char_traitsIcEEEE
+559ea	001559ea	Entry Point			NSt6__ndk19basic_iosIwNS_11char_traitsIwEEEE
+559ea	001559ea	002cb238			NSt6__ndk19basic_iosIwNS_11char_traitsIwEEEE
+55a17	00155a17	Entry Point			NSt6__ndk115basic_streambufIwNS_11char_traitsIwEEEE
+55a17	00155a17	002cb250			NSt6__ndk115basic_streambufIwNS_11char_traitsIwEEEE
+55a4b	00155a4b	Entry Point			NSt6__ndk113basic_istreamIwNS_11char_traitsIwEEEE
+55a4b	00155a4b	002cb260			NSt6__ndk113basic_istreamIwNS_11char_traitsIwEEEE
+55a7d	00155a7d	Entry Point			NSt6__ndk113basic_ostreamIwNS_11char_traitsIwEEEE
+55a7d	00155a7d	002cb288			NSt6__ndk113basic_ostreamIwNS_11char_traitsIwEEEE
+55aaf	00155aaf	Entry Point			NSt6__ndk115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+55aaf	00155aaf	002cb2b0			NSt6__ndk115basic_stringbufIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+55af4	00155af4	Entry Point			NSt6__ndk118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+55af4	00155af4	002cb4a8			NSt6__ndk118basic_stringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+55b3c	00155b3c	Entry Point			NSt6__ndk119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+55b3c	00155b3c	002cb580			NSt6__ndk119basic_ostringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+55b85	00155b85	Entry Point			NSt6__ndk119basic_istringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+55b85	00155b85	002cb658			NSt6__ndk119basic_istringstreamIcNS_11char_traitsIcEENS_9allocatorIcEEEE
+55bce	00155bce	Entry Point			NSt6__ndk114basic_ifstreamIcNS_11char_traitsIcEEEE
+55bce	00155bce	002cb730			NSt6__ndk114basic_ifstreamIcNS_11char_traitsIcEEEE
+55c01	00155c01	Entry Point			NSt6__ndk114basic_ofstreamIcNS_11char_traitsIcEEEE
+55c01	00155c01	002cb808			NSt6__ndk114basic_ofstreamIcNS_11char_traitsIcEEEE
+55c34	00155c34	Entry Point			NSt6__ndk113basic_filebufIcNS_11char_traitsIcEEEE
+55c34	00155c34	002cb820			NSt6__ndk113basic_filebufIcNS_11char_traitsIcEEEE
+55c67	00155c67	Entry Point			St16nested_exception
+55c67	00155c67	002cb858			St16nested_exception
+55dd2	00155dd2	Entry Point			0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	002cf448			0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	00285df0	00285b6c	FUN_00285b6c	0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	00283e38	00283bb4	FUN_00283bb4	0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	00287ce4	00287ba0	__stage2_int_loop	0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	00287d50	00287ba0	__stage2_int_loop	0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	0028d16c	0028d024	__stage2_float_loop	0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	0028d348	0028d298	__stage2_int_prep	0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	00285798	00285514	FUN_00285514	0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	002876d4	00287608	do_get	0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	0028792c	00287608	do_get	0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	002ba8d4	002ba82c	FUN_002ba82c	0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	00284ae8	00284864	FUN_00284864	0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	0028cb24	0028c9dc	__stage2_float_loop	0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	0028cd14	0028cc64	__stage2_int_prep	0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	0028ceec	0028ce34	__stage2_float_prep	0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	00285140	00284ebc	FUN_00284ebc	0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	0028c170	0028c0a4	do_get	0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	0028c398	0028c0a4	do_get	0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	00284490	0028420c	FUN_0028420c	0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	0028c770	0028c630	__stage2_int_loop	0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	0028c7dc	0028c630	__stage2_int_loop	0123456789abcdefABCDEFxX+-pPiInN
+55dd2	00155dd2	0028c8a4	0028c7ec	__stage2_float_prep	0123456789abcdefABCDEFxX+-pPiInN
+55df3	00155df3	00292a20	002927c8	do_get	%I:%M:%S %p
+566d0	001566d0	Entry Point			NSt6__ndk16locale5facetE
+566d0	001566d0	002cbc30			NSt6__ndk16locale5facetE
+566e9	001566e9	Entry Point			NSt6__ndk15ctypeIwEE
+566e9	001566e9	002cbcd0			NSt6__ndk15ctypeIwEE
+566fe	001566fe	Entry Point			NSt6__ndk110ctype_baseE
+566fe	001566fe	002cbd08			NSt6__ndk110ctype_baseE
+56716	00156716	Entry Point			NSt6__ndk17codecvtIcc9mbstate_tEE
+56716	00156716	002cbd78			NSt6__ndk17codecvtIcc9mbstate_tEE
+56738	00156738	Entry Point			NSt6__ndk112codecvt_baseE
+56738	00156738	002cbdb0			NSt6__ndk112codecvt_baseE
+56752	00156752	Entry Point			NSt6__ndk17codecvtIDsc9mbstate_tEE
+56752	00156752	002cbe20			NSt6__ndk17codecvtIDsc9mbstate_tEE
+56775	00156775	Entry Point			NSt6__ndk17codecvtIDsDu9mbstate_tEE
+56775	00156775	002cbeb8			NSt6__ndk17codecvtIDsDu9mbstate_tEE
+56799	00156799	Entry Point			NSt6__ndk17codecvtIDic9mbstate_tEE
+56799	00156799	002cbf50			NSt6__ndk17codecvtIDic9mbstate_tEE
+567bc	001567bc	Entry Point			NSt6__ndk17codecvtIDiDu9mbstate_tEE
+567bc	001567bc	002cbfe8			NSt6__ndk17codecvtIDiDu9mbstate_tEE
+567e0	001567e0	Entry Point			NSt6__ndk116__narrow_to_utf8ILm16EEE
+567e0	001567e0	002cc080			NSt6__ndk116__narrow_to_utf8ILm16EEE
+56805	00156805	Entry Point			NSt6__ndk116__narrow_to_utf8ILm32EEE
+56805	00156805	002cc0f8			NSt6__ndk116__narrow_to_utf8ILm32EEE
+5682a	0015682a	Entry Point			NSt6__ndk117__widen_from_utf8ILm16EEE
+5682a	0015682a	002cc170			NSt6__ndk117__widen_from_utf8ILm16EEE
+56850	00156850	Entry Point			NSt6__ndk117__widen_from_utf8ILm32EEE
+56850	00156850	002cc1e8			NSt6__ndk117__widen_from_utf8ILm32EEE
+56876	00156876	Entry Point			NSt6__ndk114__codecvt_utf8IwEE
+56876	00156876	002cc260			NSt6__ndk114__codecvt_utf8IwEE
+56895	00156895	Entry Point			NSt6__ndk17codecvtIwc9mbstate_tEE
+56895	00156895	002cc278			NSt6__ndk17codecvtIwc9mbstate_tEE
+568b7	001568b7	Entry Point			NSt6__ndk114__codecvt_utf8IDsEE
+568b7	001568b7	002cc310			NSt6__ndk114__codecvt_utf8IDsEE
+568d7	001568d7	Entry Point			NSt6__ndk114__codecvt_utf8IDiEE
+568d7	001568d7	002cc388			NSt6__ndk114__codecvt_utf8IDiEE
+568f7	001568f7	Entry Point			NSt6__ndk115__codecvt_utf16IwLb0EEE
+568f7	001568f7	002cc400			NSt6__ndk115__codecvt_utf16IwLb0EEE
+5691b	0015691b	Entry Point			NSt6__ndk115__codecvt_utf16IwLb1EEE
+5691b	0015691b	002cc478			NSt6__ndk115__codecvt_utf16IwLb1EEE
+5693f	0015693f	Entry Point			NSt6__ndk115__codecvt_utf16IDsLb0EEE
+5693f	0015693f	002cc4f0			NSt6__ndk115__codecvt_utf16IDsLb0EEE
+56964	00156964	Entry Point			NSt6__ndk115__codecvt_utf16IDsLb1EEE
+56964	00156964	002cc568			NSt6__ndk115__codecvt_utf16IDsLb1EEE
+56989	00156989	Entry Point			NSt6__ndk115__codecvt_utf16IDiLb0EEE
+56989	00156989	002cc5e0			NSt6__ndk115__codecvt_utf16IDiLb0EEE
+569ae	001569ae	Entry Point			NSt6__ndk115__codecvt_utf16IDiLb1EEE
+569ae	001569ae	002cc658			NSt6__ndk115__codecvt_utf16IDiLb1EEE
+569d3	001569d3	Entry Point			NSt6__ndk120__codecvt_utf8_utf16IwEE
+569d3	001569d3	002cc6d0			NSt6__ndk120__codecvt_utf8_utf16IwEE
+569f8	001569f8	Entry Point			NSt6__ndk120__codecvt_utf8_utf16IDiEE
+569f8	001569f8	002cc748			NSt6__ndk120__codecvt_utf8_utf16IDiEE
+56a1e	00156a1e	Entry Point			NSt6__ndk120__codecvt_utf8_utf16IDsEE
+56a1e	00156a1e	002cc7c0			NSt6__ndk120__codecvt_utf8_utf16IDsEE
+56a44	00156a44	002cc7d8			NSt6__ndk16locale5__impE
+56a5d	00156a5d	Entry Point			NSt6__ndk114collate_bynameIcEE
+56a5d	00156a5d	002cc7f0			NSt6__ndk114collate_bynameIcEE
+56a7c	00156a7c	Entry Point			NSt6__ndk17collateIcEE
+56a7c	00156a7c	002cc808			NSt6__ndk17collateIcEE
+56a93	00156a93	Entry Point			NSt6__ndk114collate_bynameIwEE
+56a93	00156a93	002cc820			NSt6__ndk114collate_bynameIwEE
+56ab2	00156ab2	Entry Point			NSt6__ndk17collateIwEE
+56ab2	00156ab2	002cc838			NSt6__ndk17collateIwEE
+56ac9	00156ac9	Entry Point			NSt6__ndk15ctypeIcEE
+56ac9	00156ac9	002cc850			NSt6__ndk15ctypeIcEE
+56ade	00156ade	Entry Point			NSt6__ndk112ctype_bynameIcEE
+56ade	00156ade	002cc888			NSt6__ndk112ctype_bynameIcEE
+56afb	00156afb	Entry Point			NSt6__ndk112ctype_bynameIwEE
+56afb	00156afb	002cc8a0			NSt6__ndk112ctype_bynameIwEE
+56b18	00156b18	Entry Point			NSt6__ndk18numpunctIcEE
+56b18	00156b18	002cc8b8			NSt6__ndk18numpunctIcEE
+56b30	00156b30	Entry Point			NSt6__ndk18numpunctIwEE
+56b30	00156b30	002cc8d0			NSt6__ndk18numpunctIwEE
+56b48	00156b48	Entry Point			NSt6__ndk115numpunct_bynameIcEE
+56b48	00156b48	002cc8e8			NSt6__ndk115numpunct_bynameIcEE
+56b68	00156b68	Entry Point			NSt6__ndk115numpunct_bynameIwEE
+56b68	00156b68	002cc900			NSt6__ndk115numpunct_bynameIwEE
+56b88	00156b88	Entry Point			NSt6__ndk17num_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEEE
+56b88	00156b88	002cca18			NSt6__ndk17num_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEEE
+56bcf	00156bcf	Entry Point			NSt6__ndk19__num_getIcEE
+56bcf	00156bcf	002cca50			NSt6__ndk19__num_getIcEE
+56be8	00156be8	Entry Point			NSt6__ndk114__num_get_baseE
+56be8	00156be8	002cca78			NSt6__ndk114__num_get_baseE
+56c04	00156c04	Entry Point			NSt6__ndk17num_getIwNS_19istreambuf_iteratorIwNS_11char_traitsIwEEEEEE
+56c04	00156c04	002ccb08			NSt6__ndk17num_getIwNS_19istreambuf_iteratorIwNS_11char_traitsIwEEEEEE
+56c4b	00156c4b	Entry Point			NSt6__ndk19__num_getIwEE
+56c4b	00156c4b	002ccb40			NSt6__ndk19__num_getIwEE
+56c64	00156c64	Entry Point			NSt6__ndk17num_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEEE
+56c64	00156c64	002ccbd0			NSt6__ndk17num_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEEE
+56cab	00156cab	Entry Point			NSt6__ndk19__num_putIcEE
+56cab	00156cab	002ccc08			NSt6__ndk19__num_putIcEE
+56cc4	00156cc4	Entry Point			NSt6__ndk114__num_put_baseE
+56cc4	00156cc4	002ccc30			NSt6__ndk114__num_put_baseE
+56ce0	00156ce0	Entry Point			NSt6__ndk17num_putIwNS_19ostreambuf_iteratorIwNS_11char_traitsIwEEEEEE
+56ce0	00156ce0	002ccca8			NSt6__ndk17num_putIwNS_19ostreambuf_iteratorIwNS_11char_traitsIwEEEEEE
+56d27	00156d27	Entry Point			NSt6__ndk19__num_putIwEE
+56d27	00156d27	002ccce0			NSt6__ndk19__num_putIwEE
+56d40	00156d40	Entry Point			NSt6__ndk18time_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEEE
+56d40	00156d40	002ccdb0			NSt6__ndk18time_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEEE
+56d88	00156d88	Entry Point			NSt6__ndk19time_baseE
+56d88	00156d88	002ccdf8			NSt6__ndk19time_baseE
+56d9e	00156d9e	Entry Point			NSt6__ndk120__time_get_c_storageIcEE
+56d9e	00156d9e	002cce08			NSt6__ndk120__time_get_c_storageIcEE
+56dc3	00156dc3	Entry Point			NSt6__ndk18time_getIwNS_19istreambuf_iteratorIwNS_11char_traitsIwEEEEEE
+56dc3	00156dc3	002ccec0			NSt6__ndk18time_getIwNS_19istreambuf_iteratorIwNS_11char_traitsIwEEEEEE
+56e0b	00156e0b	Entry Point			NSt6__ndk120__time_get_c_storageIwEE
+56e0b	00156e0b	002ccf08			NSt6__ndk120__time_get_c_storageIwEE
+56e30	00156e30	Entry Point			NSt6__ndk115time_get_bynameIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEEE
+56e30	00156e30	002ccff8			NSt6__ndk115time_get_bynameIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEEE
+56e80	00156e80	Entry Point			NSt6__ndk118__time_get_storageIcEE
+56e80	00156e80	002cd030			NSt6__ndk118__time_get_storageIcEE
+56ea3	00156ea3	Entry Point			NSt6__ndk110__time_getE
+56ea3	00156ea3	002cd048			NSt6__ndk110__time_getE
+56ebb	00156ebb	Entry Point			NSt6__ndk115time_get_bynameIwNS_19istreambuf_iteratorIwNS_11char_traitsIwEEEEEE
+56ebb	00156ebb	002cd138			NSt6__ndk115time_get_bynameIwNS_19istreambuf_iteratorIwNS_11char_traitsIwEEEEEE
+56f0b	00156f0b	Entry Point			NSt6__ndk118__time_get_storageIwEE
+56f0b	00156f0b	002cd170			NSt6__ndk118__time_get_storageIwEE
+56f2e	00156f2e	Entry Point			NSt6__ndk18time_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEEE
+56f2e	00156f2e	002cd1b8			NSt6__ndk18time_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEEE
+56f76	00156f76	Entry Point			NSt6__ndk110__time_putE
+56f76	00156f76	002cd1f0			NSt6__ndk110__time_putE
+56f8e	00156f8e	Entry Point			NSt6__ndk18time_putIwNS_19ostreambuf_iteratorIwNS_11char_traitsIwEEEEEE
+56f8e	00156f8e	002cd230			NSt6__ndk18time_putIwNS_19ostreambuf_iteratorIwNS_11char_traitsIwEEEEEE
+56fd6	00156fd6	Entry Point			NSt6__ndk115time_put_bynameIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEEE
+56fd6	00156fd6	002cd298			NSt6__ndk115time_put_bynameIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEEE
+57026	00157026	Entry Point			NSt6__ndk115time_put_bynameIwNS_19ostreambuf_iteratorIwNS_11char_traitsIwEEEEEE
+57026	00157026	002cd2e0			NSt6__ndk115time_put_bynameIwNS_19ostreambuf_iteratorIwNS_11char_traitsIwEEEEEE
+57076	00157076	Entry Point			NSt6__ndk110moneypunctIcLb0EEE
+57076	00157076	002cd368			NSt6__ndk110moneypunctIcLb0EEE
+57095	00157095	Entry Point			NSt6__ndk110money_baseE
+57095	00157095	002cd3a0			NSt6__ndk110money_baseE
+570ad	001570ad	Entry Point			NSt6__ndk110moneypunctIcLb1EEE
+570ad	001570ad	002cd420			NSt6__ndk110moneypunctIcLb1EEE
+570cc	001570cc	Entry Point			NSt6__ndk110moneypunctIwLb0EEE
+570cc	001570cc	002cd4c8			NSt6__ndk110moneypunctIwLb0EEE
+570eb	001570eb	Entry Point			NSt6__ndk110moneypunctIwLb1EEE
+570eb	001570eb	002cd570			NSt6__ndk110moneypunctIwLb1EEE
+5710a	0015710a	Entry Point			NSt6__ndk117moneypunct_bynameIcLb0EEE
+5710a	0015710a	002cd618			NSt6__ndk117moneypunct_bynameIcLb0EEE
+57130	00157130	Entry Point			NSt6__ndk117moneypunct_bynameIcLb1EEE
+57130	00157130	002cd6a0			NSt6__ndk117moneypunct_bynameIcLb1EEE
+57156	00157156	Entry Point			NSt6__ndk117moneypunct_bynameIwLb0EEE
+57156	00157156	002cd728			NSt6__ndk117moneypunct_bynameIwLb0EEE
+5717c	0015717c	Entry Point			NSt6__ndk117moneypunct_bynameIwLb1EEE
+5717c	0015717c	002cd7b0			NSt6__ndk117moneypunct_bynameIwLb1EEE
+571a2	001571a2	Entry Point			NSt6__ndk19money_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEEE
+571a2	001571a2	002cd800			NSt6__ndk19money_getIcNS_19istreambuf_iteratorIcNS_11char_traitsIcEEEEEE
+571eb	001571eb	Entry Point			NSt6__ndk111__money_getIcEE
+571eb	001571eb	002cd838			NSt6__ndk111__money_getIcEE
+57207	00157207	Entry Point			NSt6__ndk19money_getIwNS_19istreambuf_iteratorIwNS_11char_traitsIwEEEEEE
+57207	00157207	002cd880			NSt6__ndk19money_getIwNS_19istreambuf_iteratorIwNS_11char_traitsIwEEEEEE
+57250	00157250	Entry Point			NSt6__ndk111__money_getIwEE
+57250	00157250	002cd8b8			NSt6__ndk111__money_getIwEE
+5726c	0015726c	Entry Point			NSt6__ndk19money_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEEE
+5726c	0015726c	002cd900			NSt6__ndk19money_putIcNS_19ostreambuf_iteratorIcNS_11char_traitsIcEEEEEE
+572b5	001572b5	Entry Point			NSt6__ndk111__money_putIcEE
+572b5	001572b5	002cd938			NSt6__ndk111__money_putIcEE
+572d1	001572d1	Entry Point			NSt6__ndk19money_putIwNS_19ostreambuf_iteratorIwNS_11char_traitsIwEEEEEE
+572d1	001572d1	002cd980			NSt6__ndk19money_putIwNS_19ostreambuf_iteratorIwNS_11char_traitsIwEEEEEE
+5731a	0015731a	Entry Point			NSt6__ndk111__money_putIwEE
+5731a	0015731a	002cd9b8			NSt6__ndk111__money_putIwEE
+57336	00157336	Entry Point			NSt6__ndk18messagesIcEE
+57336	00157336	002cda08			NSt6__ndk18messagesIcEE
+5734e	0015734e	Entry Point			NSt6__ndk113messages_baseE
+5734e	0015734e	002cda40			NSt6__ndk113messages_baseE
+57369	00157369	Entry Point			NSt6__ndk18messagesIwEE
+57369	00157369	002cda90			NSt6__ndk18messagesIwEE
+57381	00157381	Entry Point			NSt6__ndk115messages_bynameIcEE
+57381	00157381	002cdb08			NSt6__ndk115messages_bynameIcEE
+573a1	001573a1	Entry Point			NSt6__ndk115messages_bynameIwEE
+573a1	001573a1	002cdb60			NSt6__ndk115messages_bynameIwEE
+573c1	001573c1	Entry Point			NSt6__ndk114codecvt_bynameIcc9mbstate_tEE
+573c1	001573c1	002cdbd8			NSt6__ndk114codecvt_bynameIcc9mbstate_tEE
+573eb	001573eb	Entry Point			NSt6__ndk114codecvt_bynameIwc9mbstate_tEE
+573eb	001573eb	002cdc50			NSt6__ndk114codecvt_bynameIwc9mbstate_tEE
+57415	00157415	Entry Point			NSt6__ndk114codecvt_bynameIDsc9mbstate_tEE
+57415	00157415	002cdcc8			NSt6__ndk114codecvt_bynameIDsc9mbstate_tEE
+57440	00157440	Entry Point			NSt6__ndk114codecvt_bynameIDic9mbstate_tEE
+57440	00157440	002cdd40			NSt6__ndk114codecvt_bynameIDic9mbstate_tEE
+5746b	0015746b	Entry Point			NSt6__ndk114codecvt_bynameIDsDu9mbstate_tEE
+5746b	0015746b	002cddb8			NSt6__ndk114codecvt_bynameIDsDu9mbstate_tEE
+57497	00157497	Entry Point			NSt6__ndk114codecvt_bynameIDiDu9mbstate_tEE
+57497	00157497	002cde30			NSt6__ndk114codecvt_bynameIDiDu9mbstate_tEE
+574c3	001574c3	002cdeb0			NSt6__ndk115__time_get_tempIcEE
+574e3	001574e3	002cdf50			NSt6__ndk115__time_get_tempIwEE
+57503	00157503	002bb27c	002bb228	FUN_002bb228	000000010010001101000101011001111000100110101011110011011110111100010203040506071011121314151617202122232425262730313233343536374041424344454647505152535455565760616263646566677071727374757677000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff
+57503	00157503	002badac	002bad58	FUN_002bad58	000000010010001101000101011001111000100110101011110011011110111100010203040506071011121314151617202122232425262730313233343536374041424344454647505152535455565760616263646566677071727374757677000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f404142434445464748494a4b4c4d4e4f505152535455565758595a5b5c5d5e5f606162636465666768696a6b6c6d6e6f707172737475767778797a7b7c7d7e7f808182838485868788898a8b8c8d8e8f909192939495969798999a9b9c9d9e9fa0a1a2a3a4a5a6a7a8a9aaabacadaeafb0b1b2b3b4b5b6b7b8b9babbbcbdbebfc0c1c2c3c4c5c6c7c8c9cacbcccdcecfd0d1d2d3d4d5d6d7d8d9dadbdcdddedfe0e1e2e3e4e5e6e7e8e9eaebecedeeeff0f1f2f3f4f5f6f7f8f9fafbfcfdfeff
+577ca	001577ca	Entry Point			St9exception
+577ca	001577ca	002cdfe0			St9exception
+577d7	001577d7	Entry Point			St13bad_exception
+577d7	001577d7	002ce018			St13bad_exception
+577e9	001577e9	Entry Point			St20bad_array_new_length
+577e9	001577e9	002ce030			St20bad_array_new_length
+57802	00157802	Entry Point			St9bad_alloc
+57802	00157802	002ce048			St9bad_alloc
+57810	00157810	Entry Point			St12domain_error
+57810	00157810	002ce0d8			St12domain_error
+57821	00157821	Entry Point			St11logic_error
+57821	00157821	002ce0f0			St11logic_error
+57831	00157831	Entry Point			St16invalid_argument
+57831	00157831	002ce130			St16invalid_argument
+57846	00157846	Entry Point			St12length_error
+57846	00157846	002ce170			St12length_error
+57857	00157857	Entry Point			St12out_of_range
+57857	00157857	002ce1b0			St12out_of_range
+57868	00157868	Entry Point			St11range_error
+57868	00157868	002ce1f0			St11range_error
+57878	00157878	Entry Point			St13runtime_error
+57878	00157878	002ce208			St13runtime_error
+5788a	0015788a	Entry Point			St14overflow_error
+5788a	0015788a	002ce248			St14overflow_error
+5789d	0015789d	Entry Point			St15underflow_error
+5789d	0015789d	002ce288			St15underflow_error
+578b2	001578b2	Entry Point			St9type_info
+578b2	001578b2	002ce310			St9type_info
+578bf	001578bf	Entry Point			St8bad_cast
+578bf	001578bf	002ce320			St8bad_cast
+578cb	001578cb	Entry Point			St10bad_typeid
+578cb	001578cb	002ce338			St10bad_typeid
+578dc	001578dc	Entry Point			N10__cxxabiv116__shim_type_infoE
+578dc	001578dc	002ce350			N10__cxxabiv116__shim_type_infoE
+578fd	001578fd	Entry Point			N10__cxxabiv117__class_type_infoE
+578fd	001578fd	002ce368			N10__cxxabiv117__class_type_infoE
+5791f	0015791f	Entry Point			N10__cxxabiv117__pbase_type_infoE
+5791f	0015791f	002ce380			N10__cxxabiv117__pbase_type_infoE
+57941	00157941	Entry Point			N10__cxxabiv119__pointer_type_infoE
+57941	00157941	002ce398			N10__cxxabiv119__pointer_type_infoE
+57965	00157965	Entry Point			N10__cxxabiv120__function_type_infoE
+57965	00157965	002ce3b0			N10__cxxabiv120__function_type_infoE
+5798a	0015798a	Entry Point			N10__cxxabiv129__pointer_to_member_type_infoE
+5798a	0015798a	002ce3c8			N10__cxxabiv129__pointer_to_member_type_infoE
+579d0	001579d0	Entry Point			N10__cxxabiv123__fundamental_type_infoE
+579d0	001579d0	002ce450			N10__cxxabiv123__fundamental_type_infoE
+57a08	00157a08	Entry Point			PKDn
+57a08	00157a08	002ce4e8			PKDn
+57a9b	00157a9b	Entry Point			PKDh
+57a9b	00157a9b	002ce9e8			PKDh
+57acb	00157acb	Entry Point			PKDu
+57acb	00157acb	002ceb78			PKDu
+57ad7	00157ad7	Entry Point			PKDs
+57ad7	00157ad7	002cebc8			PKDs
+57ae3	00157ae3	Entry Point			PKDi
+57ae3	00157ae3	002cec18			PKDi
+57ae8	00157ae8	Entry Point			N10__cxxabiv117__array_type_infoE
+57ae8	00157ae8	002cec70			N10__cxxabiv117__array_type_infoE
+57b0a	00157b0a	Entry Point			N10__cxxabiv116__enum_type_infoE
+57b0a	00157b0a	002cecf8			N10__cxxabiv116__enum_type_infoE
+57b2b	00157b2b	Entry Point			N10__cxxabiv120__si_class_type_infoE
+57b2b	00157b2b	002cedb0			N10__cxxabiv120__si_class_type_infoE
+57b50	00157b50	Entry Point			N10__cxxabiv121__vmi_class_type_infoE
+57b50	00157b50	002cee18			N10__cxxabiv121__vmi_class_type_infoE

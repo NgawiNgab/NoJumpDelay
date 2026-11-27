@@ -1,0 +1,5 @@
+# Large downloaded binaries and generated analysis databases remain local.
+/ghidra_analysis/libReverseSigma.so
+/ghidra_analysis/ReverseSigma_project.tar.gz
+/google_drive/
+/.ci-tmp/
