@@ -1,0 +1,2 @@
+image_base=00100000
+functions=4725

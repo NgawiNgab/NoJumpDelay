@@ -1,0 +1,40 @@
+name: Research prototype CI
+
+on:
+  pull_request:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-and-package:
+    name: Host tests and research artifact
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile and run synthetic component tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$GITHUB_WORKSPACE/.ci-tmp"
+          export TMPDIR="$GITHUB_WORKSPACE/.ci-tmp"
+          g++ -std=c++20 -Wall -Wextra -Werror -fsanitize=address,undefined -g \
+            NoJumpDelayMod/tests/component_lookup_test.cpp \
+            NoJumpDelayMod/src/ComponentLookup.cpp \
+            -o "$TMPDIR/component_lookup_test"
+          "$TMPDIR/component_lookup_test"
+      - name: Package research source and evidence (no Android binary)
+        uses: actions/upload-artifact@v4
+        with:
+          name: NoJumpDelay-research-prototype-NOT-operational
+          if-no-files-found: error
+          path: |
+            NoJumpDelayMod/
+            nojumpdelay_port_report.md
+            ghidra_analysis/nojump_ghidra.txt
+            ghidra_analysis/TraceNoJump.py
+            ghidra_analysis/TraceOffsets.py
+            ghidra_analysis/decode_hook.py
+            ghidra_analysis/libReverseSigma_modules.md

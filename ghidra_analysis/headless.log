@@ -1,0 +1,139 @@
+Java runtime not found.  Please refer to the Ghidra Installation Guide's Troubleshooting section.
+2026-11-27 09:02:04 INFO  (LoggingInitialization) Using log config file: jar:file:/home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2026-11-27 09:02:04 INFO  (LoggingInitialization) Using log file: /home/user/analysis/headless.log  
+2026-11-27 09:02:04 INFO  (Preferences) Loading user preferences: /home/user/.config/ghidra/ghidra_11.2.1_PUBLIC/preferences  
+2026-11-27 09:02:04 INFO  (ClassSearcher) Searching for classes...  
+2026-11-27 09:02:05 INFO  (ClassSearcher) Class search complete (969 ms)  
+2026-11-27 09:02:05 INFO  (SSLContextInitializer) Initializing SSL Context  
+2026-11-27 09:02:05 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2026-11-27 09:02:05 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2026-11-27 09:02:05 INFO  (ApplicationTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2026-11-27 09:02:05 INFO  (FileCacheMaintenanceDaemon) Starting cache cleanup: /var/tmp/user-ghidra/fscache2  
+2026-11-27 09:02:05 INFO  (FileCacheMaintenanceDaemon) Finished cache cleanup, estimated storage used: 0  
+2026-11-27 09:02:06 INFO  (AnalyzeHeadless) Headless startup complete (2118 ms)  
+2026-11-27 09:02:06 INFO  (ClassSearcher) Class searcher loaded 57 extension points (18 false positives)  
+2026-11-27 09:02:06 INFO  (HeadlessAnalyzer) HEADLESS Script Paths:
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/SystemEmulation/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Debug/Debugger-agent-dbgmodel-traceloader/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/PDB/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Processors/8051/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/BSim/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Debug/Debugger-rmi-trace/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/MicrosoftCodeAnalyzer/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/VersionTracking/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/BytePatterns/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Processors/JVM/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/GnuDemangler/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/SwiftDemangler/ghidra_scripts
+    /home/user/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/FunctionID/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/Jython/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Processors/Atmel/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Processors/PIC/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/FileFormats/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/WildcardAssembler/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Debug/Debugger/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/Base/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/Decompiler/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Debug/Debugger-agent-frida/ghidra_scripts
+    /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Processors/DATA/ghidra_scripts  
+2026-11-27 09:02:06 INFO  (HeadlessAnalyzer) HEADLESS: execution starts  
+2026-11-27 09:02:06 INFO  (HeadlessAnalyzer) Creating project: /home/user/ghidra_projects/ReverseSigma  
+2026-11-27 09:02:06 DEBUG (DefaultProjectManager) No tools found; Installing default tools  
+2026-11-27 09:02:06 DEBUG (DefaultProjectManager) 	no recent project directories found  
+2026-11-27 09:02:06 INFO  (DefaultProject) Creating project: /home/user/ghidra_projects/ReverseSigma  
+2026-11-27 09:02:06 INFO  (HeadlessAnalyzer) REPORT: Processing input files:   
+2026-11-27 09:02:06 INFO  (HeadlessAnalyzer)      project: /home/user/ghidra_projects/ReverseSigma  
+2026-11-27 09:02:06 INFO  (HeadlessAnalyzer) IMPORTING: file:///home/user/libReverseSigma.so  
+2026-11-27 09:02:07 INFO  (AutoImporter) Using Loader: Executable and Linking Format (ELF)  
+2026-11-27 09:02:07 INFO  (AutoImporter) Using Language/Compiler: AARCH64:LE:64:v8A:default  
+2026-11-27 09:02:07 INFO  (AutoImporter) Using Library Search Path: [., /bin, /lib, /lib64, /lib/x86_64-linux-gnu, /lib/aarch64-linux-gnu, /usr/bin, /usr/lib, /usr/X11R6/bin, /usr/X11R6/lib, /usr/java/packages/lib, /usr/lib64]  
+2026-11-27 09:02:07 DEBUG (ElfHeader) Elf symbol table section .dynsym linked to string table section .dynstr  
+2026-11-27 09:02:07 DEBUG (ElfHeader) Elf relocation table section .rela.dyn linked to symbol table section .dynsym affecting PT_LOAD  
+2026-11-27 09:02:07 DEBUG (ElfHeader) Elf relocation table section .relr.dyn linked to symbol table section .dynsym affecting PT_LOAD  
+2026-11-27 09:02:07 DEBUG (ElfHeader) Elf relocation table section .rela.plt linked to symbol table section .dynsym affecting .got.plt  
+2026-11-27 09:02:08 DEBUG (ElfProgramBuilder) Discarding 4-byte alignment/filler segment_1.4 at 0010032c  
+2026-11-27 09:02:08 DEBUG (ElfProgramBuilder) Discarding 2-byte alignment/filler segment_1.10 at 00129f46  
+2026-11-27 09:02:08 DEBUG (ElfProgramBuilder) Discarding 4-byte alignment/filler segment_1.18 at 00191cbc  
+2026-11-27 09:02:08 DEBUG (ElfProgramBuilder) Discarding 12-byte alignment/filler segment_1.21 at 002c4174  
+2026-11-27 09:02:09 INFO  (AutoImporter) Additional info:
+Loading file:///home/user/libReverseSigma.so?MD5=36d11ec57eb682b02f4aa48523f7780e...
+Unhandled ELF Relocation: R_AARCH64_TLSDESC (1031, 0x407) at 002cf228 (Symbol = <no name>)
+Unhandled ELF Relocation: R_AARCH64_TLSDESC (1031, 0x407) at 002cf238 (Symbol = <no name>)
+Unhandled ELF Relocation: R_AARCH64_TLSDESC (1031, 0x407) at 002cf750 (Symbol = <no name>)
+Unhandled ELF Relocation: R_AARCH64_TLSDESC (1031, 0x407) at 002cf760 (Symbol = <no name>)
+Unhandled ELF Relocation: R_AARCH64_TLSDESC (1031, 0x407) at 002cf770 (Symbol = <no name>)
+Unhandled ELF Relocation: R_AARCH64_TLSDESC (1031, 0x407) at 002cf780 (Symbol = <no name>)
+Unhandled ELF Relocation: R_AARCH64_TLSDESC (1031, 0x407) at 002cf790 (Symbol = <no name>)
+Unhandled ELF Relocation: R_AARCH64_TLSDESC (1031, 0x407) at 002cf7a0 (Symbol = <no name>)
+Unhandled ELF Relocation: R_AARCH64_TLSDESC (1031, 0x407) at 002cf7b0 (Symbol = <no name>)
+Setting block .data.rel.ro to read-only
+Setting block .fini_array to read-only
+Setting block .init_array to read-only
+Setting block .dynamic to read-only
+Failed to markup ELF Note at 00100308: data conflict
+------------------------------------------------
+
+Linking the External Programs of 'libReverseSigma.so' to imported libraries...
+  [liblog.so] -> not found in project
+  [libz.so] -> not found in project
+  [libandroid.so] -> not found in project
+  [libEGL.so] -> not found in project
+  [libGLESv2.so] -> not found in project
+  [libc.so] -> not found in project
+  [libm.so] -> not found in project
+  [libdl.so] -> not found in project
+------------------------------------------------
+
+Resolving External Symbols of [/libReverseSigma.so] - 219 unresolved symbols, no external libraries configured - skipping
+  
+2026-11-27 09:02:09 INFO  (HeadlessAnalyzer) IMPORTING: Loaded 0 additional files  
+2026-11-27 09:02:09 INFO  (HeadlessAnalyzer) ANALYZING all memory and code: file:///home/user/libReverseSigma.so  
+2026-11-27 09:02:10 INFO  (ExternalDebugFileSectionProvider) DWARF external debug information found: ExternalDebugInfo [filename=null, crc=0, hash=59cc05d99075de296ca33243f64866354adb5910]  
+2026-11-27 09:02:10 INFO  (DWARFAnalyzer) Unable to find DWARF information, skipping DWARF analysis  
+2026-11-27 09:02:20 ERROR (PngDataType) Invalid PNG data at 00138910  
+2026-11-27 09:02:39 ERROR (VarnodeContext) VarnodeContext: out of address spaces at @001a7007 for: d27-001a7007  
+2026-11-27 09:02:47 INFO  (PackedDatabaseCache) Packed database cache: /var/tmp/user-ghidra/packed-db-cache  
+2026-11-27 09:02:47 DEBUG (PackedDatabaseCache) Caching packed database: /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib_64.gdt  
+2026-11-27 09:02:47 DEBUG (PackedDatabase) Unpacking database /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib_64.gdt -> /var/tmp/user-ghidra/packed-db-cache/pdb2F42190E/db.1.gbf  
+2026-11-27 09:02:47 DEBUG (PackedDatabaseCache) Cache update completed: /home/user/tools/ghidra_11.2.1_PUBLIC/Ghidra/Features/Base/data/typeinfo/generic/generic_clib_64.gdt  
+2026-11-27 09:02:48 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib_64  
+2026-11-27 09:02:55 ERROR (VarnodeContext) VarnodeContext: out of address spaces at @001a7007 for: x8-001a7007  
+2026-11-27 09:03:13 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    AARCH64 ELF PLT Thunks                     0.387 secs
+    ASCII Strings                              0.552 secs
+    Apply Data Archives                        0.617 secs
+    Basic Constant Reference Analyzer         18.415 secs
+    Call Convention ID                         4.056 secs
+    Call-Fixup Installer                       0.048 secs
+    Create Address Tables                      0.363 secs
+    Create Address Tables - One Time           0.168 secs
+    Create Function                            0.004 secs
+    DWARF                                      0.007 secs
+    Data Reference                             0.604 secs
+    Decompiler Switch Analysis                 5.981 secs
+    Demangler GNU                              0.974 secs
+    Disassemble Entry Points                   2.310 secs
+    Embedded Media                             0.096 secs
+    External Entry References                  0.033 secs
+    Function Start Search                      0.146 secs
+    Function Start Search After Code           0.130 secs
+    Function Start Search After Data           0.115 secs
+    Function Start Search delayed - One Time   0.003 secs
+    GCC Exception Handlers                     7.871 secs
+    Non-Returning Functions - Discovered       0.808 secs
+    Non-Returning Functions - Known            0.007 secs
+    Reference                                  0.706 secs
+    Shared Return Calls                        0.387 secs
+    Stack                                     18.466 secs
+    Subroutine References                      0.262 secs
+-----------------------------------------------------
+     Total Time   63 secs
+-----------------------------------------------------
+  
+2026-11-27 09:03:13 INFO  (HeadlessAnalyzer) REPORT: Analysis succeeded for file: file:///home/user/libReverseSigma.so  
+2026-11-27 09:03:13 INFO  (HeadlessAnalyzer) SCRIPT: /home/user/ghidra_scripts/extract_modules.py  
+2026-11-27 09:06:10 INFO  (HeadlessAnalyzer) ANALYZING changes made by post scripts: file:///home/user/libReverseSigma.so  
+2026-11-27 09:06:10 INFO  (HeadlessAnalyzer) REPORT: Post-analysis succeeded for file: file:///home/user/libReverseSigma.so  
+2026-11-27 09:06:11 INFO  (HeadlessAnalyzer) REPORT: Save succeeded for: /libReverseSigma.so (ReverseSigma:/libReverseSigma.so)  
+2026-11-27 09:06:11 INFO  (HeadlessAnalyzer) REPORT: Import succeeded  
