@@ -1,0 +1,36 @@
+name: Build and verify
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Host synthetic tests
+        run: |
+          cmake -S . -B build-host -DNOJUMP_TEST_ONLY=ON -DCMAKE_BUILD_TYPE=Release
+          cmake --build build-host --parallel 2
+          ctest --test-dir build-host --output-on-failure
+      - uses: nttld/setup-ndk@v1
+        id: ndk
+        with:
+          ndk-version: r28c
+          add-to-path: false
+      - name: Android arm64 build
+        run: |
+          cmake -S . -B build-android -DCMAKE_TOOLCHAIN_FILE="${{ steps.ndk.outputs.ndk-path }}/build/cmake/android.toolchain.cmake" -DANDROID_ABI=arm64-v8a -DANDROID_PLATFORM=android-26 -DANDROID_STL=c++_shared -DBUILD_TESTING=OFF -DCMAKE_BUILD_TYPE=Release
+          cmake --build build-android --target NoJumpDelay --parallel 2
+      - name: Package and verify
+        run: python3 scripts/package.py build-android/libNoJumpDelay.so artifacts
+      - uses: actions/upload-artifact@v4
+        with:
+          name: NoJumpDelay-arm64
+          path: |
+            artifacts/libNoJumpDelay.so
+            artifacts/NoJumpDelay.levipack
+            artifacts/verification.json
+          if-no-files-found: error
