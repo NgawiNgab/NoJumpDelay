@@ -1,0 +1,9 @@
+{
+  "type": "preload-native",
+  "name": "No Jump Delay",
+  "author": "NoJumpDelay contributors",
+  "description": "Experimental No Jump Delay for Minecraft Bedrock 1.26.60 arm64-v8a",
+  "version": "0.1.0",
+  "minecraft_versions": ["1.26.60"],
+  "entry": "libNoJumpDelay.so"
+}
