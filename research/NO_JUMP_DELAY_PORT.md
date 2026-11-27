@@ -1,6 +1,6 @@
 # No Jump Delay port: research and progress
 
-Status: **PARTIALLY COMPLETE — RE in progress**. Hook registration, the component identity, and the immediate UI toggle were independently corroborated; full 1:1 behavioral and ABI verification remains incomplete. No native implementation, package, CI result, or PR has been produced. Do not infer a safe hook, complete guard behavior, or final ABI from the partial findings below. Phases 3–4 have not been started.
+Status: **PARTIALLY COMPLETE — experimental implementation and CI built; real-device validation and 1:1 behavioral/ABI verification remain incomplete.** Do not infer a safe hook, complete guard behavior, or final ABI from the partial findings below.
 
 ## Repository and access
 
@@ -120,3 +120,8 @@ The captured output from the successful runs is `/home/user/ghidra_projects/find
 - On user direction the hold was lifted; no Ghidra rerun and no resource redownload was done. A direct Capstone check of `0x10192184` confirms the `x0` context, hash, stride, write and error path described above.
 - The health getter `0x0fdabbfc` instructions at `0x0fdabc08`–`0x0fdabc0c` construct hash `0xfd3b0613`; `0x0fdabcb4`–`0x0fdabcbc` use stride `0x58`. The first 16 bytes are `fd7bbfa9fd030091090840f96ac28052`. The implementation checks for that component before invoking the getter; the component can still change concurrently, so this is not a complete memory-safety proof.
 - Host CMake initially absent; installed CMake into the existing Python environment and built/ran synthetic tests successfully. These tests are not game runtime or ABI tests. Screen hooks and their guards are deliberately omitted because their ABI and names are unresolved, and the >0 finite float health condition differs from `fcvtps`/nonzero. Consequently 1:1 behavior is not claimed. The worker polls for the library instead of hooking loader functions. A live hook prevents safe unload because the hook API exposes no thread-quiescence guarantee; disabling stops modifications but keeps the hook until process restart. Map checks are best-effort and not a defense against concurrent unmapping or structural races.
+
+### CI and artifact transfer
+
+- Push run https://github.com/NgawiNgab/NoJumpDelay/actions/runs/45997878503 and PR run https://github.com/NgawiNgab/NoJumpDelay/actions/runs/45997900805 passed host tests, the NDK build, ELF/package verification and artifact upload for commit `cb91be4`. These are not device tests.
+- `gh run download 45997878503 -n NoJumpDelay-arm64 -D /home/user/artifacts` failed with EOF on the redirected Azure blob host. The alternative `gh api repos/NgawiNgab/NoJumpDelay/actions/artifacts/15195984337/zip` also failed on the same disallowed host; `gh run view --log` likewise hit a disallowed logs host. The artifact remains available through GitHub Actions; local download remains blocked by this sandbox's outbound host policy.

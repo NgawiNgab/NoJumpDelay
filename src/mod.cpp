@@ -140,8 +140,13 @@ class Mod {
         if (stop_.load()) return;
         base_=game.base;target_=reinterpret_cast<void*>(tick);
         char buf[256];std::snprintf(buf,sizeof(buf),"Game 1.26.60 build ID verified; base=%p tick=%p health=%p attr=%p",reinterpret_cast<void*>(base_),target_,reinterpret_cast<void*>(health),reinterpret_cast<void*>(attr));log(buf);
-        if (pl::memory::hook(target_,reinterpret_cast<void*>(&Mod::tick),&original_) != 0 || !original_) {
+        const int hook_result = pl::memory::hook(target_,reinterpret_cast<void*>(&Mod::tick),&original_);
+        if (hook_result != 0) {
             log("ERROR: tick hook installation failed");target_=nullptr;stop_=true;return;
+        }
+        if (!original_) {
+            active_=false;
+            log("ERROR: hook installed without an original; restart required");stop_=true;return;
         }
         log("tick hook installed; original prologue e80f19fcfd7b01a9fc6f02a9fa6703a9");
         stop_=true;
