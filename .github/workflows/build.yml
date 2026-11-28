@@ -66,15 +66,7 @@ jobs:
               "https://dl.google.com/android/repository/android-ndk-r28b-linux.zip" \
               || { echo "::error::NDK download failed rc=$?"; exit 1; }
             df -h "$ANDROID_HOME" | tail -1 | sed 's/^/::notice::disk: /'
-            python3 - <<-'PY'
-                import zipfile
-                z = zipfile.ZipFile("/tmp/ndk.zip")
-                names = z.namelist()
-                print("::notice::zip-entries:", len(names))
-                print("::notice::zip-bad:", z.testzip())
-                print("::notice::zip-clang:",
-                      sum(1 for n in names if n.endswith("/bin/clang++")))
-            PY
+            python3 -c "import zipfile; z=zipfile.ZipFile('/tmp/ndk.zip'); ns=z.namelist(); print('::notice::zip-entries:', len(ns)); print('::notice::zip-bad:', z.testzip()); print('::notice::zip-clang:', sum(1 for n in ns if n.endswith('/bin/clang++')))"
             unzip -q /tmp/ndk.zip -d "$ANDROID_HOME" \
               || { echo "::error::NDK unzip failed"; exit 1; }
             rm -f /tmp/ndk.zip
