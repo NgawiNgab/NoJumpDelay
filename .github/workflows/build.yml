@@ -70,10 +70,15 @@ jobs:
               || { echo "::error::NDK download failed rc=$?"; exit 1; }
             df -h "$ANDROID_HOME" | tail -1 | sed 's/^/::notice::disk: /'
             python3 -c "import zipfile; z=zipfile.ZipFile('/tmp/ndk.zip'); ns=z.namelist(); print('::notice::zip-entries:', len(ns)); print('::notice::zip-bad:', z.testzip()); print('::notice::zip-clang:', sum(1 for n in ns if n.endswith('/bin/clang++')))"
-            unzip -q /tmp/ndk.zip -d "$ANDROID_HOME" \
+            unzip /tmp/ndk.zip -d "$ANDROID_HOME" 2>&1 \
+              | grep -iE "error|warn|avoid|skip|symbol|caution" | head -10 \
+              | sed 's/^/::notice::unzip: /'
+            unzip -tq /tmp/ndk.zip >/dev/null 2>&1 || true
+            unzip -o /tmp/ndk.zip -d "$ANDROID_HOME" > /dev/null \
               || { echo "::error::NDK unzip failed"; exit 1; }
             rm -f /tmp/ndk.zip
             echo "::notice::extracted-files: $(find "$NDK_ROOT" -type f | wc -l)"
+            echo "::notice::clang-found: $(find "$NDK_ROOT" -name 'clang++*' | head -5 | tr '\n' ' ')"
             ls "$NDK_ROOT/bin" >/dev/null 2>&1 \
               || echo "::error::NDK bin/ missing after extraction"
           fi
