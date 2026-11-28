@@ -21,7 +21,10 @@ int main() {
     Candidate targets[]{b, a, far};
     auto selected=selectPlayers(c,{0,0,0},targets); assert(selected.size()==1 && selected[0]==1);
     c.auraType=Mode::Multi; selected=selectPlayers(c,{0,0,0},targets); assert(selected.size()==2);
-    c.auraType=Mode::Switch; assert(selectPlayers(c,{0,0,0},targets).empty());
+    c.auraType=Mode::Switch;
+    selected=selectPlayers(c,{0,0,0},targets); assert(selected.size()==1 && selected[0]==0);
+    selected=selectPlayers(c,{0,0,0},targets,2); assert(selected.size()==1 && selected[0]==1);
+    selected=selectPlayers(c,{0,0,0},targets,1); assert(selected.size()==1 && selected[0]==0);
     Candidate item{.id=4,.name="",.item=true}; c.killItems=true;
     assert(itemEligible(c,item,6.0f)); assert(!itemEligible(c,item,6.01f));
     assert(!itemEligible(c,item,std::numeric_limits<float>::quiet_NaN())); c.killItems=false;

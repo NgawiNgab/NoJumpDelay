@@ -28,17 +28,23 @@ bool playerEligible(const Config& c, const Candidate& t) {
 bool itemEligible(const Config& c, const Candidate& t, float rawDistance) {
     return c.killItems && t.item && !t.self && std::isfinite(rawDistance) && rawDistance >= 0 && rawDistance <= 6.0f;
 }
-std::vector<std::size_t> selectPlayers(const Config& c, Vec3 eye, std::span<const Candidate> targets) {
+std::vector<std::size_t> selectPlayers(const Config& c, Vec3 eye, std::span<const Candidate> targets, std::uint64_t previousSwitch) {
     std::vector<std::size_t> result;
-    if (c.auraType == Mode::Switch || !std::isfinite(c.killRange) || c.killRange < 0) return result;
+    if (!std::isfinite(c.killRange) || c.killRange < 0) return result;
     float nearest = std::numeric_limits<float>::infinity();
     for (std::size_t i = 0; i < targets.size(); ++i) {
         const Candidate& t = targets[i];
         if (!playerEligible(c, t)) continue;
         const float d = distanceToBox(eye, t.origin, t.width, t.height);
         if (!(d <= c.killRange)) continue;
-        if (c.auraType == Mode::Multi) result.push_back(i);
+        if (c.auraType == Mode::Multi || c.auraType == Mode::Switch) result.push_back(i);
         else if (c.auraType == Mode::Single && d < nearest) { nearest = d; result.assign(1, i); }
+    }
+    if (c.auraType == Mode::Switch && !result.empty()) {
+        std::size_t next=0;
+        for (std::size_t i=0; i<result.size(); ++i)
+            if (targets[result[i]].id == previousSwitch) {next=(i+1)%result.size();break;}
+        const auto selected=result[next]; result.assign(1,selected);
     }
     return result;
 }

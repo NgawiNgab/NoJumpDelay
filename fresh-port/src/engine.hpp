@@ -32,6 +32,6 @@ struct Candidate {
 float distanceToBox(Vec3 eye, Vec3 upperCenter, float width, float height);
 bool playerEligible(const Config&, const Candidate&);
 bool itemEligible(const Config&, const Candidate&, float rawDistance);
-std::vector<std::size_t> selectPlayers(const Config&, Vec3 eye, std::span<const Candidate>);
+std::vector<std::size_t> selectPlayers(const Config&, Vec3 eye, std::span<const Candidate>, std::uint64_t previousSwitch = 0);
 int intervalMs(int minCps, int maxCps, std::mt19937& rng);
 } // namespace aura

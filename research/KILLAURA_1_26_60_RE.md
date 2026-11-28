@@ -492,3 +492,24 @@ The live code intentionally uses the existing simplified `playerEligible`,
 conditions, rotation registry updates and timing edge cases are not reproduced.
 Host simulations and Android cross-compilation do not demonstrate device
 compatibility, pointer lifetimes, vector ownership or 1:1 equivalence.
+
+## Deferred installation and combat follow-up
+
+The previously shipped build was reported to load and register the UI but do
+nothing in game. This update waits for the game library, distinguishing absence
+from a signature mismatch and rechecking all twelve prologues before hooking.
+It adds round-robin Switch, item/player hit-result writes, source-derived player
+name lookup and rotation registry traversal. The first Android runtime test of
+this updated build is still outstanding.
+
+Capstone on Sigma's `0x1aef80` shows the pitch in `s0` and yaw in `s1`, both
+multiplied by `-57.295776`; the rotation helper clamps Y to
+`[origin.y, origin.y + height]`, unlike the distance helper. The jitter bounds
+read from Sigma RVA `0x38078` are `0.0, 1.0`. The EnTT traversal constants and
+its write to a single yaw float were checked against Sigma's AArch64 instructions
+at Ghidra addresses `0x1aba38`–`0x1abb1c`, not just Ghidra's reconstructed C.
+These facts do not validate the live game's object layout, pointer lifetimes,
+allocator boundary, or the user-supplied game function signatures. Friend/bot
+logic and scheduler details are still simplified, so exact 1:1 parity remains
+unproven. The user-specified item hit-result mutation is not established by the
+item branch of the source decompilation.

@@ -1,5 +1,6 @@
 #include "config.hpp"
 #include "hooks.hpp"
+#include "watcher.hpp"
 #include <pl/Mod.hpp>
 #include <pl/ModMenu.hpp>
 #include <android/log.h>
@@ -21,6 +22,7 @@ class Mod {
  std::filesystem::path path_;
  std::string modId_;
  bool registered_ = false;
+ aura::HookWatcher watcher_;
  void saveLocked() { if(!path_.empty() && !aura::saveConfig(path_,config_)) log("Cannot save config.json"); }
  void updateButtons() {
   aura::Config c; std::string id;
@@ -72,8 +74,8 @@ public:
    .config("friendList","Friend list (JSON array)",T::Text,nlohmann::json(c.friendList).dump())
    .config("botList","Bot list (JSON array)",T::Text,nlohmann::json(c.botList).dump());
   registered_=builder.registerModule(); if(!registered_){log("Could not register module menu");return false;}
-  if(!aura::installHooks(&Mod::snapshot)) {
-   log("Could not install combat hooks");
+  if(!watcher_.start(&Mod::snapshot)) {
+   log("Could not start hook watcher");
    pl::modmenu::unregisterModule(moduleId); registered_=false;
    return false;
   }
@@ -81,6 +83,7 @@ public:
   return true;
  }
  bool disable(pl::mod::ModContext&) {
+  watcher_.stop();
   const bool hooksRemoved=aura::removeHooks();
   pl::modmenu::unregisterButton(auraButton); pl::modmenu::unregisterButton(itemsButton);
   if(registered_){pl::modmenu::unregisterModule(moduleId);registered_=false;}

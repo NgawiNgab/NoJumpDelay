@@ -1,6 +1,7 @@
 #include "hooks.hpp"
 #include "combat.hpp"
 #include "verification.hpp"
+#include "rotation.hpp"
 #include <pl/memory/Hook.hpp>
 #include <android/log.h>
 #include <atomic>
@@ -33,8 +34,7 @@ void rotationDetour(void* a0,void* actor) {
    const Config c=snapshot();
    const Rotation r=combat.rotation();
    if(actor==r.player && r.locked && (c.rotations||c.emulateNativeAttack)) {
-    float* component{}; std::memcpy(&component,static_cast<unsigned char*>(actor)+0x238,sizeof(component));
-    if(component) {component[0]=r.yaw; component[1]=r.pitch;}
+    injectRotation(actor,r.pitch,r.yaw);
    }
   }
  } catch(...) {error("Rotation injector threw an exception");}
@@ -43,8 +43,9 @@ void rotationDetour(void* a0,void* actor) {
 }
 bool installHooks(ConfigSnapshot getter) {
  if(tickInstalled||rotationInstalled||!getter) {error("Hooks already installed or missing config callback"); return false;}
- const auto base=verifyLoadedGame();
- if(!base) {error("Game library missing or one of twelve prologues mismatched; no hooks installed"); return false;}
+ const auto verified=verifyLoadedGame();
+ const auto base=verified.base;
+ if(verified.status!=VerificationStatus::Matched || !base) {error("Game library missing or one of twelve prologues mismatched; no hooks installed"); return false;}
  snapshot=getter; api=GameApi::fromBase(base);
  tickTarget=reinterpret_cast<void*>(base+0x0af5e460);
  rotationTarget=reinterpret_cast<void*>(base+0x10383480);
@@ -60,6 +61,7 @@ bool installHooks(ConfigSnapshot getter) {
  }
  rotationInstalled=true;
  active.store(true,std::memory_order_release);
+ __android_log_print(ANDROID_LOG_INFO,"ApollonKillAura","Installed tick and rotation hooks at game base %p",reinterpret_cast<void*>(base));
  return true;
 }
 bool removeHooks() {

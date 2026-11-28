@@ -22,7 +22,7 @@ test -n "$preloader" || { echo 'preloader build did not produce libpreloader.so'
   -include cstdlib -fPIC -shared -fvisibility=hidden -fvisibility-inlines-hidden -DFMT_HEADER_ONLY=1 \
   -I"$root/fresh-port/src" -I"$root/fresh-port/native" -I"$sdk/include" -I"$fmt" -I"$json" \
   "$root/fresh-port/native/mod.cpp" "$root/fresh-port/native/verification.cpp" \
-  "$root/fresh-port/native/hooks.cpp" "$root/fresh-port/native/combat.cpp" \
+  "$root/fresh-port/native/hooks.cpp" "$root/fresh-port/native/combat.cpp" "$root/fresh-port/native/watcher.cpp" "$root/fresh-port/native/rotation.cpp" \
   "$root/fresh-port/src/config.cpp" "$root/fresh-port/src/engine.cpp" \
   -L"$(dirname "$preloader")" -static-libstdc++ -nostdlib++ -Wl,--exclude-libs,libc++_static.a \
   -Wl,--exclude-libs,libc++abi.a -Wl,--no-undefined -Wl,-z,max-page-size=16384 \

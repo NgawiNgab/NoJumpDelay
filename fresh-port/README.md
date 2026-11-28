@@ -8,21 +8,24 @@ GitHub integration. The preloader SDK snapshot is
 
 ## Runtime and limitations
 
-At enable time the mod checks twelve 16-byte executable prologues in loaded
-`libminecraftpe.so`. A mismatch fails enable without installing either hook;
-a failure installing the second hook rolls the first back. Disable removes
-both hooks through `pl::memory::unhook`. The native menu and SVG shortcuts
+At enable time a background watcher waits for `libminecraftpe.so`, then checks
+twelve 16-byte executable prologues. A mismatch stops the watcher without
+installing either hook; a failure installing the second hook rolls the first
+back. Disable stops and joins the watcher before removing both hooks through
+`pl::memory::unhook`. The native menu and SVG shortcuts
 persist configuration in the preloader's config directory.
 
 **Prologue matches are not ABI verification.** The two detour signatures,
 component/actor fields, data addresses, `std::vector` allocation/ownership,
 rotation writes and emulated-native-attack calls are inferred or supplied
 assumptions. In particular, one native-attack routine appears to clear and
-free a pointer. This mod has not been loaded or tested on a device, and the
-exact installed preloader's ABI is unverified. Host tests simulate game objects
-and cannot establish behavior, crash safety or 1:1 parity with Sigma. `Switch`
-mode is not implemented in the selection model. Rotation component registry
-updates and some Sigma filtering and timing paths are not reproduced. See
+free a pointer. The previous build was reported to load and register its UI on
+a device but not work in-game; these new changes have not been device-tested,
+and the exact installed preloader's ABI is unverified. Host tests simulate game
+objects and cannot establish behavior, crash safety or 1:1 parity with Sigma.
+Switch is implemented as round-robin and the rotation registry traversal follows
+the recovered instructions, but some Sigma filtering and timing paths are still
+simplified. See
 [research/KILLAURA_1_26_60_RE.md](../research/KILLAURA_1_26_60_RE.md).
 
 The SDK unhook API does not provide a documented mechanism to drain callbacks
@@ -38,8 +41,8 @@ NLOHMANN_INCLUDE=/path/to/json/single_include JAVA_HOME=/path/to/jdk \\
 ./fresh-port/tests/run_sdk_compile.sh
 ```
 
-The C++ model, combat mock, hook-lifecycle mock, config and signature checks
-use ASan/UBSan; Python tests cover the scanning logic. No device test is included.
+The C++ model, combat and rotation mocks, deferred watcher, hook-lifecycle,
+config and signature checks use ASan/UBSan; Python tests cover the scanning logic. No device test is included.
 
 ## Android build
 

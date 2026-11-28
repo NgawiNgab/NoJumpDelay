@@ -41,11 +41,13 @@ int main() {
  mapping=mmap(nullptr,size,PROT_READ|PROT_WRITE,MAP_PRIVATE|MAP_ANONYMOUS,-1,0);
  assert(mapping!=MAP_FAILED);
  for(const auto& p:expected) std::memcpy(static_cast<char*>(mapping)+p.rva,p.bytes.data(),p.bytes.size());
- assert(aura::verifyLoadedGame()==reinterpret_cast<std::uintptr_t>(mapping));
+ assert(aura::verifyLoadedGame().status==aura::VerificationStatus::Matched && aura::verifyLoadedGame().base==reinterpret_cast<std::uintptr_t>(mapping));
  for(const auto& p:expected) {
-  auto* byte=static_cast<unsigned char*>(mapping)+p.rva; *byte^=0x80;
-  assert(aura::verifyLoadedGame()==0); *byte^=0x80;
+  for(std::size_t i=0;i<p.bytes.size();++i) {
+   auto* byte=static_cast<unsigned char*>(mapping)+p.rva+i; *byte^=0x80;
+   auto result=aura::verifyLoadedGame(); assert(result.status==aura::VerificationStatus::Mismatch && result.base==0 && result.mismatchedRva==p.rva); *byte^=0x80;
+  }
  }
- for(scenario=0;scenario<=3;++scenario) {if(scenario!=1) assert(aura::verifyLoadedGame()==0);}
+ for(scenario=0;scenario<=3;++scenario) {if(scenario!=1) {auto result=aura::verifyLoadedGame(); assert(result.base==0 && result.status==(scenario==0 ? aura::VerificationStatus::MissingLibrary : aura::VerificationStatus::Mismatch));}}
  assert(munmap(mapping,size)==0);
 }

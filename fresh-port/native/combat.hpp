@@ -24,6 +24,8 @@ class Combat {
  std::mutex tickMutex_, rotationMutex_;
  Rotation rotation_{};
  std::chrono::steady_clock::time_point nextAttack_{};
+ bool scheduled_{};
+ std::uint64_t previousSwitch_{};
  std::mt19937 random_{std::random_device{}()};
  void setRotation(Rotation);
 public:

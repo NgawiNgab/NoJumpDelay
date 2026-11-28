@@ -17,7 +17,7 @@ void originalRotation(void*,void*) {++rotations;}
 aura::Config snapshot() {return {};}
 }
 extern "C" int __android_log_print(int,const char*,const char*,...) {return 0;}
-namespace aura {std::uintptr_t verifyLoadedGame() {return fakeBase;}}
+namespace aura {VerificationResult verifyLoadedGame() {return fakeBase ? VerificationResult{VerificationStatus::Matched,fakeBase,0} : VerificationResult{};}}
 namespace pl::memory {
 int hook(FuncPtr target, FuncPtr detour, FuncPtr* orig, HookPriority) {
  ++hookCalls;

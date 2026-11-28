@@ -35,18 +35,49 @@ std::uint32_t hash(const std::string& s) {
  return h;
 }
 bool alive(void* actor, const GameApi& api) {
- void* c=api.component(actor,api.aliveKey);
- return !c || read<float>(c,0x7c)!=0.f;
+ void* component=api.component(actor,api.aliveKey);
+ if(!component) return false;
+ const float health=read<float>(component,0x7c);
+ // Equivalent to a nonzero truncating integer conversion without float-to-int UB.
+ return std::isfinite(health) && std::abs(health)>=1.f;
 }
 bool finite(Vec3 p) {return std::isfinite(p.x)&&std::isfinite(p.y)&&std::isfinite(p.z);}
+std::optional<std::string> playerName(void* actor,const GameApi& api) {
+ void* vector=read<void*>(actor,0x140);
+ if(vector) {
+  auto begin=read<std::uintptr_t>(vector,0), end=read<std::uintptr_t>(vector,8);
+  if(begin && end>=begin && end-begin>0x20) {
+   void* entry=read<void*>(reinterpret_cast<void*>(begin),0x20);
+   if(entry && read<unsigned char>(entry,8)==4) {
+    auto result=gameString(static_cast<unsigned char*>(entry)+0x10);
+    if(result) return result;
+   }
+  }
+ }
+ return name(actor,api);
+}
 Rotation look(void* player, Vec3 eye, const Candidate& target) {
  const float half=target.width*.5f;
  const Vec3 p{std::clamp(eye.x,target.origin.x-half,target.origin.x+half),
-              std::clamp(eye.y,target.origin.y-target.height,target.origin.y),
+              std::clamp(eye.y,target.origin.y,target.origin.y+target.height),
               std::clamp(eye.z,target.origin.z-half,target.origin.z+half)};
  const float dx=p.x-eye.x, dy=p.y-eye.y, dz=p.z-eye.z;
- constexpr float degrees=57.29577951308232f;
- return {player,true,std::atan2(dz,dx)*degrees-90.f,-std::atan2(dy,std::hypot(dx,dz))*degrees};
+ const float horizontal=std::hypot(dx,dz);
+ constexpr float degrees=57.295776f;
+ const float pitch=horizontal<=0.001f ? (dy>0.f ? -90.f : 90.f) : -std::atan2(dy,horizontal)*degrees;
+ return {player,true,-std::atan2(dx,dz)*degrees,pitch};
+}
+Vec3 jitter(Vec3 target,float width,float height,std::mt19937& rng) {
+ std::uniform_real_distribution<float> uniform(0.f,1.f);
+ const float x=2.f*uniform(rng)-1.f;
+ const float y=uniform(rng);
+ const float z=2.f*uniform(rng)-1.f;
+ return {target.x+x*width,target.y+y*height,target.z+z*width};
+}
+void hit(void* result, Vec3 position) {
+ const int type=1;
+ std::memcpy(static_cast<unsigned char*>(result)+0x18,&type,sizeof(type));
+ std::memcpy(static_cast<unsigned char*>(result)+0x2c,&position,sizeof(position));
 }
 }
 GameApi GameApi::fromBase(std::uintptr_t b) {
@@ -63,7 +94,7 @@ GameApi GameApi::fromBase(std::uintptr_t b) {
 void Combat::setRotation(Rotation value) {std::lock_guard lock(rotationMutex_); rotation_=value;}
 Rotation Combat::rotation() {std::lock_guard lock(rotationMutex_); return rotation_;}
 void Combat::reset() {
- std::lock_guard lock(tickMutex_); nextAttack_={}; setRotation({});
+ std::lock_guard lock(tickMutex_); nextAttack_={}; scheduled_=false; previousSwitch_=0; setRotation({});
 }
 void Combat::tick(void* lp, const Config& c, const GameApi& api, std::chrono::steady_clock::time_point now) {
  std::lock_guard lock(tickMutex_);
@@ -73,14 +104,16 @@ void Combat::tick(void* lp, const Config& c, const GameApi& api, std::chrono::st
  void* level=read<void*>(lp,0x1f0);
  void* mode=read<void*>(lp,0xa08);
  if(!pos||!level||!mode||!alive(lp,api)||!finite(*pos)) return;
- Vec3 eye=*pos; eye.y-=1.62f;
+ void* hitResult=read<void*>(level,0x1d8);
+ Vec3 eye=*pos;
+ Vec3 feet=eye; feet.y-=1.62f;
  const auto localTeam=c.killAura ? team(lp) : std::optional<std::string>(std::string{});
  if(!localTeam) return;
  std::vector<Candidate> candidates;
  std::vector<void*> actors;
  float nearest=std::numeric_limits<float>::infinity();
  Rotation nearestRotation{};
- const float rotationRange=c.rotations ? std::max(c.killRange,c.rotationsRange) : c.killRange;
+ const float rotationRange=(c.rotations||c.emulateNativeAttack) ? c.rotationsRange : c.killRange;
  // C++ vector return uses AArch64 x8 indirect-result ABI. Assumes the game and
  // module share the Android libc++ allocator and vector ABI.
  for(void* actor:api.actors(level)) {
@@ -92,7 +125,9 @@ void Combat::tick(void* lp, const Config& c, const GameApi& api, std::chrono::st
   if(!api.isPlayer(actor)) {
    const auto itemName=c.killItems ? name(actor,api) : std::nullopt;
    if(itemName && hash(*itemName)==0xf228491fu &&
-      std::hypot(pos->x-p->x,pos->y-p->y,pos->z-p->z)<=6.f) {
+      std::hypot(feet.x-p->x,feet.y-p->y,feet.z-p->z)<=6.f && hitResult &&
+      std::isfinite(width) && width>=0 && std::isfinite(height) && height>=0) {
+    hit(hitResult,jitter(*p,width,height,random_));
     api.attack(mode,actor,true,p);
     if(c.swing) api.swing(lp,4,0);
    }
@@ -100,21 +135,23 @@ void Combat::tick(void* lp, const Config& c, const GameApi& api, std::chrono::st
   }
   if(!c.killAura) continue;
   const auto theirTeam=team(actor);
-  const auto playerName=name(actor,api);
-  if(!theirTeam || !playerName || (!localTeam->empty() && *localTeam==*theirTeam)) continue;
-  Candidate t{.id=reinterpret_cast<std::uintptr_t>(actor),.name=*playerName,
+  const auto actorName=playerName(actor,api);
+  if(!theirTeam || !actorName || (!localTeam->empty() && *localTeam==*theirTeam)) continue;
+  Candidate t{.id=reinterpret_cast<std::uintptr_t>(actor),.name=*actorName,
               .origin={p->x,p->y-1.62f,p->z},.width=width,.height=height,
               .hurtTime=read<int>(actor,0x1b4),.player=true,.alive=alive(actor,api)};
   if(!playerEligible(c,t)) continue;
   const float distance=distanceToBox(eye,t.origin,width,height);
-  if(distance<=rotationRange && distance<nearest) {
+  if(!(distance<=rotationRange)) continue;
+  if(distance<nearest) {
    nearest=distance; nearestRotation=look(lp,eye,t);
   }
   candidates.push_back(std::move(t)); actors.push_back(actor);
  }
- if(c.rotations) setRotation(nearestRotation);
- auto chosen=selectPlayers(c,eye,candidates);
- if(chosen.empty() || now<nextAttack_) return;
+ if(c.rotations||c.emulateNativeAttack) setRotation(nearestRotation);
+ auto chosen=selectPlayers(c,eye,candidates,previousSwitch_);
+ if(chosen.empty() || (scheduled_ && now<nextAttack_)) return;
+ scheduled_=true;
  nextAttack_=now+std::chrono::milliseconds(intervalMs(c.minKillAuraCPS,c.maxKillAuraCPS,random_));
  for(auto index:chosen) {
   if(c.emulateNativeAttack) {
@@ -122,7 +159,12 @@ void Combat::tick(void* lp, const Config& c, const GameApi& api, std::chrono::st
    if(!native) continue;
    setRotation(look(lp,eye,candidates[index]));
    api.nativeBegin(native); api.nativeEnd(native);
-  } else api.attack(mode,actors[index],true,&candidates[index].origin);
+  } else {
+   if(!hitResult) continue;
+   hit(hitResult,jitter(candidates[index].origin,candidates[index].width,candidates[index].height,random_));
+   api.attack(mode,actors[index],true,&candidates[index].origin);
+  }
+  if(c.auraType==Mode::Switch) previousSwitch_=candidates[index].id;
   if(c.swing) api.swing(lp,4,0);
  }
 }
