@@ -61,14 +61,19 @@ fi
 test -x "$CLANGXX" || { echo "NDK clang++ not found under $ANDROID_NDK_HOME"; exit 1; }
 
 echo "== arm64-v8a build ($CLANGXX) =="
+mkdir -p build/native
 "$CLANGXX" -target aarch64-linux-android28 \
     -std=c++20 -O2 -fno-strict-aliasing \
     -shared -fPIC -fvisibility=hidden -fvisibility-inlines-hidden \
     -I src -I third_party -I third_party/preloader/include -I third_party/fmt/include \
     -Wl,-z,max-page-size=16384 \
     -llog \
-    -o build/native/libApollonKillAura.so ${SOURCES}
-mkdir -p build/native
+    -o build/native/libApollonKillAura.so ${SOURCES} 2> build/native-compile.log || {
+        grep -E "error|undefined|Error" build/native-compile.log | head -15 \
+            | cut -c1-250 | sed 's/^/::error::/'
+        tail -5 build/native-compile.log | cut -c1-250 | sed 's/^/::error::tail: /'
+        exit 1
+    }
 
 # ---- 4. levipack packaging ----------------------------------------------------
 echo "== packaging ApollonKillAura-1.26.60.levipack =="
