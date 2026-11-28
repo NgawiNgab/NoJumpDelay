@@ -13,12 +13,13 @@ trap 'status=$?; if (( status != 0 )) && [[ -f "$log" ]]; then text=$(tail -30 "
 clang="$ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
 test -x "$clang" || { echo 'NDK clang++ not found' >&2; exit 1; }
 cmake -S "$sdk" -B "$out/preloader" -DCMAKE_TOOLCHAIN_FILE="$ndk/build/cmake/android.toolchain.cmake" \
-  -DANDROID_ABI=arm64-v8a -DANDROID_PLATFORM=android-28 -DCMAKE_BUILD_TYPE=Release 2>&1 | tee "$log"
+  -DANDROID_ABI=arm64-v8a -DANDROID_PLATFORM=android-28 -DCMAKE_BUILD_TYPE=Release \
+  -DCMAKE_CXX_FLAGS="-include cstdlib" 2>&1 | tee "$log"
 cmake --build "$out/preloader" --target preloader --parallel 2 2>&1 | tee "$log"
 preloader=$(find "$out/preloader" -type f -name libpreloader.so -print -quit)
 test -n "$preloader" || { echo 'preloader build did not produce libpreloader.so' >&2; exit 1; }
 "$clang" -target aarch64-linux-android28 -std=c++20 -O2 -fno-strict-aliasing \
-  -fPIC -shared -fvisibility=hidden -fvisibility-inlines-hidden -DFMT_HEADER_ONLY=1 \
+  -include cstdlib -fPIC -shared -fvisibility=hidden -fvisibility-inlines-hidden -DFMT_HEADER_ONLY=1 \
   -I"$root/fresh-port/src" -I"$root/fresh-port/native" -I"$sdk/include" -I"$fmt" -I"$json" \
   "$root/fresh-port/native/mod.cpp" "$root/fresh-port/native/verification.cpp" \
   "$root/fresh-port/src/config.cpp" "$root/fresh-port/src/engine.cpp" \
