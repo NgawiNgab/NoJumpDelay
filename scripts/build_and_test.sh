@@ -37,6 +37,7 @@ g++ -std=c++20 -O2 -fno-strict-aliasing -fPIC -shared \
     -I third_party/fmt/include \
     ${SOURCES} -o build/libApollonKillAura_host.so
 echo "cross-check OK"
+./scripts/audit_preloader_symbols.sh build/libApollonKillAura_host.so
 
 if [[ "${1:-}" != "--native" ]]; then
     echo "== done (tests + cross-check) =="
@@ -60,6 +61,7 @@ if [[ -z "$CLANGXX" ]]; then
 fi
 test -x "$CLANGXX" || { echo "NDK clang++ not found under $ANDROID_NDK_HOME"; exit 1; }
 
+echo "::notice::stage: host tests + cross-check passed; starting arm64-v8a compile"
 echo "== arm64-v8a build ($CLANGXX) =="
 mkdir -p build/native
 "$CLANGXX" -target aarch64-linux-android28 \
@@ -67,6 +69,7 @@ mkdir -p build/native
     -shared -fPIC -fvisibility=hidden -fvisibility-inlines-hidden \
     -I src -I third_party -I third_party/preloader/include -I third_party/fmt/include \
     -Wl,-z,max-page-size=16384 \
+    -ldl \
     -llog \
     -o build/native/libApollonKillAura.so ${SOURCES} 2> build/native-compile.log || {
         grep -E "error|undefined|Error" build/native-compile.log | head -15 \
@@ -75,13 +78,30 @@ mkdir -p build/native
         exit 1
     }
 
+# ---- dynamic symbol audit (pl::/ll:: must match libpreloader.so) -------------
+echo "::notice::stage: arm64-v8a compile OK; running preloader symbol audit"
+echo "== preloader dynamic symbol audit (nm -Du / readelf) =="
+if ! ./scripts/audit_preloader_symbols.sh build/native/libApollonKillAura.so \
+        "$CLANGXX" -target aarch64-linux-android28 -std=c++20; then
+    echo "::error::preloader symbol audit failed on the arm64-v8a library"
+    exit 1
+fi
+if readelf --dyn-syms -W build/native/libApollonKillAura.so \
+    | grep -q "_ZN2ll3mod9NativeMod7currentEv"; then
+    echo "::notice::abi: ll::mod::NativeMod::current (libpreloader.so runtime ABI)"
+else
+    echo "::error::ll::mod::NativeMod::current missing from arm64-v8a dynsyms"
+    exit 1
+fi
+
 # ---- 4. levipack packaging ----------------------------------------------------
+echo "::notice::stage: symbol audit OK; packaging"
 echo "== packaging ApollonKillAura-1.26.60.levipack =="
 rm -rf build/package && mkdir -p build/package/ApollonKillAura
 cp build/native/libApollonKillAura.so build/package/ApollonKillAura/
 sed -e 's/@MOD_NAME@/Apollon KillAura/' \
     -e 's/@MOD_AUTHOR@/NgawiNgab/' \
-    -e 's/@MOD_VERSION@/1.0.0/' \
+    -e 's/@MOD_VERSION@/1.0.1/' \
     -e 's/@MOD_LIBRARY_NAME@/ApollonKillAura/' \
     -e 's/@MOD_ICON@//' \
     -e 's/@MOD_MINECRAFT_VERSIONS@/["1.26.60"]/' \
@@ -141,4 +161,5 @@ print("::notice::levipack: " + ",".join(names)[:230])
 print("::notice::manifest: " + json.dumps(manifest)[:230])
 print("::notice::sha256-levipack: " + sha)
 EOF
+echo "::notice::stage: all checks done"
 echo "== done =="

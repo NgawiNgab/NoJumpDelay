@@ -17,7 +17,7 @@
 #include "pl/Export.hpp"
 #include "pl/Logger.hpp"
 
-namespace pl::mod {
+namespace ll::mod {
 
 inline constexpr const char *ModRegistrationSymbol = "PLGetModRegistration";
 
@@ -302,21 +302,22 @@ template <typename T> T &materializeModInstance(T &&instance) {
 
 } // namespace detail
 
-} // namespace pl::mod
-
-namespace ll::mod {
-using ModContext = ::pl::mod::ModContext;
-using ModInfo = ::pl::mod::ModInfo;
-using ModRegistration = ::pl::mod::ModRegistration;
-using NativeMod = ::pl::mod::NativeMod;
 } // namespace ll::mod
+
+// Back-compat aliases (source level only — these do NOT affect mangling).
+namespace pl::mod {
+using ModContext = ::ll::mod::ModContext;
+using ModInfo = ::ll::mod::ModInfo;
+using ModRegistration = ::ll::mod::ModRegistration;
+using NativeMod = ::ll::mod::NativeMod;
+} // namespace pl::mod
 
 extern "C" {
 
 /**
  * @brief Returns the C++ lifecycle registration for a loaded mod library.
  */
-PL_EXPORT ::pl::mod::ModRegistration *PLGetModRegistration();
+PL_EXPORT ::ll::mod::ModRegistration *PLGetModRegistration();
 
 } // extern "C"
 
@@ -327,12 +328,12 @@ PL_EXPORT ::pl::mod::ModRegistration *PLGetModRegistration();
   namespace {                                                                  \
   TYPE &plRegisteredModInstance() {                                            \
     static TYPE &instance =                                                    \
-        ::pl::mod::detail::materializeModInstance<TYPE>((INSTANCE_EXPR));      \
+        ::ll::mod::detail::materializeModInstance<TYPE>((INSTANCE_EXPR));      \
     return instance;                                                           \
   }                                                                            \
   }                                                                            \
-  extern "C" PL_EXPORT ::pl::mod::ModRegistration *PLGetModRegistration() {    \
+  extern "C" PL_EXPORT ::ll::mod::ModRegistration *PLGetModRegistration() {    \
     static auto registration =                                                 \
-        ::pl::mod::detail::makeRegistration(plRegisteredModInstance());        \
+        ::ll::mod::detail::makeRegistration(plRegisteredModInstance());        \
     return &registration;                                                      \
   }

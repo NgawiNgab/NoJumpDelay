@@ -11,7 +11,7 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 set(MOD_ID "ApollonKillAura" CACHE STRING "LeviLauncher mod package directory name")
 set(MOD_NAME "Apollon KillAura" CACHE STRING "LeviLauncher mod display name")
 set(MOD_AUTHOR "NgawiNgab" CACHE STRING "LeviLauncher mod author")
-set(MOD_VERSION "1.0.0" CACHE STRING "LeviLauncher mod version")
+set(MOD_VERSION "1.0.1" CACHE STRING "LeviLauncher mod version")
 set(MOD_LIBRARY_NAME "ApollonKillAura" CACHE STRING
     "Native library name without lib prefix or .so suffix")
 # Target game build (user constraint: manifest.json must target 1.26.60).

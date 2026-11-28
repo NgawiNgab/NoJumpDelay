@@ -1,8 +1,10 @@
 #include "kaura/KillAuraMod.h"
 
 #include <cstdio>
+#include <dlfcn.h>
 #include <filesystem>
 #include <fstream>
+#include <string_view>
 #include <utility>
 
 #include "kaura/AuraConfig.h"
@@ -24,8 +26,59 @@ constexpr const char *kSwordSvg =
     "2.34 5.02 5.02 2.34-2.34L16.34 18 18.26 16.08 6.92 5zM19 5l-2.34 "
     "2.34-1.42-1.42-1.18 1.18 4.24 4.24 1.18-1.18-1.42-1.42L19 5z'/></svg>";
 
-std::filesystem::path configFilePath(pl::mod::NativeMod &self) {
+std::filesystem::path configFilePath(ll::mod::NativeMod &self) {
     return self.getConfigDir() / kConfigFileName;
+}
+
+// unregisterModule/unregisterButton take std::string_view, whose mangled
+// name depends on the libc++ ABI flavor (__ndk1 vs __1) libpreloader.so was
+// built with. Resolving them dynamically (trying both spellings) keeps every
+// link-time pl::/ll:: import free of std-type mangling, so dlopen cannot
+// fail on a toolchain/ABI variance again.
+template <typename Fn>
+Fn resolveAnyOf(const std::initializer_list<const char *> &names) {
+    for (const char *n : names) {
+        if (void *p = dlsym(RTLD_DEFAULT, n)) return reinterpret_cast<Fn>(p);
+    }
+    return nullptr;
+}
+
+void unregisterModmenuModule(std::string_view moduleId) {
+    using Fn = void (*)(std::string_view);
+    const auto fn = resolveAnyOf<Fn>({
+        // libstdc++ / libc++ default (__1) flavor:
+        "_ZN2pl7modmenu16unregisterModuleESt17basic_string_viewIcSt11char_"
+        "traitsIcEE",
+        // NDK libc++ __ndk1 flavor:
+        "_ZN2pl7modmenu16unregisterModuleENSt3__117basic_string_viewIcNS1_"
+        "11char_traitsIcEEEE",
+        "_ZN2pl7modmenu16unregisterModuleENSt6__ndk117basic_string_viewIcNS1_"
+        "11char_traitsIcEEEE",
+    });
+    if (fn != nullptr) {
+        fn(moduleId);
+    } else {
+        re::logWarn("pl::modmenu::unregisterModule unavailable; module stays "
+                    "registered");
+    }
+}
+
+void unregisterModmenuButton(std::string_view buttonId) {
+    using Fn = void (*)(std::string_view);
+    const auto fn = resolveAnyOf<Fn>({
+        "_ZN2pl7modmenu16unregisterButtonESt17basic_string_viewIcSt11char_"
+        "traitsIcEE",
+        "_ZN2pl7modmenu16unregisterButtonENSt3__117basic_string_viewIcNS1_"
+        "11char_traitsIcEEEE",
+        "_ZN2pl7modmenu16unregisterButtonENSt6__ndk117basic_string_viewIcNS1_"
+        "11char_traitsIcEEEE",
+    });
+    if (fn != nullptr) {
+        fn(buttonId);
+    } else {
+        re::logWarn("pl::modmenu::unregisterButton unavailable; button stays "
+                    "registered");
+    }
 }
 } // namespace
 
@@ -133,12 +186,12 @@ void KillAuraMod::registerMenu() {
 
 void KillAuraMod::unregisterMenu() {
     if (!menuRegistered_) return;
-    pl::modmenu::unregisterModule(kModuleId);
-    pl::modmenu::unregisterButton(kButtonId);
+    unregisterModmenuModule(kModuleId);
+    unregisterModmenuButton(kButtonId);
     menuRegistered_ = false;
 }
 
-bool KillAuraMod::load(pl::mod::ModContext &context) {
+bool KillAuraMod::load(ll::mod::ModContext &context) {
     self_.getLogger().info("ApollonKillAura loading (1.26.60 port of libReverseSigma)");
 
     std::error_code ec;
@@ -148,7 +201,7 @@ bool KillAuraMod::load(pl::mod::ModContext &context) {
     return true;
 }
 
-bool KillAuraMod::enable(pl::mod::ModContext &context) {
+bool KillAuraMod::enable(ll::mod::ModContext &context) {
     pushSettingsToEngine();
     re::HookManager::instance().install(settings_);
     hooksInstalled_ = true;
@@ -157,7 +210,7 @@ bool KillAuraMod::enable(pl::mod::ModContext &context) {
     return true;
 }
 
-bool KillAuraMod::disable(pl::mod::ModContext &context) {
+bool KillAuraMod::disable(ll::mod::ModContext &context) {
     unregisterMenu();
     if (hooksInstalled_) {
         re::HookManager::instance().uninstall();
@@ -167,7 +220,7 @@ bool KillAuraMod::disable(pl::mod::ModContext &context) {
     return true;
 }
 
-bool KillAuraMod::unload(pl::mod::ModContext &context) {
+bool KillAuraMod::unload(ll::mod::ModContext &context) {
     saveConfigFile();
     self_.getLogger().info("ApollonKillAura unloaded");
     return true;

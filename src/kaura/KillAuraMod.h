@@ -19,18 +19,18 @@ class KillAuraMod {
 public:
     static KillAuraMod &instance();
 
-    bool load(pl::mod::ModContext &context);
-    bool enable(pl::mod::ModContext &context);
-    bool disable(pl::mod::ModContext &context);
-    bool unload(pl::mod::ModContext &context);
+    bool load(ll::mod::ModContext &context);
+    bool enable(ll::mod::ModContext &context);
+    bool disable(ll::mod::ModContext &context);
+    bool unload(ll::mod::ModContext &context);
 
-    [[nodiscard]] pl::mod::NativeMod &self() { return self_; }
+    [[nodiscard]] ll::mod::NativeMod &self() { return self_; }
     AuraSettings &settings() { return settings_; }
 
 private:
-    KillAuraMod() : self_(*pl::mod::NativeMod::current()) {}
+    KillAuraMod() : self_(*ll::mod::NativeMod::current()) {}
 
-    pl::mod::NativeMod &self_;
+    ll::mod::NativeMod &self_;
     AuraSettings settings_{};
     bool hooksInstalled_{false};
     bool menuRegistered_{false};

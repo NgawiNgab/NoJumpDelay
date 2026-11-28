@@ -13,6 +13,18 @@ real `libminecraftpe.so 1.26.60`. The full method, the 59-hook table, the
 28-entry function table and the engine spec are in
 [`research/KILLAURA_1_26_60_RE.md`](research/KILLAURA_1_26_60_RE.md).
 
+## Runtime ABI
+
+The mod links against the LeviLauncher runtime the way the official template
+does: `ll::mod::NativeMod::current()` (the `libpreloader.so` device-runtime
+symbol), `pl::modmenu::*` registry APIs and `pl::memory::hook/unhook` stay
+undefined at build time and are resolved by `dlopen` against the launcher's
+preloader. CI audits the final arm64-v8a library's dynamic symbol table
+(`readelf --dyn-syms`, `scripts/audit_preloader_symbols.sh`) and fails if any
+`pl::`/`ll::` import is not exported by the preloader SDK — the
+`_ZN2pl3mod9NativeMod7currentEv` dlopen regression is explicitly guarded
+against. See `third_party/preloader/PATCH.llmod-abi.md`.
+
 ## Safety / fail-safes
 
 - Before any hook is installed, the resolver verifies the expected 16-byte
