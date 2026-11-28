@@ -1,0 +1,9 @@
+{
+  "type": "preload-native",
+  "name": "Apollon KillAura (inactive prototype)",
+  "author": "NgawiNgab",
+  "description": "Research prototype: combat hooks are disabled; not a 1:1 port.",
+  "version": "0.0.1",
+  "entry": "libApollonKillAura.so",
+  "minecraft_versions": ["1.26.60.4"]
+}
