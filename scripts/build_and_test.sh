@@ -80,7 +80,8 @@ mkdir -p build/native
 # ---- dynamic symbol audit (pl::/ll:: must match libpreloader.so) -------------
 echo "::notice::stage: arm64-v8a compile OK; running preloader symbol audit"
 echo "== preloader dynamic symbol audit (nm -Du / readelf) =="
-if ! ./scripts/audit_preloader_symbols.sh build/native/libApollonKillAura.so; then
+if ! ./scripts/audit_preloader_symbols.sh build/native/libApollonKillAura.so \
+        "$CLANGXX" -target aarch64-linux-android28 -std=c++20; then
     echo "::error::preloader symbol audit failed on the arm64-v8a library"
     exit 1
 fi

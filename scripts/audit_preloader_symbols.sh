@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 # Dynamic symbol audit for a built mod library (nm -Du / readelf equivalent).
 #
-#   scripts/audit_preloader_symbols.sh <path-to-libApollonKillAura.so>
+#   scripts/audit_preloader_symbols.sh <path-to-libApollonKillAura.so> #       [probe-compiler command...]
+#
+# The probe is compiled with the SAME toolchain as the audited library so the
+# C++-standard-library mangling (libstdc++ "St17..." vs libc++ "NSt3__1...")
+# matches; pass the NDK clang++ command when auditing an arm64-v8a build.
 #
 # Fails the build when the .so references any undefined pl::/ll:: symbol that
 # the vendored official preloader SDK headers do not expose, and specifically
@@ -10,14 +14,19 @@
 # present.
 set -euo pipefail
 REPO="$(cd "$(dirname "$0")/.." && pwd)"
-SO="${1:?usage: audit_preloader_symbols.sh <path-to-.so>}"
+SO="${1:?usage: audit_preloader_symbols.sh <path-to-.so> [probe-cxx...]}"
+if [ $# -ge 2 ]; then
+    PROBE_CXX=("${@:2}")
+else
+    PROBE_CXX=(g++ -std=c++20)
+fi
 
 TMP="$(mktemp -d)"
 trap 'rm -rf "$TMP"' EXIT
 
 # 1. Ground-truth allowlist: compile the probe against the same vendored
 #    headers the mod uses and collect its undefined pl::/ll:: symbols.
-g++ -std=c++20 -shared -fPIC \
+"${PROBE_CXX[@]}" -shared -fPIC \
     -I "$REPO/third_party" -I "$REPO/third_party/preloader/include" -I "$REPO/third_party/fmt/include" \
     "$REPO/scripts/probe_preloader_refs.cpp" -o "$TMP/probe.so"
 readelf --dyn-syms -W "$TMP/probe.so" | awk '$7=="UND"{print $8}' \
@@ -29,12 +38,14 @@ readelf --dyn-syms -W "$SO" | awk '$7=="UND"{print $8}' \
 
 echo "undefined pl::/ll:: symbols in $(basename "$SO"):"
 sed 's/^/  /' "$TMP/mod_undefs"
+sed 's/^/::notice::undef: /' "$TMP/mod_undefs"
 
 # 3. Every mod import must be a preloader SDK export.
 BAD="$(comm -23 "$TMP/mod_undefs" "$TMP/expected" || true)"
 if [ -n "$BAD" ]; then
     echo "FAIL: undefined symbols NOT exported by LiteLDev/preloader-android:"
-    echo "$BAD" | sed 's/^/  /'
+    echo "$BAD" | sed 's/^/  /; s/^  /::error::unexpected undef: /2'
+    echo "$BAD" | while read -r sym; do echo "::error::unexpected undef: $sym"; done
     exit 1
 fi
 
