@@ -37,6 +37,7 @@ g++ -std=c++20 -O2 -fno-strict-aliasing -fPIC -shared \
     -I third_party/fmt/include \
     ${SOURCES} -o build/libApollonKillAura_host.so
 echo "cross-check OK"
+./scripts/audit_preloader_symbols.sh build/libApollonKillAura_host.so
 
 if [[ "${1:-}" != "--native" ]]; then
     echo "== done (tests + cross-check) =="
@@ -75,13 +76,19 @@ mkdir -p build/native
         exit 1
     }
 
+# ---- dynamic symbol audit (pl::/ll:: must match libpreloader.so) -------------
+echo "== preloader dynamic symbol audit (nm -Du / readelf) =="
+./scripts/audit_preloader_symbols.sh build/native/libApollonKillAura.so
+grep -q "_ZN2ll3mod9NativeMod7currentEv" <(readelf --dyn-syms -W build/native/libApollonKillAura.so) \
+    && echo "::notice::abi: ll::mod::NativeMod::current (libpreloader.so runtime ABI)"
+
 # ---- 4. levipack packaging ----------------------------------------------------
 echo "== packaging ApollonKillAura-1.26.60.levipack =="
 rm -rf build/package && mkdir -p build/package/ApollonKillAura
 cp build/native/libApollonKillAura.so build/package/ApollonKillAura/
 sed -e 's/@MOD_NAME@/Apollon KillAura/' \
     -e 's/@MOD_AUTHOR@/NgawiNgab/' \
-    -e 's/@MOD_VERSION@/1.0.0/' \
+    -e 's/@MOD_VERSION@/1.0.1/' \
     -e 's/@MOD_LIBRARY_NAME@/ApollonKillAura/' \
     -e 's/@MOD_ICON@//' \
     -e 's/@MOD_MINECRAFT_VERSIONS@/["1.26.60"]/' \

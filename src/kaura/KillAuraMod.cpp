@@ -24,7 +24,7 @@ constexpr const char *kSwordSvg =
     "2.34 5.02 5.02 2.34-2.34L16.34 18 18.26 16.08 6.92 5zM19 5l-2.34 "
     "2.34-1.42-1.42-1.18 1.18 4.24 4.24 1.18-1.18-1.42-1.42L19 5z'/></svg>";
 
-std::filesystem::path configFilePath(pl::mod::NativeMod &self) {
+std::filesystem::path configFilePath(ll::mod::NativeMod &self) {
     return self.getConfigDir() / kConfigFileName;
 }
 } // namespace
@@ -138,7 +138,7 @@ void KillAuraMod::unregisterMenu() {
     menuRegistered_ = false;
 }
 
-bool KillAuraMod::load(pl::mod::ModContext &context) {
+bool KillAuraMod::load(ll::mod::ModContext &context) {
     self_.getLogger().info("ApollonKillAura loading (1.26.60 port of libReverseSigma)");
 
     std::error_code ec;
@@ -148,7 +148,7 @@ bool KillAuraMod::load(pl::mod::ModContext &context) {
     return true;
 }
 
-bool KillAuraMod::enable(pl::mod::ModContext &context) {
+bool KillAuraMod::enable(ll::mod::ModContext &context) {
     pushSettingsToEngine();
     re::HookManager::instance().install(settings_);
     hooksInstalled_ = true;
@@ -157,7 +157,7 @@ bool KillAuraMod::enable(pl::mod::ModContext &context) {
     return true;
 }
 
-bool KillAuraMod::disable(pl::mod::ModContext &context) {
+bool KillAuraMod::disable(ll::mod::ModContext &context) {
     unregisterMenu();
     if (hooksInstalled_) {
         re::HookManager::instance().uninstall();
@@ -167,7 +167,7 @@ bool KillAuraMod::disable(pl::mod::ModContext &context) {
     return true;
 }
 
-bool KillAuraMod::unload(pl::mod::ModContext &context) {
+bool KillAuraMod::unload(ll::mod::ModContext &context) {
     saveConfigFile();
     self_.getLogger().info("ApollonKillAura unloaded");
     return true;

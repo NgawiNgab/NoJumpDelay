@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+# Dynamic symbol audit for a built mod library (nm -Du / readelf equivalent).
+#
+#   scripts/audit_preloader_symbols.sh <path-to-libApollonKillAura.so>
+#
+# Fails the build when the .so references any undefined pl::/ll:: symbol that
+# the vendored official preloader SDK headers do not expose, and specifically
+# verifies that _ZN2pl3mod9NativeMod7currentEv is completely gone while
+# _ZN2ll3mod9NativeMod7currentEv (the libpreloader.so device-runtime ABI) is
+# present.
+set -euo pipefail
+REPO="$(cd "$(dirname "$0")/.." && pwd)"
+SO="${1:?usage: audit_preloader_symbols.sh <path-to-.so>}"
+
+TMP="$(mktemp -d)"
+trap 'rm -rf "$TMP"' EXIT
+
+# 1. Ground-truth allowlist: compile the probe against the same vendored
+#    headers the mod uses and collect its undefined pl::/ll:: symbols.
+g++ -std=c++20 -shared -fPIC \
+    -I "$REPO/third_party" -I "$REPO/third_party/preloader/include" -I "$REPO/third_party/fmt/include" \
+    "$REPO/scripts/probe_preloader_refs.cpp" -o "$TMP/probe.so"
+readelf --dyn-syms -W "$TMP/probe.so" | awk '$7=="UND"{print $8}' \
+    | grep -E "^_ZN2(pl|ll)" | sort -u > "$TMP/expected" || true
+
+# 2. The mod's own undefined pl::/ll:: dynamic symbols.
+readelf --dyn-syms -W "$SO" | awk '$7=="UND"{print $8}' \
+    | grep -E "^_ZN2(pl|ll)" | sort -u > "$TMP/mod_undefs" || true
+
+echo "undefined pl::/ll:: symbols in $(basename "$SO"):"
+sed 's/^/  /' "$TMP/mod_undefs"
+
+# 3. Every mod import must be a preloader SDK export.
+BAD="$(comm -23 "$TMP/mod_undefs" "$TMP/expected" || true)"
+if [ -n "$BAD" ]; then
+    echo "FAIL: undefined symbols NOT exported by LiteLDev/preloader-android:"
+    echo "$BAD" | sed 's/^/  /'
+    exit 1
+fi
+
+# 4. The NativeMod ABI regression guard (dlopen bug fixed here).
+if grep -q "_ZN2pl3mod9NativeMod7currentEv" "$TMP/mod_undefs"; then
+    echo "FAIL: _ZN2pl3mod9NativeMod7currentEv must be completely gone"
+    exit 1
+fi
+if ! grep -q "_ZN2ll3mod9NativeMod7currentEv" "$TMP/mod_undefs"; then
+    echo "FAIL: _ZN2ll3mod9NativeMod7currentEv (ll::mod::NativeMod::current) missing"
+    exit 1
+fi
+
+echo "PRELOADER SYMBOL AUDIT OK"
