@@ -106,10 +106,11 @@ bad = 0
 for line in out.splitlines():
     if line.strip().startswith("LOAD"):
         f = line.split()
-        off = int(f[1], 16); va = int(f[2], 16)
-        if off % 16384 or va % 16384:
+        off = int(f[1], 16); va = int(f[2], 16); align = int(f[-1], 16)
+        # Android 16 KB rule: (p_vaddr - p_offset) % p_align == 0, p_align >= 16384
+        if (va - off) % max(align, 16384) != 0:
             bad += 1
-print("ALIGN-FAIL" if bad else "ALIGN-OK: all PT_LOAD 16KB aligned (vaddr+offset)")
+print("ALIGN-FAIL" if bad else "ALIGN-OK: all PT_LOAD satisfy (vaddr-offset)%16384==0")
 EOF
 [ "$ARCH" = "AArch64" ] || { echo "FAIL: not an AArch64 ELF ($ARCH)"; exit 1; }
 [ "$PLSYM" -ge 1 ] || { echo "FAIL: PLGetModRegistration not exported"; exit 1; }
