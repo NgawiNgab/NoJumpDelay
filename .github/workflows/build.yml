@@ -1,0 +1,48 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+      - "arena/**"
+      - "feat/**"
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  tests:
+    name: Host tests + cross-check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run host unit tests + full-source cross-check
+        run: ./scripts/build_and_test.sh
+
+  native:
+    name: arm64-v8a build + levipack
+    runs-on: ubuntu-latest
+    needs: tests
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Android NDK
+        run: sdkmanager "ndk;28.2.13676358"
+
+      - name: Build native lib + package
+        env:
+          ANDROID_NDK_HOME: /usr/local/lib/android/sdk/ndk/28.2.13676358
+        run: |
+          sudo apt-get update && sudo apt-get install -y zip
+          ./scripts/build_and_test.sh --native
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: ApollonKillAura-1.26.60-levipack
+          path: build/ApollonKillAura-1.26.60.levipack
