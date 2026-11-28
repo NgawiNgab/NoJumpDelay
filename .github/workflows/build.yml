@@ -65,13 +65,21 @@ jobs:
             curl -fsSL -o /tmp/ndk.zip \
               "https://dl.google.com/android/repository/android-ndk-r28b-linux.zip" \
               || { echo "::error::NDK download failed rc=$?"; exit 1; }
-            ls -la /tmp/ndk.zip | sed 's/^/::notice::download: /'
+            df -h "$ANDROID_HOME" | tail -1 | sed 's/^/::notice::disk: /'
+            python3 - <<-'PY'
+                import zipfile
+                z = zipfile.ZipFile("/tmp/ndk.zip")
+                names = z.namelist()
+                print("::notice::zip-entries:", len(names))
+                print("::notice::zip-bad:", z.testzip())
+                print("::notice::zip-clang:",
+                      sum(1 for n in names if n.endswith("/bin/clang++")))
+            PY
             unzip -q /tmp/ndk.zip -d "$ANDROID_HOME" \
               || { echo "::error::NDK unzip failed"; exit 1; }
             rm -f /tmp/ndk.zip
-            du -sh "$NDK_ROOT" 2>/dev/null | sed 's/^/::notice::ndk-size: /'
-            ls "$NDK_ROOT" | head -12 | sed 's/^/::notice::ndk-top: /'
-            ls "$NDK_ROOT/bin" 2>/dev/null | head -8 | sed 's/^/::notice::ndk-bin: /' \
+            echo "::notice::extracted-files: $(find "$NDK_ROOT" -type f | wc -l)"
+            ls "$NDK_ROOT/bin" >/dev/null 2>&1 \
               || echo "::error::NDK bin/ missing after extraction"
           fi
           [ -x "$NDK_ROOT/bin/clang++" ] || { echo "::error::NDK clang++ missing"; exit 1; }
