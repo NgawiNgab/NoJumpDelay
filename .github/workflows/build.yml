@@ -56,7 +56,8 @@ jobs:
           # 1) Reuse a preinstalled NDK when present (fastest).
           if [ -d "$ANDROID_HOME/ndk" ]; then
             for v in $(ls -1 "$ANDROID_HOME/ndk" | sort -V | tail -3); do
-              if [ -x "$ANDROID_HOME/ndk/$v/bin/clang++" ] || \
+              if [ -x "$ANDROID_HOME/ndk/$v/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" ] || \
+                 [ -x "$ANDROID_HOME/ndk/$v/bin/clang++" ] || \
                  [ -x "$ANDROID_HOME/ndk/$v/toolchain/llvm/bin/clang++" ]; then
                 NDK_ROOT="$ANDROID_HOME/ndk/$v"; break
               fi
@@ -70,23 +71,17 @@ jobs:
               || { echo "::error::NDK download failed rc=$?"; exit 1; }
             df -h "$ANDROID_HOME" | tail -1 | sed 's/^/::notice::disk: /'
             python3 -c "import zipfile; z=zipfile.ZipFile('/tmp/ndk.zip'); ns=z.namelist(); print('::notice::zip-entries:', len(ns)); print('::notice::zip-bad:', z.testzip()); print('::notice::zip-clang:', sum(1 for n in ns if n.endswith('/bin/clang++')))"
-            unzip /tmp/ndk.zip -d "$ANDROID_HOME" 2>&1 \
-              | grep -iE "error|warn|avoid|skip|symbol|caution" | head -10 \
-              | sed 's/^/::notice::unzip: /'
-            unzip -tq /tmp/ndk.zip >/dev/null 2>&1 || true
-            unzip -o /tmp/ndk.zip -d "$ANDROID_HOME" > /dev/null \
+            unzip -q /tmp/ndk.zip -d "$ANDROID_HOME" \
               || { echo "::error::NDK unzip failed"; exit 1; }
             rm -f /tmp/ndk.zip
-            echo "::notice::extracted-files: $(find "$NDK_ROOT" -type f | wc -l)"
-            echo "::notice::clang-found: $(find "$NDK_ROOT" -name 'clang++*' | head -5 | tr '\n' ' ')"
-            ls "$NDK_ROOT/bin" >/dev/null 2>&1 \
-              || echo "::error::NDK bin/ missing after extraction"
+            echo "::notice::clang-found: $(find "$NDK_ROOT" -name 'clang++' -path '*bin*' | head -3 | tr '\n' ' ')"
           fi
-          [ -x "$NDK_ROOT/bin/clang++" ] || [ -x "$NDK_ROOT/toolchain/llvm/bin/clang++" ] \
-            || { echo "::error::NDK clang++ missing"; exit 1; }
+          CLANG="$NDK_ROOT/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+          [ -x "$CLANG" ] || CLANG="$NDK_ROOT/toolchain/llvm/bin/clang++"
+          [ -x "$CLANG" ] || CLANG="$NDK_ROOT/bin/clang++"
+          [ -x "$CLANG" ] || { echo "::error::NDK clang++ missing"; exit 1; }
           echo "ANDROID_NDK_HOME=$NDK_ROOT" >> "$GITHUB_ENV"
-          "$NDK_ROOT/toolchain/llvm/bin/clang++" --version 2>/dev/null \
-            || "$NDK_ROOT/bin/clang++" --version
+          "$CLANG" --version
 
       - name: Build native lib + package
         run: ./scripts/build_and_test.sh --native
