@@ -33,16 +33,25 @@ NLOHMANN_INCLUDE=/path/to/json/single_include ./fresh-port/tests/run_host_tests.
 The C++ model and config tests use ASan/UBSan; Python tests cover the scanning
 logic. Tests of the actual game hooks and Android loading are not implemented.
 
-## Intended Android build (not yet validated)
+## Android build (inactive prototype only)
 
-From this directory, with xmake and an Android NDK:
+GitHub Actions builds the arm64 prototype with a runner-provided Android NDK,
+links against the pinned preloader source, and checks ELF architecture, exported
+registration, absence of `JNI_OnLoad`, and 16 KB PT_LOAD alignment. It uploads
+an explicitly named `ApollonKillAura-INACTIVE-PROTOTYPE-1.26.60.4.levipack`.
+The build is not a device, installed-preloader ABI or gameplay validation.
+The local sandbox cannot obtain an NDK, so Android compilation ran in Actions.
+
+To reproduce using Linux, CMake and an Android NDK:
 
 ```sh
-xmake f -y -p android -a arm64-v8a -m release --ndk=/path/to/ndk
-xmake -y
+ANDROID_NDK_HOME=/path/to/ndk \
+PRELOADER_SDK=/path/to/preloader-android \
+FMT_INCLUDE=/path/to/fmt/include \
+NLOHMANN_INCLUDE=/path/to/json/single_include \
+./fresh-port/scripts/build_native.sh
 ```
 
-The target requests C++20, `-O2 -fno-strict-aliasing` and 16 KB max page size.
-No `.levipack` has been built or validated. Do not package this inactive
-prototype as a ready-to-test release. The old root build and workflow are not
-part of this port.
+The script requests C++20, `-O2 -fno-strict-aliasing` and 16 KB max page size.
+An additional xmake layout is supplied but has not been validated. The old root
+build is not part of this port. Neither build produces a working combat mod.
