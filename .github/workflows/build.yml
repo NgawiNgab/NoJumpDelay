@@ -54,16 +54,20 @@ jobs:
         run: |
           NDK_ZIP_URL="https://dl.google.com/android/repository/android-ndk-r28b-linux.zip"
           NDK_ROOT="$ANDROID_HOME/android-ndk-r28b"
+          command -v unzip >/dev/null || { echo "::error::unzip not installed"; exit 1; }
           if [ ! -x "$NDK_ROOT/bin/clang++" ]; then
             curl -fsSL -o /tmp/ndk.zip "$NDK_ZIP_URL" \
               || { echo "::error::NDK download failed rc=$?"; exit 1; }
+            ls -la /tmp/ndk.zip | sed 's/^/::notice::download: /'
             unzip -q /tmp/ndk.zip -d "$ANDROID_HOME" \
               || { echo "::error::NDK unzip failed"; exit 1; }
             rm -f /tmp/ndk.zip
+            ls "$ANDROID_HOME" | sed 's/^/::notice::sdk-home: /'
           fi
+          ls "$NDK_ROOT/bin/clang++" | sed 's/^/::notice::clang: /'
           echo "ANDROID_NDK_HOME=$NDK_ROOT" >> "$GITHUB_ENV"
           "$NDK_ROOT/bin/clang++" --version \
-            || { echo "::error::NDK clang++ missing"; exit 1; }
+            || { ls "$NDK_ROOT/bin" | head -20 | sed 's/^/::error::bin: /'; echo "::error::NDK clang++ missing"; exit 1; }
 
       - name: Build native lib + package
         run: ./scripts/build_and_test.sh --native
