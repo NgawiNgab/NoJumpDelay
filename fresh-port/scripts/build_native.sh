@@ -8,11 +8,13 @@ json=${NLOHMANN_INCLUDE:?Set NLOHMANN_INCLUDE to nlohmann/json v3.11.3 single_in
 ndk=${ANDROID_NDK_HOME:?Set ANDROID_NDK_HOME to an Android NDK}
 out=${BUILD_DIR:-"$root/build/fresh-port-native"}
 mkdir -p "$out"
+log="$out/native-build.log"
+trap 'status=$?; if (( status != 0 )) && [[ -f "$log" ]]; then text=$(tail -30 "$log" | tr "\n" " " | cut -c1-3000); echo "::error::Native build failed: $text"; fi' EXIT
 clang="$ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
 test -x "$clang" || { echo 'NDK clang++ not found' >&2; exit 1; }
 cmake -S "$sdk" -B "$out/preloader" -DCMAKE_TOOLCHAIN_FILE="$ndk/build/cmake/android.toolchain.cmake" \
-  -DANDROID_ABI=arm64-v8a -DANDROID_PLATFORM=android-28 -DCMAKE_BUILD_TYPE=Release
-cmake --build "$out/preloader" --target preloader --parallel 2
+  -DANDROID_ABI=arm64-v8a -DANDROID_PLATFORM=android-28 -DCMAKE_BUILD_TYPE=Release 2>&1 | tee "$log"
+cmake --build "$out/preloader" --target preloader --parallel 2 2>&1 | tee "$log"
 preloader=$(find "$out/preloader" -type f -name libpreloader.so -print -quit)
 test -n "$preloader" || { echo 'preloader build did not produce libpreloader.so' >&2; exit 1; }
 "$clang" -target aarch64-linux-android28 -std=c++20 -O2 -fno-strict-aliasing \
@@ -21,7 +23,7 @@ test -n "$preloader" || { echo 'preloader build did not produce libpreloader.so'
   "$root/fresh-port/native/mod.cpp" "$root/fresh-port/native/verification.cpp" \
   "$root/fresh-port/src/config.cpp" "$root/fresh-port/src/engine.cpp" \
   -L"$(dirname "$preloader")" -Wl,--no-undefined -Wl,-z,max-page-size=16384 \
-  -lpreloader -llog -ldl -o "$out/libApollonKillAura.so"
+  -lpreloader -llog -ldl -o "$out/libApollonKillAura.so" 2>&1 | tee "$log"
 python3 "$root/fresh-port/scripts/check_elf.py" "$out/libApollonKillAura.so"
 python3 - "$root/fresh-port/manifest.json" "$out/libApollonKillAura.so" "$out/ApollonKillAura-INACTIVE-PROTOTYPE-1.26.60.4.levipack" <<'PY'
 import json,sys,zipfile
