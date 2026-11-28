@@ -50,8 +50,12 @@ if [[ -z "${ANDROID_NDK_HOME:-}" ]]; then
 fi
 CLANGXX="$(command -v aarch64-linux-android28-clang++ || true)"
 if [[ -z "$CLANGXX" ]]; then
-    CLANGXX="$ANDROID_NDK_HOME/bin/clang++"
-    [[ -x "$CLANGXX" ]] || CLANGXX="$ANDROID_NDK_HOME/bin/aarch64-linux-android28-clang++"
+    for cand in \
+        "$ANDROID_NDK_HOME/bin/clang++" \
+        "$ANDROID_NDK_HOME/bin/aarch64-linux-android28-clang++" \
+        "$ANDROID_NDK_HOME/toolchain/llvm/bin/clang++"; do
+        [[ -x "$cand" ]] && CLANGXX="$cand" && break
+    done
 fi
 test -x "$CLANGXX" || { echo "NDK clang++ not found under $ANDROID_NDK_HOME"; exit 1; }
 

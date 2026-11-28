@@ -56,7 +56,10 @@ jobs:
           # 1) Reuse a preinstalled NDK when present (fastest).
           if [ -d "$ANDROID_HOME/ndk" ]; then
             for v in $(ls -1 "$ANDROID_HOME/ndk" | sort -V | tail -3); do
-              [ -x "$ANDROID_HOME/ndk/$v/bin/clang++" ] && NDK_ROOT="$ANDROID_HOME/ndk/$v" && break
+              if [ -x "$ANDROID_HOME/ndk/$v/bin/clang++" ] || \
+                 [ -x "$ANDROID_HOME/ndk/$v/toolchain/llvm/bin/clang++" ]; then
+                NDK_ROOT="$ANDROID_HOME/ndk/$v"; break
+              fi
             done
           fi
           # 2) Fall back to downloading r28b.
@@ -74,9 +77,11 @@ jobs:
             ls "$NDK_ROOT/bin" >/dev/null 2>&1 \
               || echo "::error::NDK bin/ missing after extraction"
           fi
-          [ -x "$NDK_ROOT/bin/clang++" ] || { echo "::error::NDK clang++ missing"; exit 1; }
+          [ -x "$NDK_ROOT/bin/clang++" ] || [ -x "$NDK_ROOT/toolchain/llvm/bin/clang++" ] \
+            || { echo "::error::NDK clang++ missing"; exit 1; }
           echo "ANDROID_NDK_HOME=$NDK_ROOT" >> "$GITHUB_ENV"
-          "$NDK_ROOT/bin/clang++" --version
+          "$NDK_ROOT/toolchain/llvm/bin/clang++" --version 2>/dev/null \
+            || "$NDK_ROOT/bin/clang++" --version
 
       - name: Build native lib + package
         run: ./scripts/build_and_test.sh --native
