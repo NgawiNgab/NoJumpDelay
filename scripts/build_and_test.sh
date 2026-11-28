@@ -90,21 +90,54 @@ sed -e 's/@MOD_NAME@/Apollon KillAura/' \
 
 # ---- 5. sanity checks ----------------------------------------------------------
 echo "== ELF checks =="
-readelf -lW build/native/libApollonKillAura.so | grep -E "LOAD" | head -4
-if readelf -lW build/native/libApollonKillAura.so | grep -qE "0x0+4000 0x0+4000"; then
+LOAD_LINES="$(readelf -lW build/native/libApollonKillAura.so | grep -E "LOAD")"
+echo "$LOAD_LINES"
+ARCH="$(readelf -hW build/native/libApollonKillAura.so | grep Machine | awk '{print $2}')"
+PLSYM="$(readelf --dyn-syms -W build/native/libApollonKillAura.so | grep -c PLGetModRegistration || true)"
+SHA_SO="$(sha256sum build/native/libApollonKillAura.so | cut -d' ' -f1)"
+if echo "$LOAD_LINES" | grep -qE "0x0+4000 0x0+4000"; then
     echo "FAIL: 4KB-aligned PT_LOAD found"; exit 1
 fi
-echo "16 KB max-page-size OK"
+python3 - <<'EOF'
+import subprocess
+out = subprocess.check_output(
+    ["readelf", "-lW", "build/native/libApollonKillAura.so"], text=True)
+bad = 0
+for line in out.splitlines():
+    if line.strip().startswith("LOAD"):
+        f = line.split()
+        off = int(f[1], 16); va = int(f[2], 16)
+        if off % 16384 or va % 16384:
+            bad += 1
+print("ALIGN-FAIL" if bad else "ALIGN-OK: all PT_LOAD 16KB aligned (vaddr+offset)")
+EOF
+[ "$ARCH" = "AArch64" ] || { echo "FAIL: not an AArch64 ELF ($ARCH)"; exit 1; }
+[ "$PLSYM" -ge 1 ] || { echo "FAIL: PLGetModRegistration not exported"; exit 1; }
+echo "16 KB max-page-size OK; arch=$ARCH; PLGetModRegistration exported"
+echo "sha256(libApollonKillAura.so) = $SHA_SO"
 file_size=$(stat -c %s build/native/libApollonKillAura.so)
 echo "libApollonKillAura.so: ${file_size} bytes"
+
+# CI annotations: verification evidence readable via the API.
+echo "$LOAD_LINES" | cut -c1-250 | sed 's/^/::notice::elf: /'
+echo "::notice::elf-arch: $ARCH"
+echo "::notice::pl-export: PLGetModRegistration entries=$PLSYM"
+echo "::notice::sha256-so: $SHA_SO"
+
 python3 - <<'EOF'
-import zipfile, json
+import zipfile, json, hashlib
 z = zipfile.ZipFile("build/ApollonKillAura-1.26.60.levipack")
 names = z.namelist()
 assert "ApollonKillAura/libApollonKillAura.so" in names, names
 assert "ApollonKillAura/manifest.json" in names, names
 manifest = json.loads(z.read("ApollonKillAura/manifest.json"))
 assert manifest["minecraft_versions"] == ["1.26.60"], manifest
+assert manifest["entry"] == "libApollonKillAura.so", manifest
 print("levipack OK:", names, "manifest:", manifest)
+sha = hashlib.sha256(open("build/ApollonKillAura-1.26.60.levipack","rb").read()).hexdigest()
+print("sha256(levipack) =", sha)
+print("::notice::levipack: " + ",".join(names)[:230])
+print("::notice::manifest: " + json.dumps(manifest)[:230])
+print("::notice::sha256-levipack: " + sha)
 EOF
 echo "== done =="
