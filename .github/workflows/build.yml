@@ -27,3 +27,33 @@ jobs:
           PRELOADER_SDK: ${{ runner.temp }}/preloader
           FMT_INCLUDE: ${{ runner.temp }}/fmt/include
         run: ./fresh-port/tests/run_sdk_compile.sh
+  android-prototype:
+    name: Android inactive prototype (not a combat release)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch pinned independent build dependencies
+        run: |
+          git init "$RUNNER_TEMP/preloader"
+          git -C "$RUNNER_TEMP/preloader" remote add origin https://github.com/LiteLDev/preloader-android.git
+          git -C "$RUNNER_TEMP/preloader" fetch --depth 1 origin cc08b40a31471d3e2dedb267f5f17b28da2b0604
+          git -C "$RUNNER_TEMP/preloader" checkout --detach FETCH_HEAD
+          git clone --depth 1 --branch 11.2.0 https://github.com/fmtlib/fmt.git "$RUNNER_TEMP/fmt"
+          git clone --depth 1 --branch v3.11.3 https://github.com/nlohmann/json.git "$RUNNER_TEMP/nlohmann-json"
+      - name: Select preinstalled Android NDK
+        run: |
+          NDK_ROOT=$(find "$ANDROID_HOME/ndk" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
+          test -x "$NDK_ROOT/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+          echo "ANDROID_NDK_HOME=$NDK_ROOT" >> "$GITHUB_ENV"
+      - name: Build, verify and package inactive prototype
+        env:
+          PRELOADER_SDK: ${{ runner.temp }}/preloader
+          FMT_INCLUDE: ${{ runner.temp }}/fmt/include
+          NLOHMANN_INCLUDE: ${{ runner.temp }}/nlohmann-json/single_include
+          BUILD_DIR: ${{ runner.temp }}/native-prototype
+        run: ./fresh-port/scripts/build_native.sh
+      - name: Upload inactive prototype (not 1:1)
+        uses: actions/upload-artifact@v4
+        with:
+          name: ApollonKillAura-INACTIVE-PROTOTYPE-1.26.60.4
+          path: ${{ runner.temp }}/native-prototype/ApollonKillAura-INACTIVE-PROTOTYPE-1.26.60.4.levipack

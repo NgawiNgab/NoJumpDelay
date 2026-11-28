@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+# Build the INACTIVE prototype. No installer hooks are enabled by this script.
+set -euo pipefail
+root=$(cd "$(dirname "$0")/../.." && pwd)
+sdk=${PRELOADER_SDK:?Set PRELOADER_SDK to the pinned independent preloader checkout}
+fmt=${FMT_INCLUDE:?Set FMT_INCLUDE to fmt 11.2.0 include}
+json=${NLOHMANN_INCLUDE:?Set NLOHMANN_INCLUDE to nlohmann/json v3.11.3 single_include}
+ndk=${ANDROID_NDK_HOME:?Set ANDROID_NDK_HOME to an Android NDK}
+out=${BUILD_DIR:-"$root/build/fresh-port-native"}
+mkdir -p "$out"
+clang="$ndk/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+test -x "$clang" || { echo 'NDK clang++ not found' >&2; exit 1; }
+cmake -S "$sdk" -B "$out/preloader" -DCMAKE_TOOLCHAIN_FILE="$ndk/build/cmake/android.toolchain.cmake" \
+  -DANDROID_ABI=arm64-v8a -DANDROID_PLATFORM=android-28 -DCMAKE_BUILD_TYPE=Release
+cmake --build "$out/preloader" --target preloader --parallel 2
+preloader=$(find "$out/preloader" -type f -name libpreloader.so -print -quit)
+test -n "$preloader" || { echo 'preloader build did not produce libpreloader.so' >&2; exit 1; }
+"$clang" -target aarch64-linux-android28 -std=c++20 -O2 -fno-strict-aliasing \
+  -fPIC -shared -fvisibility=hidden -fvisibility-inlines-hidden -DFMT_HEADER_ONLY=1 \
+  -I"$root/fresh-port/src" -I"$root/fresh-port/native" -I"$sdk/include" -I"$fmt" -I"$json" \
+  "$root/fresh-port/native/mod.cpp" "$root/fresh-port/native/verification.cpp" \
+  "$root/fresh-port/src/config.cpp" "$root/fresh-port/src/engine.cpp" \
+  -L"$(dirname "$preloader")" -Wl,--no-undefined -Wl,-z,max-page-size=16384 \
+  -lpreloader -llog -ldl -o "$out/libApollonKillAura.so"
+python3 "$root/fresh-port/scripts/check_elf.py" "$out/libApollonKillAura.so"
+python3 - "$root/fresh-port/manifest.json" "$out/libApollonKillAura.so" "$out/ApollonKillAura-INACTIVE-PROTOTYPE-1.26.60.4.levipack" <<'PY'
+import json,sys,zipfile
+from pathlib import Path
+manifest, library, output = map(Path, sys.argv[1:])
+metadata=json.loads(manifest.read_text())
+assert metadata['minecraft_versions']==['1.26.60.4']
+assert metadata['entry']==library.name
+assert 'inactive' in metadata['name']
+with zipfile.ZipFile(output,'w',compression=zipfile.ZIP_DEFLATED) as z:
+    z.write(manifest,'manifest.json')
+    z.write(library,library.name)
+with zipfile.ZipFile(output) as z:
+    assert set(z.namelist())=={'manifest.json',library.name}
+    assert json.loads(z.read('manifest.json')) == metadata
+print('Packaged INACTIVE prototype only:',output)
+PY
