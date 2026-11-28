@@ -26,7 +26,6 @@ jobs:
     needs: tests
     env:
       ANDROID_HOME: /usr/local/lib/android/sdk
-      ANDROID_NDK_HOME: /usr/local/lib/android/sdk/ndk/28.2.13676358
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -53,12 +52,17 @@ jobs:
 
       - name: Install Android NDK
         run: |
-          SDKM="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
-          if [ ! -x "$ANDROID_NDK_HOME/bin/clang++" ]; then
-            yes | "$SDKM" --sdk_root="$ANDROID_HOME" "ndk;28.2.13676358" > /dev/null \
-              || { echo "::error::sdkmanager NDK install failed"; exit 1; }
+          NDK_ZIP_URL="https://dl.google.com/android/repository/android-ndk-r28b-linux.zip"
+          NDK_ROOT="$ANDROID_HOME/android-ndk-r28b"
+          if [ ! -x "$NDK_ROOT/bin/clang++" ]; then
+            curl -fsSL -o /tmp/ndk.zip "$NDK_ZIP_URL" \
+              || { echo "::error::NDK download failed rc=$?"; exit 1; }
+            unzip -q /tmp/ndk.zip -d "$ANDROID_HOME" \
+              || { echo "::error::NDK unzip failed"; exit 1; }
+            rm -f /tmp/ndk.zip
           fi
-          "$ANDROID_NDK_HOME/bin/clang++" --version \
+          echo "ANDROID_NDK_HOME=$NDK_ROOT" >> "$GITHUB_ENV"
+          "$NDK_ROOT/bin/clang++" --version \
             || { echo "::error::NDK clang++ missing"; exit 1; }
 
       - name: Build native lib + package
