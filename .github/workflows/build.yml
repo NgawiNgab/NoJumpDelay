@@ -52,22 +52,31 @@ jobs:
 
       - name: Install Android NDK
         run: |
-          NDK_ZIP_URL="https://dl.google.com/android/repository/android-ndk-r28b-linux.zip"
-          NDK_ROOT="$ANDROID_HOME/android-ndk-r28b"
-          command -v unzip >/dev/null || { echo "::error::unzip not installed"; exit 1; }
-          if [ ! -x "$NDK_ROOT/bin/clang++" ]; then
-            curl -fsSL -o /tmp/ndk.zip "$NDK_ZIP_URL" \
+          NDK_ROOT=""
+          # 1) Reuse a preinstalled NDK when present (fastest).
+          if [ -d "$ANDROID_HOME/ndk" ]; then
+            for v in $(ls -1 "$ANDROID_HOME/ndk" | sort -V | tail -3); do
+              [ -x "$ANDROID_HOME/ndk/$v/bin/clang++" ] && NDK_ROOT="$ANDROID_HOME/ndk/$v" && break
+            done
+          fi
+          # 2) Fall back to downloading r28b.
+          if [ -z "$NDK_ROOT" ]; then
+            NDK_ROOT="$ANDROID_HOME/android-ndk-r28b"
+            curl -fsSL -o /tmp/ndk.zip \
+              "https://dl.google.com/android/repository/android-ndk-r28b-linux.zip" \
               || { echo "::error::NDK download failed rc=$?"; exit 1; }
             ls -la /tmp/ndk.zip | sed 's/^/::notice::download: /'
             unzip -q /tmp/ndk.zip -d "$ANDROID_HOME" \
               || { echo "::error::NDK unzip failed"; exit 1; }
             rm -f /tmp/ndk.zip
-            ls "$ANDROID_HOME" | sed 's/^/::notice::sdk-home: /'
+            du -sh "$NDK_ROOT" 2>/dev/null | sed 's/^/::notice::ndk-size: /'
+            ls "$NDK_ROOT" | head -12 | sed 's/^/::notice::ndk-top: /'
+            ls "$NDK_ROOT/bin" 2>/dev/null | head -8 | sed 's/^/::notice::ndk-bin: /' \
+              || echo "::error::NDK bin/ missing after extraction"
           fi
-          ls "$NDK_ROOT/bin/clang++" | sed 's/^/::notice::clang: /'
+          [ -x "$NDK_ROOT/bin/clang++" ] || { echo "::error::NDK clang++ missing"; exit 1; }
           echo "ANDROID_NDK_HOME=$NDK_ROOT" >> "$GITHUB_ENV"
-          "$NDK_ROOT/bin/clang++" --version \
-            || { ls "$NDK_ROOT/bin" | head -20 | sed 's/^/::error::bin: /'; echo "::error::NDK clang++ missing"; exit 1; }
+          "$NDK_ROOT/bin/clang++" --version
 
       - name: Build native lib + package
         run: ./scripts/build_and_test.sh --native
