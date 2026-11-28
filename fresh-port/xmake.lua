@@ -22,7 +22,9 @@ target("ApollonKillAura")
     add_includedirs("src", "native")
     add_packages("preloader", "nlohmann_json", "fmt")
     if is_plat("android") then
+        set_runtimes("c++_static")
         add_cxxflags("-O2", "-fno-strict-aliasing")
-        add_shflags("-Wl,-z,max-page-size=16384")
+        add_shflags("-static-libstdc++", "-Wl,--exclude-libs,libc++_static.a",
+                    "-Wl,--exclude-libs,libc++abi.a", "-Wl,-z,max-page-size=16384")
         add_syslinks("log", "dl")
     end

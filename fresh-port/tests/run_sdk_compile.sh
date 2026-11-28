@@ -13,8 +13,9 @@ mkdir -p "$out"
   "$root/fresh-port/native/mod.cpp" "$root/fresh-port/native/verification.cpp" \
   "$root/fresh-port/native/hooks.cpp" "$root/fresh-port/native/combat.cpp" \
   "$root/fresh-port/src/config.cpp" "$root/fresh-port/src/engine.cpp" -ldl -o "$out/libApollonKillAura-host.so"
-nm -D "$out/libApollonKillAura-host.so" | grep -Eq ' [TW] PLGetModRegistration$'
-if nm -D "$out/libApollonKillAura-host.so" | grep -Eq 'JNI_OnLoad|NativeMod7current'; then
+nm -D "$out/libApollonKillAura-host.so" > "$out/host-symbols.txt"
+grep -Eq ' [TW] PLGetModRegistration$' "$out/host-symbols.txt"
+if grep -Eq 'JNI_OnLoad|NativeMod7current' "$out/host-symbols.txt"; then
   echo 'Unexpected JNI_OnLoad or NativeMod::current symbol' >&2; exit 1
 fi
 echo 'Host SDK compile passed; this is not a device ABI or Android build test.'

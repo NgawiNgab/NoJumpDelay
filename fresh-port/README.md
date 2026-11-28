@@ -44,7 +44,8 @@ use ASan/UBSan; Python tests cover the scanning logic. No device test is include
 ## Android build
 
 GitHub Actions builds with a runner-provided Android NDK, links against the
-pinned preloader source, checks AArch64 and 16 KB PT_LOAD alignment, and
+pinned preloader source, checks AArch64 and 16 KB PT_LOAD alignment, rejects an undefined
+`__hash_memory` or a direct `libc++_shared.so` dependency in the mod, and
 uploads `ApollonKillAura-1.26.60.4.levipack`. To reproduce on Linux:
 
 ```sh
@@ -55,6 +56,10 @@ NLOHMANN_INCLUDE=/path/to/json/single_include \\
 ./fresh-port/scripts/build_native.sh
 ```
 
-The script requests C++20, `-O2 -fno-strict-aliasing` and 16 KB max page size.
+The script requests C++20, `-O2 -fno-strict-aliasing`, 16 KB max page size,
+and a statically linked, hidden libc++ runtime. The ELF checks only inspect the
+mod itself, not transitive dependencies such as the installed preloader. This
+change does not validate C++ ABI, allocator ownership, exceptions or runtime
+interaction across the mod, preloader and game boundaries on a device.
 An xmake layout is supplied but has not been validated. A successful build is
 not evidence of compatibility or parity.

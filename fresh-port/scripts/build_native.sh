@@ -24,7 +24,8 @@ test -n "$preloader" || { echo 'preloader build did not produce libpreloader.so'
   "$root/fresh-port/native/mod.cpp" "$root/fresh-port/native/verification.cpp" \
   "$root/fresh-port/native/hooks.cpp" "$root/fresh-port/native/combat.cpp" \
   "$root/fresh-port/src/config.cpp" "$root/fresh-port/src/engine.cpp" \
-  -L"$(dirname "$preloader")" -Wl,--no-undefined -Wl,-z,max-page-size=16384 \
+  -L"$(dirname "$preloader")" -static-libstdc++ -Wl,--exclude-libs,libc++_static.a \
+  -Wl,--exclude-libs,libc++abi.a -Wl,--no-undefined -Wl,-z,max-page-size=16384 \
   -lpreloader -llog -ldl -o "$out/libApollonKillAura.so" 2>&1 | tee "$log"
 python3 "$root/fresh-port/scripts/check_elf.py" "$out/libApollonKillAura.so"
 python3 - "$root/fresh-port/manifest.json" "$out/libApollonKillAura.so" "$out/ApollonKillAura-1.26.60.4.levipack" <<'PY'

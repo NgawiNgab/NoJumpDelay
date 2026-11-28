@@ -25,6 +25,13 @@ def check(path: Path):
         raise ValueError('JNI_OnLoad must not be present')
     if 'NativeMod7current' in symbols:
         raise ValueError('unexpected NativeMod::current dependency')
+    if any(re.search(r'\bUND\b', line) and '__hash_memory' in line
+           for line in symbols.splitlines()):
+        raise ValueError('undefined __hash_memory symbol (incompatible libc++ runtime)')
+    dynamic = subprocess.check_output(['readelf', '-dW', str(path)], text=True)
+    if any('(NEEDED)' in line and re.search(r'\[libc\+\+_shared\.so\]', line)
+           for line in dynamic.splitlines()):
+        raise ValueError('direct dependency on libc++_shared.so')
     return program
 
 
@@ -33,7 +40,7 @@ def main():
     parser.add_argument('library', type=Path)
     args = parser.parse_args()
     print(check(args.library))
-    print('AArch64, 16 KiB PT_LOAD alignment, and required export checks passed.')
+    print('AArch64, 16 KiB PT_LOAD alignment, exports and C++ runtime dependency checks passed.')
 
 
 if __name__ == '__main__':
