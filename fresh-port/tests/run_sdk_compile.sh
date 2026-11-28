@@ -11,9 +11,17 @@ mkdir -p "$out"
   -I"$root/fresh-port/src" -I"$root/fresh-port/native" -I"$root/fresh-port/host" \
   -I"$sdk/include" -I"$fmt" -I"$json" -I"$jdk/include" -I"$jdk/include/linux" \
   "$root/fresh-port/native/mod.cpp" "$root/fresh-port/native/verification.cpp" \
+  "$root/fresh-port/native/hooks.cpp" "$root/fresh-port/native/combat.cpp" \
   "$root/fresh-port/src/config.cpp" "$root/fresh-port/src/engine.cpp" -ldl -o "$out/libApollonKillAura-host.so"
 nm -D "$out/libApollonKillAura-host.so" | grep -Eq ' [TW] PLGetModRegistration$'
 if nm -D "$out/libApollonKillAura-host.so" | grep -Eq 'JNI_OnLoad|NativeMod7current'; then
   echo 'Unexpected JNI_OnLoad or NativeMod::current symbol' >&2; exit 1
 fi
 echo 'Host SDK compile passed; this is not a device ABI or Android build test.'
+"${CXX:-g++}" -std=c++20 -g -O1 -fno-omit-frame-pointer -fsanitize=address,undefined \
+  -Wall -Wextra -Werror -I"$root/fresh-port/src" -I"$root/fresh-port/native" \
+  -I"$root/fresh-port/host" -I"$sdk/include" \
+  "$root/fresh-port/tests/test_hooks.cpp" "$root/fresh-port/native/hooks.cpp" \
+  "$root/fresh-port/native/combat.cpp" "$root/fresh-port/src/engine.cpp" -o "$out/test_hooks"
+"$out/test_hooks"
+echo 'Hook lifecycle mock tests passed.'

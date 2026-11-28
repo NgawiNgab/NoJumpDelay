@@ -1,5 +1,5 @@
 #include "config.hpp"
-#include "verification.hpp"
+#include "hooks.hpp"
 #include <pl/Mod.hpp>
 #include <pl/ModMenu.hpp>
 #include <android/log.h>
@@ -42,6 +42,7 @@ class Mod {
  }
 public:
  static Mod& instance() {static Mod mod;return mod;}
+ static aura::Config snapshot() { auto& m=instance(); std::lock_guard lock(m.mutex_); return m.config_; }
  bool load(pl::mod::ModContext& context) {
   std::lock_guard lock(mutex_); modId_=context.id(); path_=context.configDir()/"config.json";
   if(std::filesystem::exists(path_) && !aura::loadConfig(path_,config_)) log("Could not read config.json; using defaults without overwriting it");
@@ -51,8 +52,8 @@ public:
   aura::Config c; std::string id;
   {std::lock_guard lock(mutex_); c=config_; id=modId_;}
   using T=pl::modmenu::ConfigType;
-  auto builder=pl::modmenu::ModuleBuilder(std::string(moduleId),"Kill Aura (inactive prototype)");
-  builder.modId(id).description("Research prototype: combat hooks are disabled, even if toggled.").defaultEnabled(c.killAura)
+  auto builder=pl::modmenu::ModuleBuilder(std::string(moduleId),"Kill Aura");
+  builder.modId(id).description("Native Kill Aura for Minecraft Bedrock 1.26.60.4.").defaultEnabled(c.killAura)
    .onToggle([this](std::string_view,bool enabled){std::lock_guard lock(mutex_); config_.killAura=enabled; saveLocked();})
    .onConfigChanged([this](std::string_view,std::string_view key,std::string_view value){bool refresh=false; {std::lock_guard lock(mutex_); if(!aura::updateConfig(config_,key,value)){log("Invalid configuration value");return;} saveLocked(); refresh=key=="killAuraShortcut"||key=="killItemsShortcut";} if(refresh)updateButtons();})
    .config("auraType","Aura type",T::Radio,c.auraType==aura::Mode::Single?"Single":c.auraType==aura::Mode::Multi?"Multi":"Switch","Single,Multi,Switch")
@@ -71,17 +72,19 @@ public:
    .config("friendList","Friend list (JSON array)",T::Text,nlohmann::json(c.friendList).dump())
    .config("botList","Bot list (JSON array)",T::Text,nlohmann::json(c.botList).dump());
   registered_=builder.registerModule(); if(!registered_){log("Could not register module menu");return false;}
+  if(!aura::installHooks(&Mod::snapshot)) {
+   log("Could not install combat hooks");
+   pl::modmenu::unregisterModule(moduleId); registered_=false;
+   return false;
+  }
   updateButtons();
-  const auto v=aura::verifyLoadedGame();
-  if(v==aura::Verification::MissingLibrary) log("Game library is not loaded; combat hooks remain disabled");
-  else if(v==aura::Verification::Mismatch) log("Game prologue mismatch; combat hooks remain disabled");
-  else log("Game prologues match; combat hooks remain disabled because ABIs and behavior are not fully verified");
   return true;
  }
  bool disable(pl::mod::ModContext&) {
+  const bool hooksRemoved=aura::removeHooks();
   pl::modmenu::unregisterButton(auraButton); pl::modmenu::unregisterButton(itemsButton);
   if(registered_){pl::modmenu::unregisterModule(moduleId);registered_=false;}
-  return true;
+  return hooksRemoved;
  }
  bool unload(pl::mod::ModContext& context){return disable(context);}
 };

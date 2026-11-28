@@ -1,4 +1,4 @@
--- Independent, inactive prototype. Adapted to the upstream BedrockTools
+-- Independent port. Adapted to the upstream BedrockTools
 -- preloader package layout; do not use the legacy root CMake build.
 add_rules("mode.debug", "mode.release")
 

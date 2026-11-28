@@ -34,14 +34,14 @@ int visit(dl_phdr_info* info, std::size_t, void* arg) {
  std::string_view name=info->dlpi_name ? info->dlpi_name : "";
  auto slash=name.find_last_of('/'); if(slash!=name.npos) name.remove_prefix(slash+1);
  if(name!="libminecraftpe.so") return 0;
- auto& result=*static_cast<Verification*>(arg); result=Verification::Mismatch;
+ auto& result=*static_cast<std::uintptr_t*>(arg); result=0;
  for (const auto& p:patterns) {
   if(!executableRange(info,p.rva,p.bytes.size())) return 1;
   auto* address=reinterpret_cast<const void*>(static_cast<std::uintptr_t>(info->dlpi_addr)+p.rva);
   if(std::memcmp(address,p.bytes.data(),p.bytes.size())!=0) return 1;
  }
- result=Verification::Matched; return 1;
+ result=static_cast<std::uintptr_t>(info->dlpi_addr); return 1;
 }
 }
-Verification verifyLoadedGame() { Verification result=Verification::MissingLibrary; dl_iterate_phdr(visit,&result); return result; }
+std::uintptr_t verifyLoadedGame() { std::uintptr_t result=0; dl_iterate_phdr(visit,&result); return result; }
 } // namespace aura

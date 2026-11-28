@@ -1,9 +1,10 @@
-# KillAura: independent research and inactive prototype
+# Apollon Kill Aura
 
-The earlier root implementation was unsuccessful and is not used by the new
-work. The independent investigation and prototype live in [`fresh-port/`](fresh-port/).
-The prototype currently installs **no combat hooks** and is not a 1:1 port or
-a device-testing release.
+The independent native implementation, build and tests live in
+[`fresh-port/`](fresh-port/). The earlier root implementation is not used.
 
-Research evidence and known gaps are in
-[`research/KILLAURA_1_26_60_RE.md`](research/KILLAURA_1_26_60_RE.md).
+The mod installs combat hooks only when twelve in-memory game prologues match.
+**Device behavior and 1:1 parity have not been verified**: function signatures,
+object layouts and game allocation/lifetime assumptions may be wrong. See the
+[research report](research/KILLAURA_1_26_60_RE.md) and
+[port documentation](fresh-port/README.md) before testing.

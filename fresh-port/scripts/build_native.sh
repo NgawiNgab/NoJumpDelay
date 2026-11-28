@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Build the INACTIVE prototype. No installer hooks are enabled by this script.
+# Build the arm64 native mod. Device behavior has not been validated.
 set -euo pipefail
 root=$(cd "$(dirname "$0")/../.." && pwd)
 sdk=${PRELOADER_SDK:?Set PRELOADER_SDK to the pinned independent preloader checkout}
@@ -22,23 +22,24 @@ test -n "$preloader" || { echo 'preloader build did not produce libpreloader.so'
   -include cstdlib -fPIC -shared -fvisibility=hidden -fvisibility-inlines-hidden -DFMT_HEADER_ONLY=1 \
   -I"$root/fresh-port/src" -I"$root/fresh-port/native" -I"$sdk/include" -I"$fmt" -I"$json" \
   "$root/fresh-port/native/mod.cpp" "$root/fresh-port/native/verification.cpp" \
+  "$root/fresh-port/native/hooks.cpp" "$root/fresh-port/native/combat.cpp" \
   "$root/fresh-port/src/config.cpp" "$root/fresh-port/src/engine.cpp" \
   -L"$(dirname "$preloader")" -Wl,--no-undefined -Wl,-z,max-page-size=16384 \
   -lpreloader -llog -ldl -o "$out/libApollonKillAura.so" 2>&1 | tee "$log"
 python3 "$root/fresh-port/scripts/check_elf.py" "$out/libApollonKillAura.so"
-python3 - "$root/fresh-port/manifest.json" "$out/libApollonKillAura.so" "$out/ApollonKillAura-INACTIVE-PROTOTYPE-1.26.60.4.levipack" <<'PY'
+python3 - "$root/fresh-port/manifest.json" "$out/libApollonKillAura.so" "$out/ApollonKillAura-1.26.60.4.levipack" <<'PY'
 import json,sys,zipfile
 from pathlib import Path
 manifest, library, output = map(Path, sys.argv[1:])
 metadata=json.loads(manifest.read_text())
 assert metadata['minecraft_versions']==['1.26.60.4']
 assert metadata['entry']==library.name
-assert 'inactive' in metadata['name']
+assert metadata['name']=='Apollon KillAura'
 with zipfile.ZipFile(output,'w',compression=zipfile.ZIP_DEFLATED) as z:
     z.write(manifest,'manifest.json')
     z.write(library,library.name)
 with zipfile.ZipFile(output) as z:
     assert set(z.namelist())=={'manifest.json',library.name}
     assert json.loads(z.read('manifest.json')) == metadata
-print('Packaged INACTIVE prototype only:',output)
+print('Packaged:',output)
 PY

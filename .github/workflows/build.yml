@@ -1,4 +1,4 @@
-name: Independent prototype checks
+name: Kill Aura build and checks
 on: [push, pull_request, workflow_dispatch]
 permissions:
   contents: read
@@ -21,14 +21,14 @@ jobs:
           git -C "$RUNNER_TEMP/preloader" fetch --depth 1 origin cc08b40a31471d3e2dedb267f5f17b28da2b0604
           git -C "$RUNNER_TEMP/preloader" checkout --detach FETCH_HEAD
           git clone --depth 1 --branch 11.2.0 https://github.com/fmtlib/fmt.git "$RUNNER_TEMP/fmt"
-      - name: Compile prototype against upstream SDK headers on host
+      - name: Compile against upstream SDK headers on host
         env:
           NLOHMANN_INCLUDE: ${{ runner.temp }}/nlohmann-json/single_include
           PRELOADER_SDK: ${{ runner.temp }}/preloader
           FMT_INCLUDE: ${{ runner.temp }}/fmt/include
         run: ./fresh-port/tests/run_sdk_compile.sh
-  android-prototype:
-    name: Android inactive prototype (not a combat release)
+  android:
+    name: Android arm64 build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -45,15 +45,15 @@ jobs:
           NDK_ROOT=$(find "$ANDROID_HOME/ndk" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -1)
           test -x "$NDK_ROOT/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
           echo "ANDROID_NDK_HOME=$NDK_ROOT" >> "$GITHUB_ENV"
-      - name: Build, verify and package inactive prototype
+      - name: Build, verify and package
         env:
           PRELOADER_SDK: ${{ runner.temp }}/preloader
           FMT_INCLUDE: ${{ runner.temp }}/fmt/include
           NLOHMANN_INCLUDE: ${{ runner.temp }}/nlohmann-json/single_include
-          BUILD_DIR: ${{ runner.temp }}/native-prototype
+          BUILD_DIR: ${{ runner.temp }}/native
         run: ./fresh-port/scripts/build_native.sh
-      - name: Upload inactive prototype (not 1:1)
+      - name: Upload mod package
         uses: actions/upload-artifact@v4
         with:
-          name: ApollonKillAura-INACTIVE-PROTOTYPE-1.26.60.4
-          path: ${{ runner.temp }}/native-prototype/ApollonKillAura-INACTIVE-PROTOTYPE-1.26.60.4.levipack
+          name: ApollonKillAura-1.26.60.4
+          path: ${{ runner.temp }}/native/ApollonKillAura-1.26.60.4.levipack

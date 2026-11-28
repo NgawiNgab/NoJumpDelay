@@ -1,7 +1,7 @@
 # Independent investigation: 1.26.60.4 arm64 (incomplete)
 
-**Status: research only. No runtime binding, ABI, hook, port or package has
-been validated.** Existing project research and code were not used. A unique
+**Status: runtime hooks have been implemented, but no runtime binding, ABI,
+hook behavior, parity or package has been device-validated.** Existing project research and code were not used. A unique
 byte-pattern match is a candidate, not semantic or calling-convention proof.
 
 ## Inputs and reproducibility
@@ -77,7 +77,7 @@ python3 fresh-port/tools/scan_signatures.py \
 
 The last match begins with a short instruction sequence preceding another
 possible entry, emphasizing why pattern hits alone cannot establish the correct
-ABI or hook site. None of these are approved runtime hooks.
+ABI or hook site. Prologue matching alone cannot prove that runtime hooks are safe.
 
 ## Required before device testing
 
@@ -477,3 +477,18 @@ These are encoded displacements; register provenance and target-layout identity 
   combat 0xac7cc: ldr s0, [x0, #0x7c]
   combat 0xac87c: ldr s0, [x0, #0x7c]
 ```
+
+## Runtime implementation added after the investigation
+
+The user authorized enabling the modeled tick and rotation hooks. The implementation
+checks all twelve recorded prologues first, but it necessarily uses the user-supplied
+function signatures and layouts; the checks do not independently validate those.
+The native-attack path calls the two specified routines, including `0x09b94c98`,
+which target disassembly shows clears/deallocates a pointer at `+0x280`. This is
+not proof that the two calls reproduce Sigma's native attack behavior.
+
+The live code intentionally uses the existing simplified `playerEligible`,
+`selectPlayers` and CPS models: `Switch` mode, some source filter/control-flow
+conditions, rotation registry updates and timing edge cases are not reproduced.
+Host simulations and Android cross-compilation do not demonstrate device
+compatibility, pointer lifetimes, vector ownership or 1:1 equivalence.
