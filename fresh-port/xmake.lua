@@ -24,7 +24,17 @@ target("ApollonKillAura")
     if is_plat("android") then
         set_runtimes("c++_static")
         add_cxxflags("-O2", "-fno-strict-aliasing")
-        add_shflags("-static-libstdc++", "-Wl,--exclude-libs,libc++_static.a",
-                    "-Wl,--exclude-libs,libc++abi.a", "-Wl,-z,max-page-size=16384")
+        -- Disable the driver's implicit libc++ selection and resolve the archives
+        -- before the preloader shared library, as in build_native.sh.
+        add_shflags("-static-libstdc++", "-nostdlib++", "-Wl,--exclude-libs,libc++_static.a",
+                    "-Wl,--exclude-libs,libc++abi.a", "-Wl,-z,max-page-size=16384",
+                    "-Wl,--start-group", "-l:libc++_static.a", "-l:libc++abi.a", "-Wl,--end-group",
+                    {force = true})
         add_syslinks("log", "dl")
     end
+
+    after_build(function (target)
+        if target:is_plat("android") then
+            os.vrunv("python3", {path.join(os.projectdir(), "scripts", "check_elf.py"), target:targetfile()})
+        end
+    end)
