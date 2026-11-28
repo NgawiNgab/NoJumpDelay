@@ -61,6 +61,7 @@ if [[ -z "$CLANGXX" ]]; then
 fi
 test -x "$CLANGXX" || { echo "NDK clang++ not found under $ANDROID_NDK_HOME"; exit 1; }
 
+echo "::notice::stage: host tests + cross-check passed; starting arm64-v8a compile"
 echo "== arm64-v8a build ($CLANGXX) =="
 mkdir -p build/native
 "$CLANGXX" -target aarch64-linux-android28 \
@@ -77,12 +78,22 @@ mkdir -p build/native
     }
 
 # ---- dynamic symbol audit (pl::/ll:: must match libpreloader.so) -------------
+echo "::notice::stage: arm64-v8a compile OK; running preloader symbol audit"
 echo "== preloader dynamic symbol audit (nm -Du / readelf) =="
-./scripts/audit_preloader_symbols.sh build/native/libApollonKillAura.so
-grep -q "_ZN2ll3mod9NativeMod7currentEv" <(readelf --dyn-syms -W build/native/libApollonKillAura.so) \
-    && echo "::notice::abi: ll::mod::NativeMod::current (libpreloader.so runtime ABI)"
+if ! ./scripts/audit_preloader_symbols.sh build/native/libApollonKillAura.so; then
+    echo "::error::preloader symbol audit failed on the arm64-v8a library"
+    exit 1
+fi
+if readelf --dyn-syms -W build/native/libApollonKillAura.so \
+    | grep -q "_ZN2ll3mod9NativeMod7currentEv"; then
+    echo "::notice::abi: ll::mod::NativeMod::current (libpreloader.so runtime ABI)"
+else
+    echo "::error::ll::mod::NativeMod::current missing from arm64-v8a dynsyms"
+    exit 1
+fi
 
 # ---- 4. levipack packaging ----------------------------------------------------
+echo "::notice::stage: symbol audit OK; packaging"
 echo "== packaging ApollonKillAura-1.26.60.levipack =="
 rm -rf build/package && mkdir -p build/package/ApollonKillAura
 cp build/native/libApollonKillAura.so build/package/ApollonKillAura/
@@ -148,4 +159,5 @@ print("::notice::levipack: " + ",".join(names)[:230])
 print("::notice::manifest: " + json.dumps(manifest)[:230])
 print("::notice::sha256-levipack: " + sha)
 EOF
+echo "::notice::stage: all checks done"
 echo "== done =="
