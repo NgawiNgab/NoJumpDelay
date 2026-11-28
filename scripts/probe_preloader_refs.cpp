@@ -17,11 +17,13 @@ const void *const kRuntimeRefs[] = {
     // Mod lifecycle (ll::mod — the libpreloader.so device-runtime ABI).
     reinterpret_cast<const void *>(&ll::mod::NativeMod::current),
 
-    // pl::modmenu registry.
+    // pl::modmenu registry. registerModule/registerButton take (const
+    // ModuleInfo&) / (const ButtonInfo&) — std-type-free mangles, stable
+    // across libc++ flavors. The unregister* pair takes std::string_view
+    // (ABI-flavor-dependent mangle) and is resolved via dlsym at runtime
+    // instead (see KillAuraMod.cpp unregisterModmenuModule/Button).
     reinterpret_cast<const void *>(&pl::modmenu::registerModule),
-    reinterpret_cast<const void *>(&pl::modmenu::unregisterModule),
     reinterpret_cast<const void *>(&pl::modmenu::registerButton),
-    reinterpret_cast<const void *>(&pl::modmenu::unregisterButton),
 
     // pl::memory hooking.
     reinterpret_cast<const void *>(&pl::memory::hook),

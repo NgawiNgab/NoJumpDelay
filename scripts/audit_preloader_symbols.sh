@@ -36,12 +36,17 @@ readelf --dyn-syms -W "$TMP/probe.so" | awk '$7=="UND"{print $8}' \
 readelf --dyn-syms -W "$SO" | awk '$7=="UND"{print $8}' \
     | grep -E "^_ZN2(pl|ll)" | sort -u > "$TMP/mod_undefs" || true
 
+# Normalize libc++ inline-ABI-namespace variance (__ndk1 vs __1) so the
+# comparison is toolchain-independent; genuinely different symbols still fail.
+sed -E 's/NSt6__ndk1/NSt3__1/g' "$TMP/mod_undefs" | sort -u > "$TMP/mod_norm"
+sed -E 's/NSt6__ndk1/NSt3__1/g' "$TMP/expected" | sort -u > "$TMP/exp_norm"
+
 echo "undefined pl::/ll:: symbols in $(basename "$SO"):"
 sed 's/^/  /' "$TMP/mod_undefs"
 sed 's/^/::notice::undef: /' "$TMP/mod_undefs"
 
 # 3. Every mod import must be a preloader SDK export.
-BAD="$(comm -23 "$TMP/mod_undefs" "$TMP/expected" || true)"
+BAD="$(comm -23 "$TMP/mod_norm" "$TMP/exp_norm" || true)"
 if [ -n "$BAD" ]; then
     echo "FAIL: undefined symbols NOT exported by LiteLDev/preloader-android:"
     echo "$BAD" | sed 's/^/  /; s/^  /::error::unexpected undef: /2'

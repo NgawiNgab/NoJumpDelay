@@ -69,6 +69,7 @@ mkdir -p build/native
     -shared -fPIC -fvisibility=hidden -fvisibility-inlines-hidden \
     -I src -I third_party -I third_party/preloader/include -I third_party/fmt/include \
     -Wl,-z,max-page-size=16384 \
+    -ldl \
     -llog \
     -o build/native/libApollonKillAura.so ${SOURCES} 2> build/native-compile.log || {
         grep -E "error|undefined|Error" build/native-compile.log | head -15 \
